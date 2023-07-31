@@ -17,7 +17,7 @@ function CompanyPage({ companies }) {
 
             <div className="tech-stack-list">
                 {companyMatch.techStack.map(tech => (
-                    <Link to={`/tech/${tech.slug}`} key={tech.slug} className="tech-card">
+                    <Link to={`/tech/${tech.slug}?company=${companyMatch.slug}`} key={tech.slug} className="tech-card">
                         <img src={tech.image} alt={`${tech.name} logo`} className="tech-image" />
                         {tech.name}
                     </Link>
