@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+ul {
+  list-style: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px; /* add spacing between items */
+}
