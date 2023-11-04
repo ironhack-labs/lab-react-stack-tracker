@@ -11,6 +11,43 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
+.company-page-logo {
+  height: auto;
+  width: 20%;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.company-page {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#company-properties {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position:sticky;
+  overflow: auto
+}
+
+#company-properties-text {
+  text-align: center;
+  margin-left: 50px;
+  width: 500px;
+}
+
+#stack-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  align-items: flex-start;
+}
+
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
