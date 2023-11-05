@@ -2,37 +2,41 @@
 import { useParams, Link } from "react-router-dom";
 
 function CompanyPage(props) {
-  let {companies} = props 
-  let {technologies} = props
-  const { companiesSlug } = useParams();
+  let {companies, technologies} = props 
+  let { companySlug } = useParams();
+  console.log(companySlug)
   const companyExist = companies.find((theCompany) => {     
-    return theCompany.companySlug === companiesSlug;
+    return theCompany.slug === companySlug;
   })
 
   return (
-    <div>
+    <div id="pageCompany">
       <h1>Company Profile</h1>
-      {companies.name}
       {companyExist ? 
         <div>
-        <img id="detail-logo"src={companyExist.logo}/>
-          <h2>{companyExist.name}</h2>
-          <h3>About</h3>
-          <p>{companyExist.description}</p>
-          <a href={companyExist.logo}/>
-          {technologies.map(tecnhology=>{
-            return(
-                <div id="tech-parent" key={tecnhology.id}>
-                    <li id="tech-list"> 
-                        <Link id="detail-company" to={`/tech/${tecnhology.slug}`}>
-                            {tecnhology.name} 
-                            <img id="logo" src={tecnhology.image}/>
-                        </Link>
+          <div id="company-info">
+            <img id="detail-logo"src={companyExist.logo}/>
+            <div id="company-vertical">
+              <h2>{companyExist.name}</h2>
+              <h3>About</h3>
+              <p>{companyExist.description}</p>
+            </div>
+          </div>
+          <div id="tech-parent" >
+            <ul id="list-elements">
+                {technologies.map(tecnhology=>{
+                  return(
+                    <li key={tecnhology.id} >
+                      <Link  id="tech-list" to={`/tech/${tecnhology.slug}?companySlug=${companySlug}`}>
+                        <img id="logo" src={tecnhology.image}/>
+                      </Link>
+                      <div id="tech-name">{tecnhology.name}</div>
                     </li>
-                </div>
-                )
-          })}
-          <Link to="/" >Back</Link>
+                    )
+                })}
+            </ul>
+          </div>
+          <Link to="/" id="button-back">Back</Link>
         </div> : "No company info"
       }
     </div>
