@@ -4,13 +4,13 @@ import { Link } from 'react-router-dom';
 
 
 function CompanyPage(props) {
-  let { companySlug } = useParams();
-  let companies = props.companies;
-  let company = companies.find((company) => company.slug === companySlug);
-  let techs= company.techStack
+  const { companySlug } = useParams();
+  const companies = props.companies;
+  const company = companies.find((company) => company.slug === companySlug);
+  const techs= company.techStack
   
   return (
-    <div>
+    <div className='returned-div'>
         <h1>Company Profile</h1>
           <div className="individual-display">
             <div>
@@ -24,11 +24,12 @@ function CompanyPage(props) {
             
           </div>
           <div className="btn-div"><Link to={"../"}><button>Back</button></Link></div>
+
           <div className="scrollable-div">
-            {techs.map((tech)=>{
+            {techs.map((tech , index)=>{
               
             return(
-              <div>
+              <div key={index}>
                 <Link to={`../tech/${tech.slug}`}>
                 <img className="comp-logo" src={tech.image}/>
                 <h2 className="comp-name-x">{tech.name}</h2>

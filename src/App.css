@@ -3,6 +3,9 @@
   margin: 0 auto;
   text-align: center;
 }
+.returned-div{
+  margin-top: 150px;
+}
 
 .nav{
   position: fixed;
@@ -10,10 +13,11 @@
   left: 0;
   width:100%;
   text-align: left;
-  background-color: #656DFF;
+  background-color: rgba(101, 109, 255, 0.95);
   font-size:1.5em;
   padding: 0px 25px;
   color:white;
+  margin-bottom: 100px;
 }
 
 .comp-name{
@@ -51,6 +55,11 @@
   padding:0;
 }
 
+.comp-logo-paragraph{
+  width:66%;
+  margin: 0 auto;
+}
+
 .individual-display h2{
   font-size:3em;
 }
@@ -86,6 +95,13 @@
 
 .btn-div{
   font-size: 2em;
-  
+}
+
+* a{
+  text-decoration: none;
+}
+
+.comp-logo:hover{
+  scale: 1.1;
 }
 
