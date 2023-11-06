@@ -1,9 +1,13 @@
-function CompanyPage() {
-  return (
-    <div>
-      <h1>CompanyPage</h1>
-    </div>
-  );
-}
+import React from "react";
 
-export default CompanyPage;
+
+function CompanyPage(props) {
+  const {companies} = props;
+  const {companySlug} = useParams();
+
+  return(
+    <div>
+      
+    </div>
+  )
+}
