@@ -1,0 +1,20 @@
+.companies-div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between  ;
+    align-items: center;
+    width: 1600px;
+}
+
+.company-link {
+    width: 400px;
+    margin: 30px 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.company-logo {
+    height: 200px;
+    width: auto;
+    margin: 40px;
+}
