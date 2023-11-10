@@ -40,3 +40,27 @@
 .read-the-docs {
   color: #888;
 }
+
+.nav-top {
+  font-size: 30px;
+  background-color: rgb(104, 199, 199);
+}
+
+.company-name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+img {
+  max-width: 100px;
+}
+
+.company-container {
+  border: 1px solid black;
+}
+
+.company-slug-container {
+  max-width: 300px;
+  border: 1px solid black;
+}
