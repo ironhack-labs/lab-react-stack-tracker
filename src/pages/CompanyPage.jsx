@@ -1,7 +1,7 @@
 function CompanyPage() {
   return (
     <div>
-      <h1>Company Profile</h1>
+      <h2>Company Profile</h2>
     </div>
   );
 }

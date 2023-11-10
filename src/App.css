@@ -33,6 +33,9 @@
   }
 }
 
+li{
+  list-style: none;
+}
 .card {
   padding: 2em;
 }
@@ -40,3 +43,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.nav-bar{
+  background-color: lightseagreen;
+  color: white;
+  font-size: x-large;
+  width: 100%;
+  position:absolute;
+  top:0;
+  left: 0;
+  padding: 2rem;
+  display: flex;
+  font-weight: 800;
+}
+
