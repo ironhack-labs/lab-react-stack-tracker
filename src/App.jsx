@@ -12,11 +12,10 @@ import Navbar from "./components/Navbar";
 function App() {
   const [companiesData, setCompaniesData] = useState(companies);
   const [technologiesData, setTechnologiesData] = useState(technologies);
-
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage companiesList={companiesData} />} />
         <Route path="/company/:companySlug" element={<CompanyPage />} />
         <Route path="/tech/:slug" element={<TechnologyPage />} />
       </Routes>
