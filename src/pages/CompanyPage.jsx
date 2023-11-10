@@ -1,8 +1,11 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom'
+
 
 function CompanyPage(props) {
 
   let {companySlug} = useParams();
+  const navigate = useNavigate();
 
   const companyDetails = props.companiesArr.find((company)=>{
     return company.slug === companySlug;  
@@ -20,11 +23,16 @@ function CompanyPage(props) {
         {companyDetails.techStack.map((techstackObj)=>{
           return(
           <section className="tech-stack">
+          <Link to={`/tech/${techstackObj.slug}`}>
           <img className="tech-stack-image" src={techstackObj.image} alt="" />
+          </Link>
           <p>{techstackObj.name}</p>
         </section>
         )})}
+        
+        
         </div>
+        <button onClick={()=>{navigate(-1)}}>Back</button>
       
       
     </>
