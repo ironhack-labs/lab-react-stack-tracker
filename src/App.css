@@ -40,3 +40,43 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  background-color: rgb(202, 199, 192);
+}
+
+.Logos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+img {
+  height: 100px;
+  width: auto;
+}
+
+.tech-stack-parent {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.tech-stack {
+  margin: 5px;
+  padding: 5px;
+
+}
+
+.tech-stack-image {
+  height: auto;
+  width: 50px;
+  box-shadow: #61dafbaa;
+  border: 1px solid black;
+ 
+  
+}

@@ -1,8 +1,22 @@
-function HomePage() {
+import { Link } from 'react-router-dom'
+
+function HomePage(props) {
   return (
-    <div>
-      <h1>HomePage</h1>
-    </div>
+    <>
+      <section className='Logos'>
+        {props.companiesArr.map((companyObj, i) => (
+          <div key={companyObj.slug}>
+            <h3 className='Logos-children'>
+              {companyObj.name} <br />
+              <Link to={`/company/${companyObj.slug}`}>
+                <img src={companyObj.logo} alt="" />
+              </Link>
+            </h3>
+            <hr />
+          </div>
+        ))}
+      </section>
+    </>
   );
 }
 
