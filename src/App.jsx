@@ -12,14 +12,19 @@ function App() {
   const [companiesDetails, setCompaniesDetails] = useState(companies);
   const [techDetails, setTechDetails] = useState(technologies);
 
+
+
   return (
     <div className="App">
       <Navbar />
 
       <Routes>
         <Route path="/" element={<HomePage companiesArr={companiesDetails}/>} />
-        <Route path="/company/:companySlug" element={<CompanyPage companiesArr={companiesDetails}/>} />
-        <Route path="/tech/:slug" element={<TechnologyPage techStack={techDetails.techStack}/>} />
+        <Route path="/company/:companySlug" 
+          element={<CompanyPage 
+          companiesArr={companiesDetails} 
+          techStack={techDetails}/>} />
+        <Route path="/tech/:slug" element={<TechnologyPage techStack={techDetails}/>} />
       </Routes>
     </div>
   );
