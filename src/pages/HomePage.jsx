@@ -1,4 +1,3 @@
-
 import { Link} from "react-router-dom";
 
 function HomePage(props) {
@@ -11,11 +10,11 @@ function HomePage(props) {
 
       <ul >
         {props.companiesArr.map((company, index) => {
-            {console.log(company.logo)}
+            // {console.log(company.logo)}
           return (
               <li
               key={company.id}>
-              <Link to={`/CompanyPage/${company.slur}`}>To Company</Link>
+              <Link to={`/company/${company.slug}`}>To Company</Link>
               <p>{company.name}</p>
               <img className="logo" src={`${company.logo}`} alt="" />
             </li>
