@@ -16,7 +16,10 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<HomePage companiesList={companiesData} />} />
-        <Route path="/company/:companySlug" element={<CompanyPage />} />
+        <Route
+          path="/company/:companySlug"
+          element={<CompanyPage companiesList={companiesData} />}
+        />
         <Route path="/tech/:slug" element={<TechnologyPage />} />
       </Routes>
     </div>
