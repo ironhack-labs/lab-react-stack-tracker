@@ -40,3 +40,28 @@
 .read-the-docs {
   color: #888;
 }
+
+.companyLogo {
+  height: 20%;
+  width: 20%;
+}
+
+.listCompanies {
+  columns: 2;
+  
+}
+
+.logoDetails {
+  height: 20%;
+  width: 20%;
+}
+
+.techLogo {
+  height: 20%;
+  width: 20%;
+}
+
+.techStack {
+  display:inline-block;
+  
+}
