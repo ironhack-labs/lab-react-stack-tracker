@@ -8,8 +8,8 @@ function HomePage(props) {
         {props.companiesArr.map((companyObj) => {
           return (
             <>
-              <hr />
-              <div>
+        
+              <div className="companyCard">
                 <Link to={`/company/${companyObj.slug}`}>
                   <p>{companyObj.name} </p>
                   {<img className="companyLogo" src={companyObj.logo} />}

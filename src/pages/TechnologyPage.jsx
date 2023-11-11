@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 
 function TechnologyPage(props) {
-  const { slug: techSlug } = useParams();
+  const { slug } = useParams();
 
-  const techDetails = props.techStack.find((tech) => tech.slug === techSlug);
+  const techDetails = props.techStack.find((tech) => tech.slug === slug);
 
   return (
     <div>

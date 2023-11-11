@@ -11,7 +11,7 @@ function CompanyPage(props) {
 
   
   return (
-    <div>
+    <div className="companyPage">
       <h1>Company: {companyDetails.name}</h1>
       <h2>Website: {companyDetails.website}</h2>
       <p>{companyDetails.description}</p>
