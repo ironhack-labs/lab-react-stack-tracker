@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import companies from "../companies.json"
-// src/pages/HomePage.jsx
+import companies from "../companies.json";
+
 function HomePage(props) {
   if (!props.companies || !Array.isArray(props.companies)) {
     return <div>No companies data available.</div>;

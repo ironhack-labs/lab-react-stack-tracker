@@ -15,13 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      
       <Navbar />
       <Routes>
-        <Route
-          path="/"
-          element={<HomePage companies={companiesData} />}
-        />
+        <Route path="/" element={<HomePage companies={companiesData} />} />
         <Route
           path="/company/:slug"
           element={<CompanyPage companies={companiesData} />}
