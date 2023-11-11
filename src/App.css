@@ -57,3 +57,6 @@ li{
   font-weight: 800;
 }
 
+.techStack{
+  display: flex;
+}
