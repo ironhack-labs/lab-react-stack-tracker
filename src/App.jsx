@@ -18,7 +18,7 @@ function App() {
             <h1>LAB | React Stack Tracker</h1>
             <Routes>
                 <Route path="/" element={<HomePage companiesArray={companies} />} />
-                <Route path="/company/:companySlug" />
+                <Route path="/company/:companySlug" element={<CompanyPage companiesArray={companies} />} />
                 <Route path="/tech/:slug" element={<TechnologyPage />} />
             </Routes>
         </div>
