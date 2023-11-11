@@ -1,42 +1,133 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+body {
+  margin: 0;
+}
+
+nav {
+  padding: 0 15px;
+  background-color: #656cff;
+  width: 100vw;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.app-content {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.home-page-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.home-page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 20vw;
+  min-width: 200px;
+  min-height: 220px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: black;
+}
+
+.company-image {
+  width: 100px;
+  margin: 15px auto;
+}
+
+.company-page-information {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+}
+
+.company-image-card {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.company-image-card > img {
+  width: 100px;
+  padding: 40px;
+}
+
+.company-about {
+  width: 30vw;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.tech-stack-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  text-decoration: none;
+  color: black;
+  gap: 10px;
+  min-width: 60px;
+  padding: 5px 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.tech-image {
+  height: 50px;
 }
 
-.card {
-  padding: 2em;
+.technology-page-information {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.technology-image-card {
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.technology-image-card > img {
+  width: 100px;
+  padding: 40px;
+}
+
+.technology-about {
+  width: 30vw;
+  text-align: center;
 }
