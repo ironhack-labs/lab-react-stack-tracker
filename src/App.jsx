@@ -10,7 +10,6 @@ import Navbar from "./components/Navbar";
 
 function App() {
 
-  // Iteration 1:
   const [companies, setCompanies] = useState(companiesData);
   const [technologies, setTechnologies] = useState(technologiesData);
 
@@ -18,7 +17,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage companiesList={companiesData}/>} />
         <Route path="/company/:companySlug" element={<CompanyPage />}/>
         <Route path="/tech/:slug" element={<TechnologyPage />}/>
       </Routes>
