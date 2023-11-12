@@ -10,9 +10,12 @@ function HomePage(props) {
           <>
           <ul>
             <li key={element.id}>{element.name} 
-            <img src={element.logo} />
+            
             </li>
-            <Link to={`/company/${element.slug}`}>More details</Link>
+            <li>
+              <Link to={`/company/${element.slug}`}> <img src={element.logo} /></Link>
+            </li>
+
           </ul>
           </>
         )
