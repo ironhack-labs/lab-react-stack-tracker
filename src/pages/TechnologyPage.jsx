@@ -17,7 +17,7 @@ function TechnologyPage(props) {
         </div>
       </section>
 
-      <button>Back</button>
+      <a href="/">Go back</a>
     </div>
   );
 }
