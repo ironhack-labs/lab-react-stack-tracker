@@ -1,7 +1,7 @@
 function TechnologyPage() {
   return (
     <div>
-      <h1>TechnologyPage</h1>
+      <h1>Technology Detailse</h1>
     </div>
   );
 }
