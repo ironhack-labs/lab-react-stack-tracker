@@ -61,7 +61,7 @@ nav {
 }
 
 img {
-  height: 150px;
+  height: 100px;
   width: auto;
 }
 
@@ -77,8 +77,10 @@ li {
   flex-direction: column;
   border: 0px solid black;
   box-shadow: 5px 5px 5px -5px;
-  width: 150px;
-  height: auto;
+}
+
+.companyProfile {
+  display: flex;
 }
 
 @media (prefers-color-scheme: light) {
