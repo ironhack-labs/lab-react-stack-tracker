@@ -7,13 +7,15 @@
 
 .logo {
   height: 6em;
-  padding: 1.5em;
+  padding: 2.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,96 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.navbar {
+  background-color: darkblue;
+  width: 100%;
+  padding: 25px 10px
+}
+
+.nav-text {
+  color: white;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.company-card {
+  width: 500px;
+  height: 300px;
+  border-style: outset;
+  margin-bottom: 20px;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.company-name {
+  color: black;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.company-info-image {
+  width: 150px;
+  padding: 75px 100px;
+  border-style: outset;
+  margin-bottom: 50px;
+}
+
+.company-info-content {
+  width: 500px;
+  padding: 1px 1px 100px 50px;
+  margin-bottom: 50px;
+
+}
+
+.stack-list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  justify-content: space-evenly;
+}
+
+.stack-logo {
+  width: 75px;
+  height: 75px;
+  padding: 30px 30px;
+  border-style: outset;
+  margin: 0 15px
+}
+
+.stack-name {
+  color: black;
+}
+
+.stack-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.stack-info-image {
+  width: 150px;
+  padding: 75px 100px;
+  border-style: outset;
+  margin-bottom: 50px;
+}
+
+.stack-info-content {
+  width: 500px;
+  padding: 1px 50px 100px 50px;
+  margin-bottom: 50px
 }
