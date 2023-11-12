@@ -19,7 +19,7 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage listOfCompanies ={companyList}/>} />
       <Route path="/company/:companySlug" element={<CompanyPage companyArray={companyList}/>}/>
-      <Route path="/tech/:slug" element={<TechnologyPage/>}/>
+      <Route path="/tech/:slug" element={<TechnologyPage technologyArray={technologyList}/>}/>
     </Routes>
       </>
 
