@@ -23,7 +23,7 @@ function CompanyPage(props) {
 
       <ul className="techStack">
         {companyMatch.techStack.map((tech, index) => (
-          <Link to ={`/tech/${tech.slug}`} key={index}>
+          <Link to ={`/tech/${tech.slug}?company=${companySlug}`} key={index}>
             <li className="logo" >
               <h2>{tech.name}</h2>
               <img src={tech.image} alt="tech image" className="logo" />
