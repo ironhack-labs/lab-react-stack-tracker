@@ -1,9 +1,31 @@
+import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import companies from "./companies.json";
+import technologies from "./technologies.json";
+import HomePage from "./pages/HomePage";
+import CompanyPage from "./pages/CompanyPage";
+import TechnologyPage from "./pages/TechnologyPage";
+
+import Navbar from "./components/Navbar";
 
 function App() {
+  const [companiesData, setCompaniesData] = useState(companies);
+  const [technologiesData, setTechnologiesData] = useState(technologies);
+
   return (
     <div className="App">
-      <h1>LAB | React Stack Tracker</h1>
+      <Routes>
+        <Route path="/" element={<HomePage companiesList={companiesData} />} />
+        <Route
+          path="/company/:companySlug"
+          element={<CompanyPage companiesList={companiesData} />}
+        />
+        <Route
+          path="/tech/:slug"
+          element={<TechnologyPage techList={technologiesData} />}
+        />
+      </Routes>
     </div>
   );
 }

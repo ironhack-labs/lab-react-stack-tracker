@@ -6,10 +6,12 @@
 }
 
 .logo {
-  height: 6em;
+  height: 6rem;
+  width: auto;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  /* display: block; */
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -34,7 +36,18 @@
 }
 
 .card {
+  width: 20em;
   padding: 2em;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px grey;
+}
+
+.container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }
 
 .read-the-docs {
