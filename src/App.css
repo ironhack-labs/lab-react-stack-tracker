@@ -40,3 +40,29 @@
 .read-the-docs {
   color: #888;
 }
+
+body {
+  margin: 0;
+}
+
+
+
+.TopBar {
+  background-color: #000000; 
+  color: #a0e9d7; 
+  padding: 10px; 
+  text-align: center;
+}
+
+h1 {
+  margin: 0; 
+}
+
+.CompanyPage {
+  background-color: #b8e1d5;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
