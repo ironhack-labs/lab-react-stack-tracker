@@ -12,6 +12,7 @@ import Navbar from "./components/Navbar";
 function App() {
   const [companiesData, setCompaniesData] = useState(companies);
   const [technologiesData, setTechnologiesData] = useState(technologies);
+
   return (
     <div className="App">
       <Routes>
@@ -20,7 +21,10 @@ function App() {
           path="/company/:companySlug"
           element={<CompanyPage companiesList={companiesData} />}
         />
-        <Route path="/tech/:slug" element={<TechnologyPage />} />
+        <Route
+          path="/tech/:slug"
+          element={<TechnologyPage techList={technologiesData} />}
+        />
       </Routes>
     </div>
   );

@@ -17,9 +17,9 @@ function CompanyPage(props) {
         <p>{selectedCompany.description}</p>
       </div>
 
-      {selectedCompany.techStack.map((elm) => {
+      {selectedCompany.techStack.map((elm, i) => {
         return (
-          <Link to={`/tech/${elm.slug}`}>
+          <Link to={`/tech/${elm.slug}?${selectedCompany.slug}`} key={i}>
             <img src={elm.image} className="logo"></img>
             <p>{elm.name}</p>
           </Link>
