@@ -14,11 +14,15 @@ function CompanyPage(props) {
     <>
       <div className="card">
         <h2>Company Profile</h2>
-        <img className="logo" src={companyMatch.logo} alt="" />
-        <h2>{companySlug}</h2>
-        <h3>About</h3>
-        <p>{companyMatch.description}</p>
-        <a href={companyMatch.website}>Visit website</a>
+        <div className="box">
+          <img className="logo" src={companyMatch.logo} alt="" />
+          <div className="info">
+            <h2>{companySlug.toLocaleUpperCase()}</h2>
+            <h3>About</h3>
+            <p>{companyMatch.description}</p>
+            <a href={companyMatch.website}>Visit website</a>  
+          </div>
+        </div>
       </div>
 
       <ul className="techStack">

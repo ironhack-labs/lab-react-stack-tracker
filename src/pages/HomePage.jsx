@@ -8,15 +8,16 @@ function HomePage(props) {
       <h2>StackTracker: Discover Tech Stacks Used by Top Companies</h2>
       {/* <CompanyList companyList={props.companiesArr} /> */}
 
-      <ul >
+      <ul className="box">
         {props.companiesArr.map((company, index) => {
             // {console.log(company.logo)}
           return (
-              <li
+              <li className="li-item"
               key={company.id}>
-              <Link to={`/company/${company.slug}`}>To Company</Link>
+              <Link to={`/company/${company.slug}`}>
               <p>{company.name}</p>
               <img className="logo" src={`${company.logo}`} alt="" />
+              </Link>
             </li>
 
             //   <CompanySumary
