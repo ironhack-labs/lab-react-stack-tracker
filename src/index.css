@@ -50,6 +50,37 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+nav {
+  background-color: rgb(	100, 108, 255);
+  
+  color: white;
+  text-align: start;
+  padding: 35px;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+img {
+  height: 150px;
+  width: auto;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li {
+  font-size: xx-large;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  border: 0px solid black;
+  box-shadow: 5px 5px 5px -5px;
+  width: 150px;
+  height: auto;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
