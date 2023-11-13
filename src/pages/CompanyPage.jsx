@@ -28,7 +28,6 @@ function CompanyPage(props) {
           );
         })}
       </div>
-      
     </div>
   );
 }
