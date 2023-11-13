@@ -1,0 +1,33 @@
+.company-logo {
+    width: auto;
+    max-height: 100px;
+    max-width: 210px;
+}
+
+#flex-companies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.company-item-container {
+    width: 30%;
+    min-width: 245px;
+    height: 201px;
+    box-shadow: 0 5px 6px -2px rgb(0 0 0 / 0.2);
+}
+
+a , a:hover {
+    color: black;
+}
+
+p {
+    font-size: larger;
+}
+
+h1 {
+    font-size: xx-large;
+}
