@@ -1,4 +1,4 @@
-import { useParams, useSearchParams } from "react-router-dom";  
+import { Link, useParams, useSearchParams } from "react-router-dom";  
 
 
 export function TechnologyPage(props) {
@@ -25,9 +25,9 @@ export function TechnologyPage(props) {
       <img src={techDetails.image} alt={techDetails.name} />
     </div>
 
-    <a href={`/company/${previousCompanySlug}/`}>Go back</a>
+    {/* <a href={`/company/${previousCompanySlug}/`}>Go back</a> */}
     {/* <button onClick={() => navigate(`${previousCompanySlug}`)}>Go back</button> */}
-
+    <Link to={`/company/${previousCompanySlug}/`}>Go back</Link>
     </>
   );
 }
