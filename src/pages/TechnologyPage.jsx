@@ -1,4 +1,4 @@
-import { useNavigate, useParams, useSearchParams } from "react-router-dom";  
+import { useParams, useSearchParams } from "react-router-dom";  
 
 
 export function TechnologyPage(props) {
@@ -10,11 +10,11 @@ export function TechnologyPage(props) {
     return elm.slug == techSlug
   })  
 
-  const { navigate } = useNavigate();
   const [searchParams] = useSearchParams();
 
   const previousCompanySlug = searchParams.get("company");
 
+  console.log(previousCompanySlug)
 
   return (
     <>
@@ -25,7 +25,8 @@ export function TechnologyPage(props) {
       <img src={techDetails.image} alt={techDetails.name} />
     </div>
 
-    <button onClick={() => navigate(`/company/${previousCompanySlug}`)}>Go back</button>
+    <a href={`/company/${previousCompanySlug}/`}>Go back</a>
+    {/* <button onClick={() => navigate(`${previousCompanySlug}`)}>Go back</button> */}
 
     </>
   );
