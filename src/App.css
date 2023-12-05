@@ -32,11 +32,90 @@
     animation: logo-spin infinite 20s linear;
   }
 }
-
+.Navbar {
+  display: flex;
+  background: blue;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left:0;
+}
+.banner-hp {
+  font-size: 2em;
+  position: relative;
+  top: 60px;
+}
 .card {
   padding: 2em;
 }
-
 .read-the-docs {
   color: #888;
+}
+.companies {
+  position: relative;
+  top: 80px;
+  display: inline;
+  float: left;
+  margin: 10px;
+}
+.banner {
+  font-size: 1.3em;
+}
+.company-name {
+  position: relative;
+  font-size: 2em;
+}
+.company-page-top {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 10px
+}
+.company-profile {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.company-profile img {
+  width: 100%;
+  max-width: 150px;
+}
+.company-profile p {
+  font-size: 1.1em;
+  text-align: justify;
+  max-width: 400px;
+  margin-left: 100px;
+}
+.company-tech-stack {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.company-tech-stack a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.5em;
+  color: #333;
+  box-shadow: 0px 0px 0.7px lightgrey;
+  margin-bottom: 30px;
+}
+
+.company-tech-stack img {
+  width: auto;
+  max-height: 30px;
+  margin: 15px;
+}
+.back-button {
+  position: relative;
+  margin-top: 30px;
 }
