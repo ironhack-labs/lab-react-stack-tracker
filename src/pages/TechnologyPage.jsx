@@ -1,8 +1,24 @@
-function TechnologyPage() {
+import {useParams, useNavigate} from 'react-router-dom'
+
+function TechnologyPage({technologies}) {
+  
+  const navigate = useNavigate()
+  const { technologySlug } = useParams()
+  const technology = technologies.find((technology)=>  {
+    return technology.slug === technologySlug
+  })
+
   return (
+    <>
     <header>
       <h1>Technology Details</h1>
     </header>
+    <h2>{technology.name}</h2>
+    <p>{technology.description}</p>
+    <img src={technology.image} alt="tech logo"/>
+    <button onClick={()=>{navigate(-1)}}>Back to company page</button>
+    <button onClick={()=>{navigate(-2)}}>Home</button>
+    </>
   );
 }
 

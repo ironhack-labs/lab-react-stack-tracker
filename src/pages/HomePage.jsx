@@ -9,7 +9,6 @@ function HomePage(props) {
 
       {props.companies.map((company) => {
         return (
-          <>
             <div key={company.id}>
               <Link to={`/company/${company.slug}`}>
               <p>{company.name}</p>
@@ -20,7 +19,7 @@ function HomePage(props) {
                 />
                 </Link>
             </div>
-          </>
+          
         );
       })}
     </>
