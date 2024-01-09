@@ -15,23 +15,27 @@ function CompanyPage({companies}) {
     <header>
       <h1>Company Profile</h1>
     </header>
+    <div className='details'>
+    <img src={company.logo} alt="company logo"/>
+    <div className='info'>
     <h2>{company.name}</h2>
     <p>{company.website}</p>
     <p>{company.description}</p>
-    <img src={company.logo} alt="company logo"/>
-    <div>
+    </div>
+    </div>
+    <div className='tech'>
       {company.techStack.map((tech)=> {
         return (
-          <div key={tech.slug}>
+          <div key={tech.slug} className='card'>
           <Link to={`/tech/${tech.slug}`} >
-          <p>{tech.name}</p>
+          <p className='link'>{tech.name}</p>
           <img src={tech.image} alt="techstack logo"/>
           </Link >
           </div>
           )
       })}
-          <button onClick={()=>{navigate(-1)}}>Back</button>
     </div>
+          <button onClick={()=>{navigate(-1)}}>Back</button>
     </>
   );
 }

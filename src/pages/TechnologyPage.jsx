@@ -13,9 +13,13 @@ function TechnologyPage({technologies}) {
     <header>
       <h1>Technology Details</h1>
     </header>
+    <div className='details'>
+    <img src={technology.image} alt="tech logo"/>
+    <div className='info'>
     <h2>{technology.name}</h2>
     <p>{technology.description}</p>
-    <img src={technology.image} alt="tech logo"/>
+    </div>
+    </div>
     <button onClick={()=>{navigate(-1)}}>Back to company page</button>
     <button onClick={()=>{navigate(-2)}}>Home</button>
     </>

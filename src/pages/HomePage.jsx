@@ -4,24 +4,25 @@ function HomePage(props) {
   return (
     <>
       <header>
-        <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>
+        <h1 className="blurb">Discover Tech Stacks Used by Top Companies</h1>
       </header>
 
+      <div className="container">
       {props.companies.map((company) => {
         return (
-            <div key={company.id}>
+            <div className="card" key={company.id}>
               <Link to={`/company/${company.slug}`}>
-              <p>{company.name}</p>
+                <p className='link'>{company.name}</p>
               <img
                 width={50}
                 src={company.logo}
                 alt="can't load company logo"
                 />
                 </Link>
-            </div>
-          
+          </div>
         );
       })}
+      </div>
     </>
   );
 }
