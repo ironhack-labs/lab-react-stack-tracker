@@ -3,20 +3,26 @@ import { Link } from "react-router-dom";
 function HomePage(props) {
   return (
     <>
-      <div>
+      <header>
         <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>
-      </div>
-        {props.companies.map((aCompany) => {
-          return (
-            <>
-            <div key={aCompany.id}>
-              <Link to={`/aCompany/${aCompany.slug}`}></Link>
-              <p>{aCompany.name}</p>
-              <img width={50} src={aCompany.logo} alt="can't load company logo" />
-      </div>
-            </>
-          );
-        })}
+      </header>
+
+      {props.companies.map((company) => {
+        return (
+          <>
+            <div key={company.id}>
+              <Link to={`/company/${company.slug}`}>
+              <p>{company.name}</p>
+              <img
+                width={50}
+                src={company.logo}
+                alt="can't load company logo"
+                />
+                </Link>
+            </div>
+          </>
+        );
+      })}
     </>
   );
 }
