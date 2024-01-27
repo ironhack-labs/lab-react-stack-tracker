@@ -14,16 +14,20 @@ function TechnologyPage({ technologies }) {
 
   if (!foundTechnology) {
     return (
-      <div>
+      <div className="not-found">
         <h1>Not found</h1>
       </div>
     );
   }
   return (
-    <div>
+    <div id="TechnologyPage">
       <h1>Technology Profile</h1>
       <div>
-        <img src={foundTechnology.image} alt={foundTechnology.name} height="100" />
+        <img
+          src={foundTechnology.image}
+          alt={foundTechnology.name}
+          height="100"
+        />
       </div>
       <div>
         <h2>{foundTechnology.name}</h2>
