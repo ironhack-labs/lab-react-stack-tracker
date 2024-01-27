@@ -14,8 +14,8 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<HomePage companies={companies}></HomePage>}></Route>
-      <Route path='/company/:companySlug' element={<CompanyPage></CompanyPage>}></Route>
-      <Route path='/tech/:slug' element={<TechnologyPage></TechnologyPage>}></Route>
+      <Route path='/company/:companySlug' element={<CompanyPage companies={companies}></CompanyPage>}></Route>
+      <Route path='/tech/:slug' element={<TechnologyPage technologies={technologies}></TechnologyPage>}></Route>
     </Routes>
   );
 }
