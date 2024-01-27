@@ -29,7 +29,9 @@ function App() {
         ></Route>
         <Route
           path="/tech/:slug"
-          element={<TechnologyPage></TechnologyPage>}
+          element={
+            <TechnologyPage technologies={technologiesJson}></TechnologyPage>
+          }
         ></Route>
       </Routes>
     </div>
