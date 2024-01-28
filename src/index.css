@@ -76,3 +76,21 @@ button:focus-visible {
     
 
 }
+
+.homepage-companyimage {
+  width: 150px;
+  padding: 20px;
+  
+}
+
+.Company-List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.companyname {
+  margin: 10px;
+
+}
