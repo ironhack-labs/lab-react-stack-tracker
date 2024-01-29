@@ -17,7 +17,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
     <Routes>
-      <Route path='/' element={<Homepage companies={companies}></Homepage>}></Route>
+      <Route path='' element={<Homepage companies={companies}></Homepage>}></Route>
       <Route path='/company/:companySlug' element={<CompanyPage companies={companies}></CompanyPage>}></Route>
       <Route path='/tech/:slug' element={<TechnologyPage technologies={technologies}></TechnologyPage>}></Route>
     </Routes>

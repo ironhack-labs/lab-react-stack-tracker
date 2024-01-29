@@ -20,16 +20,11 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -61,4 +56,93 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+nav {
+  color: white;
+  background-color: #535bf2;
+  width: 100vw;
+  text-align: left;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  color: black
+}
+
+h3 {
+  color: black;
+}
+
+.company-info img{
+  left: 20
+}
+
+.company-info {
+  width: 90vw;
+  text-align: center;
+  margin: 30px;
+}
+
+.companies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.company-row {
+  display: flex;
+  margin: 10px;
+  flex-direction: column;
+  flex-basis: calc(40% - 20px);
+}
+
+.company {
+  text-align: center;
+  /* padding: 10px; */
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 500px;
+  height: auto
+}
+
+.company img {
+  margin: 10px;
+}
+
+.tech-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.tech-row {
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  /* box-sizing: border-box; */
+  width: 300px;
+  height: 150px;
+  overflow: hidden;
+
+}
+
+
+.tech {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tech img {
+  width: 70px; 
 }
