@@ -1,21 +1,26 @@
-import { useParams, useSearchParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { useSearchParams, useNavigate } from 'react-router-dom';
 
 function TechnologyPage(props) {
+
+  let [searchParams] = useSearchParams();
+  let navigate = useNavigate();
+
   const { technologies } = props;
   const { slug } = useParams();
 
-  // stopped here ***
-  // let [searchParams, setSearchParams] = useSearchParams();
+  const companySlug = searchParams.get('company');
+
 
   const technologyToDisplay = technologies.find((technology) => {
     return technology.slug === slug;
   });
 
-  // stopped here ***
-  function handleButtonEvent(event) {
-    event.preventDefault();
-    // setSearchParams("test");
-  }
+  function handleBack(){
+    navigate(`/company/${companySlug}`);
+  };
+
+  
 
   return (
     <div>
@@ -26,7 +31,7 @@ function TechnologyPage(props) {
           <h1>{technologyToDisplay.name}</h1>
           <h2>About</h2>
           <p>{technologyToDisplay.description}</p>
-          <button onClick={handleButtonEvent}>Back</button>
+          <button onClick={handleBack}>Back to Company</button>
         </div>
       }
     </div>

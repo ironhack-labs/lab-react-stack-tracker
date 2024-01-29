@@ -25,7 +25,7 @@ function CompanyPage(props) {
 
           {companyDisplay.techStack.map((stackElement) => {
             return (
-              <Link to={`/tech/${stackElement.slug}`} key={stackElement.image}>
+              <Link to={`/tech/${stackElement.slug}?company=${companySlug}`} key={stackElement.image}>
                 <div>
                   <img src={stackElement.image} width="50px" />
                   <h3>{stackElement.name}</h3>
