@@ -1,5 +1,5 @@
 function Navbar() {
-  return <nav>StackTracker</nav>;
+  return <nav id="nav-bar">StackTracker</nav>;
 }
 
 export default Navbar;

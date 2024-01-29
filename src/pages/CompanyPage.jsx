@@ -17,22 +17,32 @@ function CompanyPage(props) {
     <div>
       <h1>Company Profile</h1>
       {
-        <div>
+        <div id="company-container">
           <img src={companyDisplay.logo} width="200px" />
           <h1>{companyDisplay.name}</h1>
           <h2>About</h2>
           <p>{companyDisplay.description}</p>
-
-          {companyDisplay.techStack.map((stackElement) => {
-            return (
-              <Link to={`/tech/${stackElement.slug}?company=${companySlug}`} key={stackElement.image}>
-                <div>
-                  <img src={stackElement.image} width="50px" />
-                  <h3>{stackElement.name}</h3>
-                </div>
-              </Link>
-            );
-          })}
+          <div id="technology-container">
+            {companyDisplay.techStack.map((stackElement) => {
+              return (
+                <Link
+                  className="technology-card"
+                  to={`/tech/${stackElement.slug}?company=${companySlug}`}
+                  key={stackElement.image}
+                >
+                  <div>
+                    <div className="technology-logo-div">
+                      <img
+                        src={stackElement.image}
+                        className="technology-logo-img"
+                      />
+                    </div>
+                    <h3>{stackElement.name}</h3>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       }
     </div>
