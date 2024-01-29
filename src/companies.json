@@ -1,4 +1,4 @@
-[
+ [
   {
     "id": "8a678fe4",
     "slug": "airbnb",
@@ -1535,7 +1535,7 @@
       {
         "name": "C++",
         "slug": "c++",
-        "image": "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/logos/c++-logo.png"
+        "image": "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/logos/cpp-logo.png"
       }
     ]
   },

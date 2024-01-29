@@ -1,0 +1,98 @@
+.company-details-title{
+    font-size: 2em;
+    margin: 0 auto ;
+}
+
+.company-details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10em;
+    margin-top: 2em;
+}
+
+.company-details-item{
+    width: 49%;
+}
+
+.company-details-item p{
+    width: 60%;
+    margin: auto;
+}
+
+.company-details-item h2{
+   font-size: 2em;
+}
+
+.company-details-item img{
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px ;
+    padding: 6em;
+    box-shadow: 2px 4px #e0e0e0;
+ }
+
+.company-icon{
+    width: 6em;
+}
+
+.tech-stack-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    overflow: auto;
+    width: 100%;
+    padding-bottom: 20px;
+   
+}
+
+.tech-stack-item{
+    border: 1px solid #e0e0e0; 
+    border-radius: 5px ;
+    box-shadow: 2px 4px #e0e0e0;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.tech-stack-item img {
+    height: 5em;
+    width: 4em;
+    object-fit: contain;
+}
+
+.tech-stack-item p {
+   margin-bottom: 0;
+   color: black;
+    font-size: .9em;
+}
+
+.tech-stack-item:hover{
+    box-shadow: 2px 4px #646cff ;
+    
+}
+
+.back-button{
+    color: #646cff;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin-left: .5em;
+}
+
+.back-button:hover{
+    background-color: #646cff;
+    border: 2px solid #646cff;
+    color: white;
+}
+
+.title-and-button{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    margin-top: 1em;
+    
+}
