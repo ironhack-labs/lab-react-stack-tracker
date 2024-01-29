@@ -1,4 +1,4 @@
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function TechnologyPage({ technologies }) {
   const { slug } = useParams();
@@ -21,20 +21,22 @@ function TechnologyPage({ technologies }) {
   }
   return (
     <div id="TechnologyPage">
-      <h1>Technology Profile</h1>
-      <div>
+      <h2>Technology Profile</h2>
+      <div className="technology-profile-container">
+      <div className="technology-img-wrapper">
         <img
           src={foundTechnology.image}
           alt={foundTechnology.name}
           height="100"
         />
       </div>
-      <div>
-        <h2>{foundTechnology.name}</h2>
+      <div className="technology-info-wrapper">
+        <h1>{foundTechnology.name}</h1>
         <h4>About</h4>
         <p>{foundTechnology.description}</p>
-        <button onClick={goBack}>Back</button>
       </div>
+      </div>
+        <button className="btn" onClick={goBack}>Back</button>
     </div>
   );
 }

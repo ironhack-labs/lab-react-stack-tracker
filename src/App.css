@@ -41,7 +41,7 @@ a {
   flex-direction: column;
 }
 
-#CompanyPage > h1 {
+#CompanyPage > h2 {
   text-align: center;
   margin-bottom: 32px;
 }
@@ -69,6 +69,7 @@ a {
   justify-content: center;
   align-items: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 4px;
   padding: 48px;
   height: 200px;
   width: 200px;
@@ -90,7 +91,7 @@ a {
   gap: 8px
 }
 
-.company-profile-details > h2 {
+.company-profile-details > h1 {
   margin-bottom: 4px;
 }
 
@@ -108,13 +109,13 @@ a {
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 4px;
   height: 300px;
   padding: 24px;
 }
 .company-link > span {
   margin-bottom: auto;
   font-size: 1.4rem;
-
   font-weight: 500;
 }
 
@@ -154,9 +155,16 @@ img {
 }
 
 .technology-stack-container {
+  margin: 28px 0;
   display: flex;
   overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   gap: 12px;
+}
+
+.technology-stack-container::-webkit-scrollbar {
+  display: none;
 }
 
 .technology-link {
@@ -176,11 +184,62 @@ img {
   align-items: center;
   flex: 1;
   width: 100%;
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 2px;
 }
 
 .technology-link .image-container > img {
   height: auto;
   max-width: 80px;
   max-height: 80px;
+}
+
+.technology-link > span {
+  font-weight:700;
+  font-size: 0.8em;
+  padding: 0.4em;
+}
+
+#TechnologyPage > h2{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.technology-profile-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  justify-content: space-around;
+}
+
+.technology-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 2px;
+  height: 200px;
+  width: 200px;
+}
+
+.technology-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.btn {
+  position: relative;
+  margin-top: 32px;
+  margin-left: 46%;
+  border: 1.5px solid white;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-weight: 600;
+}
+ .btn:hover {
+  border: 1.5px solid #656dff;
 }

@@ -17,7 +17,7 @@ function CompanyPage({ companies }) {
 
   return (
     <div id="CompanyPage">
-      <h1>Company Profile</h1>
+      <h2>Company Profile</h2>
       <div className="company-profile-container">
         <div className="img-container">
           <div className="img-wrapper">
@@ -25,7 +25,7 @@ function CompanyPage({ companies }) {
           </div>
         </div>
         <div className="company-profile-details">
-          <h2>{foundCompany.name}</h2>
+          <h1>{foundCompany.name}</h1>
           <h4>About</h4>
           <p>{foundCompany.description}</p>
         </div>
