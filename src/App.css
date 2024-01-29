@@ -1,42 +1,245 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.not-found {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+#App {
+  display: flex;
+  flex-direction: column;
+}
+
+#Navbar {
+  background-color: #656dff;
+  padding: 16px 32px;
+  color: white;
+  height: 72px;
+}
+
+#Page {
+  padding: 48px 72px;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  flex-direction: column;
+}
+
+#CompanyPage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#CompanyPage > h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.company-profile-container {
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+
+.company-profile-container > div {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 50%;
+}
+
+.company-profile-container > .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-profile-container .img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 4px;
+  padding: 48px;
+  height: 200px;
+  width: 200px;
+}
+
+.company-profile-container .img-wrapper > img {
+  height: auto;
+  width: 100%;
+  max-width: 120px;
+}
+
+.company-profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 36px;
+  text-align: center;
+  gap: 8px
+}
+
+.company-profile-details > h1 {
+  margin-bottom: 4px;
+}
+
+.companies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.company-link {
+  width: calc(50% - 12px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 4px;
+  height: 300px;
+  padding: 24px;
+}
+.company-link > span {
+  margin-bottom: auto;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+}
+
+.company-link > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.company-link > div > img {
+  height: auto;
+  width: 100%;
+  max-width: 120px;
+}
+
+#HomePage {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#HomePage > h1 {
+  margin-bottom: 48px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#HomePage .companies-container {
+  max-width: 1000px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.technology-stack-container {
+  margin: 28px 0;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 12px;
 }
 
-.card {
-  padding: 2em;
+.technology-stack-container::-webkit-scrollbar {
+  display: none;
 }
 
-.read-the-docs {
-  color: #888;
+.technology-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 150px;
+  flex-shrink: 0;
+}
+
+.technology-link .image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 2px;
+}
+
+.technology-link .image-container > img {
+  height: auto;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.technology-link > span {
+  font-weight:700;
+  font-size: 0.8em;
+  padding: 0.4em;
+}
+
+#TechnologyPage > h2{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.technology-profile-container {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  justify-content: space-around;
+}
+
+.technology-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border-radius: 2px;
+  height: 200px;
+  width: 200px;
+}
+
+.technology-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+  width: 300px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.btn {
+  position: relative;
+  margin-top: 32px;
+  margin-left: 46%;
+  border: 1.5px solid white;
+  border-radius: 8px;
+  padding: 8px 15px;
+  font-weight: 600;
+}
+ .btn:hover {
+  border: 1.5px solid #656dff;
 }
