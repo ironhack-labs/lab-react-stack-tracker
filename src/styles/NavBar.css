@@ -1,0 +1,15 @@
+body {
+    margin: 0; 
+    padding: 0; 
+  }
+
+.navbar{
+    background-color: #646cff;
+    display: flex;
+}
+
+.navbar h2{
+    margin: 0;
+    padding: 1.4em;
+    color: white;
+}
