@@ -1,7 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
   return (
     <nav className="Navbar">
-      <h2>StackTracker</h2>
+      <ul>
+        <NavLink to={"/"}>StackTracker</NavLink>
+      </ul>
     </nav>
   );
 }

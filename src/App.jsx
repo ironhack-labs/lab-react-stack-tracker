@@ -6,7 +6,7 @@ import TechnologyPage from "./pages/TechnologyPage";
 import Technologies from "./technologies.json";
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 
 function App() {
   const [companies, setCompanies] = useState(Companies);
@@ -17,7 +17,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<HomePage companies={companies}></HomePage>}></Route>
-        <Route path="/company/:companySlug" element={<CompanyPage companies={companies} technologies={technologies}></CompanyPage>}></Route>
+        <Route path="/company" element={<CompanyPage companies={companies} technologies={technologies}></CompanyPage>}></Route>
         <Route path="/tech/:slug" element={<TechnologyPage technologies={technologies}></TechnologyPage>}></Route>
       </Routes>
     </div>
