@@ -71,18 +71,21 @@ button:focus-visible {
   position: top;
 }
 
-.company img{
-  width: 20%;
-}
-
-.company{
+.Company{
 flex-direction: column;
   justify-content: center;
   align-items: center;
   display: flex
 }
 
-.routes{
+
+.CompanyBlock{
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CompanyBlock img{
+  width: 15%;
 }

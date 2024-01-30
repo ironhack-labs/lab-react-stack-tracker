@@ -1,30 +1,37 @@
 import * as React from "react";
-import {useParams} from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+
 
 
 function CompanyPage(props) {
 
-  const {companyID}= useParams();
-  console.log(companyID)
+    console.log(props);
 
-  let foundCompany = props.companies.find((company) => {
-    return company.id === companyID
-  })
+  const {companySlug} = useParams();
+
+  console.log(props.companies)
+  console.log(companySlug);
+
+  const foundCompany = props.companies.find((e)=> e.slug === companySlug)
+
   
+console.log(foundCompany)
 
 return(
 <div>
   <h2>Company profile</h2>
+
   {!foundCompany && <h4>Not found</h4>}
   {foundCompany && (
     <div>
-    <img src={foundCompany.logo} alt={foundCompany.name + " logo"}></img>
+    <img src={foundCompany.logo} alt={foundCompany.name + " logo"} width="10%"></img>
     <h3>{foundCompany.name}</h3>
     <p>{foundCompany.description}</p>
+    <h4>{foundCompany.website}</h4>
     </div>
   )}
 
-</div>
+ </div>
 )
 }
 

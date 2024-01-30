@@ -12,11 +12,14 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Routes class="routes">
+      
+      <Routes>
         <Route path='/' element={<HomePage companies={companiesJson}/>}/>
         <Route path='/company/:companySlug' element={<CompanyPage companies={companiesJson}/>}/>
         <Route path='/tech/:slug' element={<TechnologyPage/>}/>
       </Routes>
+      
+      
     </div>
   );
 }
