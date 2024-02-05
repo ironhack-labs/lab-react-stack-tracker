@@ -4,14 +4,15 @@ import { v4 as randomId } from "uuid";
 import { Link } from "react-router-dom";
 
 function CompanyPage(props) {
-  const [currentUrl, setCurrentUrl] = useSearchParams();
-  const slug = currentUrl.get("companyId");
-  console.log("slug: ", slug);
+ // const [currentUrl, setCurrentUrl] = useSearchParams();
+ const {companies} = props
+ const {companySlug} = useParams()
+ 
 
-  let foundCompany = props.companies.find((company) => {
-    return company.slug === slug;
+  let foundCompany = companies.find((company) => {
+    return company.slug === companySlug;
   });
-  // useParams is an object!!
+  
   return (
     <div>
       <h2>Company Profile</h2>
@@ -34,7 +35,7 @@ function CompanyPage(props) {
           {foundCompany.techStack.map((oneTechStack) => {
             return (
               <div key={randomId()}>
-                <Link to={`/tech/${oneTechStack.slug}`} state={{ from: slug }}>
+              <Link to={`/tech/${oneTechStack.slug}?q=${foundCompany.slug}`}>
                   <h4>{oneTechStack.name}</h4>
                   <img className="tech-img" src={oneTechStack.image} alt="TechStack image" width="150"></img>
                 </Link>
@@ -48,6 +49,10 @@ function CompanyPage(props) {
 }
 
 export default CompanyPage;
+
+//<Link to={`/tech/?q=${foundCompany.name}`}>
+//<Link to={`/tech/${oneTechStack.slug}`}>  old link before Iteration 7 from me!
+
 
 //<Link to={`/tech/${oneTechStack.slug}`}> with /tech we get a separate url tech/java
 // but without, so tech/$   we get a url that concatenates with the path defined on the App

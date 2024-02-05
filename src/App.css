@@ -66,14 +66,15 @@
 }
 
 .Company-List {
-  display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
-    width: 45%;
+    flex-wrap: wrap;    
+    /*flex-basis: 33%;*/
     margin: 0 auto;
     justify-content: center;
     gap: 50px;
+    width: 45%;
 }
 
 

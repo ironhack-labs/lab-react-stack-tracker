@@ -1,13 +1,15 @@
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation, useParams, useSearchParams, useNavigate } from "react-router-dom";
 
 function TechnologyPage(props) {
+  const { technologies } = props;
   const { slug } = useParams(); // we have defined the path(route) on App
   //as /tech/:slug and we want to store the last url on a variable using useParams
   // and that is why we use
+  const [searchParams, setSearchParams] = useSearchParams();
+  const navigate = useNavigate();
+  const companyName = searchParams.get("q");
 
-  const location = useLocation();
-  const { from } = location.state;
-  let foundTechnology = props.technologies.find((technology) => {
+  let foundTechnology = technologies.find((technology) => {
     return technology.slug === slug;
   });
   console.log(foundTechnology);
@@ -31,9 +33,8 @@ function TechnologyPage(props) {
           </div>
         </div>
       )}
-      <a href={`/company?companyId=${from}`}>
-        <button> back</button>
-      </a>
+
+      <button onClick={() => navigate(`/company/${companyName}`)}> back</button>
     </div>
   );
 }
