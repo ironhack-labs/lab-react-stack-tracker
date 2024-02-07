@@ -1,7 +1,7 @@
 function CompanyPage() {
   return (
-    <div>
-      <h1>CompanyPage</h1>
+    <div className="CompanyPage">
+      <h1>Company Profile</h1>
     </div>
   );
 }
