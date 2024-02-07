@@ -1,42 +1,198 @@
-#root {
-  max-width: 1280px;
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #3182ce;
+  height: 10vh;
+  z-index: 50;
+  text-align: left;
+  padding-left: 30px;
+}
+
+nav h2 {
+  line-height: 2em;
+  font-weight: 400;
+  color: white;
+}
+
+.HomePage {
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 3vh 0;
+}
+
+.CompanyPage {
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 3vh 0;
+}
+
+.TechnologyPage {
+  position: relative;
+  top: 10vh;
+  text-align: center;
+  font-size: 0.7em;
+  padding: 3vh 0;
+}
+
+.HomePage-CompagnieList {
+  width: 90%;
   margin: 0 auto;
-  padding: 2rem;
+  position: relative;
+  top: 10vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.HomePage-CompagnieBox {
+  width: 40vh;
+  height: 40vh;
+  background-color: #BBE2EC;
+  text-align: center;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 4px 4px 3px rgb(128, 128, 128);
+}
+
+.HomePage-CompagnieBox:hover {
+  background-color: #a7c5cc;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.HomePage-CompagnieBox h3{
+  padding: 22px 0 0 0;
+  color: black;
+}
+
+
+.HomePage-CompagnieBoxImg {
+  margin: auto;
+  width: 28vh;
+  height: 28vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.HomePage-CompagnieBox img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.CompanyPage-Main {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.CompanyPage-Presentation {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.CompanyPage-Presentation-ImgBox {
+  width: 40%;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.CompanyPage-Presentation-ImgBox img {
+  max-width: 30vh;
+  max-height: 30vh;
+  margin: 8vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.CompanyPage-Presentation-TxtBox {
+  width: 40%;
+  text-align: center;
+  
+  padding-top: 5vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.CompanyPage-Presentation-TxtBoxP {
+  margin: auto;
+  width: 80%;
 }
 
-.card {
-  padding: 2em;
+.CompanyPage-TechList {
+  width: 90%;
+  height: 25vh;
+  margin: 30px auto 0 auto;
+  display: flex;
+  align-self: flex-end;
+  overflow-x: auto;
 }
 
-.read-the-docs {
-  color: #888;
+.CompanyPage-TechListBox {
+  min-width: 140px;
+  height: 100%;
+  text-align: center;
+  margin: 0 30px;
+}
+
+.CompanyPage-TechListBoxImg {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CompanyPage-TechListBoxImg img{
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.CompanyPage-TechListBox h3{
+  margin: 0;
+}
+
+.TechnologyPage-Main {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  top: 10vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.TechnologyPage-Presentation {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.TechnologyPage-Presentation-ImgBox {
+  width: 40%;
+  text-align: center;
+}
+
+.TechnologyPage-Presentation-ImgBox img {
+  max-width: 30vh;
+  max-height: 30vh;
+  margin: 8vh;
+}
+
+.TechnologyPage-Presentation-TxtBox {
+  width: 40%;
+  text-align: center;
+  
+  padding-top: 5vh;
+}
+
+.TechnologyPage-Presentation-TxtBoxP {
+  margin: auto;
+  width: 80%;
 }
