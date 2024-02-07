@@ -8,7 +8,6 @@ function CompanyPage({companies}) {
 
   const companyProfile = companies.find(element => element.slug === companySlug);
 
-  console.log(companyProfile.name)
 
   return (
     <div>
