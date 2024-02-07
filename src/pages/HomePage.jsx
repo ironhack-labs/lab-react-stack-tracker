@@ -18,7 +18,7 @@ function HomePage({companies}) {
           companiesList.map(element => {
 
           return (
-            <Link to={`/companies/${element.slug}`} className="card-link" key={element.id}>
+            <Link to={`/company/${element.slug}`} className="card-link" key={element.id}>
               <div key={element.id}>
                 <h2>{element.name}</h2>
                 <img className="logo" src={element.logo} />
