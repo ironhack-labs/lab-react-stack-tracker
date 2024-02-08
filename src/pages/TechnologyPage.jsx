@@ -1,11 +1,10 @@
 import Technology from "../technologies.json";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
-function TechnologyPage() {
+function TechnologyPage(props) {
   const paramObj = useParams();
 
   const technologyObj = Technology.find((element) => element.slug == paramObj.TechSlug);
-  console.log(technologyObj)
   
   if (!technologyObj) {
     return (
@@ -31,6 +30,9 @@ function TechnologyPage() {
             <div className="TechnologyPage-Presentation-TxtBoxP">
               <p>{technologyObj.description}</p>
             </div>
+            <Link to={`/company/${props.techBackUrl}`}>
+              <button>Back</button>
+            </Link>
           </div>
         </div>
       </div>

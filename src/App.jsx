@@ -6,16 +6,18 @@ import HomePage from "./pages/HomePage";
 import CompanyPage from "./pages/CompanyPage";
 import TechnologyPage from "./pages/TechnologyPage";
 import { Routes, Route } from "react-router-dom"
+import { useState } from "react";
 
 
 function App() {
+  const [techBackUrl, setTechBackUrl] = useState("")
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<HomePage compagnieList={Compagnie} />}/>
-        <Route path="/company/:CompanySlug" element={<CompanyPage />}/>
-        <Route path="/tech/:TechSlug" element={<TechnologyPage />}/>
+        <Route path="/" element={<HomePage compagnieList={Compagnie}/>}/>
+        <Route path="/company/:CompanySlug" element={<CompanyPage setTechBackUrl={setTechBackUrl}/>}/>
+        <Route path="/tech/:TechSlug" element={<TechnologyPage techBackUrl={techBackUrl}/>}/>
       </Routes>
     </div>
   );

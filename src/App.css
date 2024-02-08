@@ -188,11 +188,17 @@ nav h2 {
 .TechnologyPage-Presentation-TxtBox {
   width: 40%;
   text-align: center;
-  
   padding-top: 5vh;
 }
 
 .TechnologyPage-Presentation-TxtBoxP {
   margin: auto;
   width: 80%;
+}
+
+.TechnologyPage-Presentation-TxtBox button {
+  margin-top: 30px;
+  background-color: gray;
+  padding: 10px 15px;
+  line-height: 1em;
 }

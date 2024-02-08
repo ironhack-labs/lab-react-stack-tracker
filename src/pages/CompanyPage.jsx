@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import Compagnie from "../companies.json";
 import { Link } from "react-router-dom"
 
-function CompanyPage() {
+function CompanyPage(props) {
   const paramObj = useParams();
 
   const companyObj = Compagnie.find((element) => element.slug == paramObj.CompanySlug);
@@ -25,18 +25,24 @@ function CompanyPage() {
             </div>
           </div>
         </div>
-        <div className="CompanyPage-TechList">
+        <div className="CompanyPage-TechList" key={companyObj.id}>
           {
             companyObj.techStack.map((element) => {
               return(
-                <div className="CompanyPage-TechListBox">
-                  <Link to={`/tech/${element.slug}`}>
-                  <div className="CompanyPage-TechListBoxImg">
-                    <img src={element.image} alt="TechImg" />
+                <button onClick={() => {
+                  console.log(companyObj.slug)
+                  console.log(props)
+                  props.setTechBackUrl(companyObj.slug)}
+                  }>
+                  <div className="CompanyPage-TechListBox">
+                    <Link to={`/tech/${element.slug}`}>
+                      <div className="CompanyPage-TechListBoxImg">
+                        <img src={element.image} alt="TechImg" />
+                      </div>
+                      <h3>{element.name}</h3>
+                    </Link>
                   </div>
-                  <h3>{element.name}</h3>
-                  </Link>
-                </div>
+                </button>
               )
             })
           }
