@@ -11,10 +11,10 @@ function HomePage() {
         {companiesData.map((company) => (
           <li key={company.id} className="companiesName-img">
             <div className="companyname">
-          <Link to={`/company/${company.slug}`}>{company.name}</Link>
-          </div>
-          <div>
-            <img src={company.logo} alt="logo-img" className="logo-img"/>
+          <Link to={`/company/${company.slug}`}>
+            <div>{company.name}</div>
+            <div><img src={company.logo} alt="logo-img" className="logo-img"/></div>
+            </Link>
           </div>
             </li>
           ))}
