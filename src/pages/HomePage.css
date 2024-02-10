@@ -1,0 +1,24 @@
+
+.logo-img{
+    width:120px
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.companiesName-img{
+    padding: 70px 140px;
+    border: 1px solid grey;
+    margin: 20px 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.companyname{
+    margin-bottom: 40px;
+    font-size: 1.5em;
+}
