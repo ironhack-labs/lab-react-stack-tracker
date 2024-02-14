@@ -9,7 +9,7 @@ function HomePage(props) {
       <div className="container">
       {props.companies.map((obj) => {
         return ( 
-          <Link to={`/company/${obj.id}`}><div key={obj.id} className="company-card">
+          <Link to={`/company/${obj.slug}`}><div key={obj.id} className="company-card">
             <p><strong>{obj.name}</strong></p>
             <img src={obj.logo}/>
           </div></Link>

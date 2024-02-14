@@ -8,8 +8,8 @@ function TechnologyPage({technologies}) {
   console.log(technologyDetails)
 
   const [searchParams] = useSearchParams()
-  // const currentCompanySlug = searchParams.get("company");
-  const navigate = useNavigate(); 
+  const currentCompanySlug = searchParams.get("companyName");
+  // const navigate = useNavigate(); 
   
 
   return (
@@ -23,8 +23,8 @@ function TechnologyPage({technologies}) {
           <p>{technologyDetails.description}</p>
         </div>
       </div>
-      {/* <Link to={`/company/${currentCompanySlug}`}><button>Back</button></Link> */}
-      <button onClick={() => navigate(-1)}>Back</button>
+      <Link to={`/company/${currentCompanySlug}`}><button>Back</button></Link>
+      {/* <button onClick={() => navigate(-1)}>Back</button> */}
     </div>
   );
 }

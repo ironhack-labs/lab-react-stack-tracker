@@ -5,13 +5,13 @@ function CompanyPage({companies, technologies}) {
   console.log(technologies)
 
   const {companySlug} = useParams()
+  console.log(companySlug)
 
-  const companyDetails = companies.find(company => company.id === companySlug);
+  const companyDetails = companies.find(company => company.slug === companySlug);
   console.log(companyDetails)
 
   const companyTech = companyDetails.techStack
   console.log(companyTech)
-
 
 
   return (
@@ -28,7 +28,7 @@ function CompanyPage({companies, technologies}) {
       <div className="flex">
       {companyDetails.techStack.map((obj) => {
         return (
-          <Link to={`/tech/${obj.slug}`}><div >
+          <Link to={`/tech/${obj.slug}?companyName=${companySlug}`}><div >
           <p><strong>{obj.name}</strong></p>
           <img className="logo-tech" src={obj.image}/>
           </div></Link>
