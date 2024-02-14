@@ -10,55 +10,62 @@
   -webkit-text-size-adjust: 100%;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
-body {
-  margin: 0;
+.Navbar{
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(98, 98, 223);
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  padding-left: 30px;
+}
+.HomePage {
+  text-align: center;
+}
+.CompanyPage{
+  text-align: center;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.company-card {
+  width: 500px;
+  height: 430px;
+  margin: 2rem auto;
+  border: 1px solid #e2e2e2;
+  box-shadow: 2px 2px 10px -10px;
+}
+.container a{
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+.company-card img{
+  width: 180px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-  transition: border-color 0.25s;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-button:hover {
-  border-color: #646cff;
+.CompanyPage img{
+  width: 180px;
 }
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.block-container {
+  max-width: 500px;
+}
+.logo-tech {
+  max-width: 40px;
+}
+.flex a{
+  text-decoration: none;
+  color: black;
+}
+.TechnologyPage{
+  text-align: center;
 }
