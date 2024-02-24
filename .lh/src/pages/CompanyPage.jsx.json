@@ -1,0 +1,134 @@
+{
+    "sourceFile": "src/pages/CompanyPage.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 29,
+            "patches": [
+                {
+                    "date": 1708714662653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708760184812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function CompanyPage() {\r\n+function CompanyPage(props) {\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708761681675,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,7 @@\n function CompanyPage(props) {\r\n+\r\n+  \r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708761796530,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n function CompanyPage(props) {\r\n \r\n   \r\n+\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762410810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,7 @@\n function CompanyPage(props) {\r\n \r\n   \r\n-\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762417606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  \r\n+  console.log(p)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762472825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log(p)\r\n+  console.log(props.name)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762495639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,11 @@\n+function CompanyPage(props) {\r\n+\r\n+  console.log(''props.name)\r\n+  return (\r\n+    <div>\r\n+      <h1>Company Profile</h1>\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default CompanyPage;\r\n"
+                },
+                {
+                    "date": 1708762501691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,22 +1,11 @@\n function CompanyPage(props) {\r\n \r\n-  console.log(''props.name)\r\n+  console.log('name',props.name)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n   );\r\n }\r\n \r\n export default CompanyPage;\r\n-function CompanyPage(props) {\r\n-\r\n-  console.log(props.name)\r\n-  return (\r\n-    <div>\r\n-      <h1>Company Profile</h1>\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default CompanyPage;\r\n"
+                },
+                {
+                    "date": 1708762507581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('name',props.name)\r\n+  console.log('comp name: ',props.name)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762522515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('comp name: ',props.name)\r\n+  console.log('comp name: ',props)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762574155,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('comp name: ',props)\r\n+  console.log('comp name: ',props.)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762590592,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('comp name: ',props.)\r\n+  console.log('comp name: ',props.companies)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762595653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('comp name: ',props.companies)\r\n+  console.log('comp name: ',props.companiesToDis)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762618819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('comp name: ',props.companiesToDis)\r\n+  console.log('comp name: ',props.companiesToDisplay.)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762635923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('comp name: ',props.companiesToDisplay.)\r\n+  console.log('comp name: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762715731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('comp name: ',props.companiesToDisplay)\r\n+  console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762729354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n+  console.log('props.companiesToDisplay: ',props)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762750472,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('props.companiesToDisplay: ',props)\r\n+  console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762877732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n+  //console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708762993723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  //console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n+  console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708763203432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n   console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n+      \r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708763218610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n-      \r\n+      {props.companiesToDisplay}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708763224323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n-      {props.companiesToDisplay}\r\n+      {props.companiesToDisplay.map()}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708763233404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n-      {props.companiesToDisplay.map()}\r\n+      {props.companiesToDisplay.map(company)}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708763242034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function CompanyPage(props) {\r\n \r\n-  console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n+  //console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n       {props.companiesToDisplay.map(company)}\r\n"
+                },
+                {
+                    "date": 1708763250751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n   //console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n-      {props.companiesToDisplay.map(company)}\r\n+      {props.companiesToDisplay.map(company=>)}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708763358788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,11 @@\n   //console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n-      {props.companiesToDisplay.map(company=>)}\r\n+      {props.companiesToDisplay.map(company=>{\r\n+        \r\n+      })}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708763376051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   return (\r\n     <div>\r\n       <h1>Company Profile</h1>\r\n       {props.companiesToDisplay.map(company=>{\r\n-        comp\r\n+        company\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708763447962,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+function CompanyPage(props) {\r\n+\r\n+  //console.log('props.companiesToDisplay: ',props.companiesToDisplay)\r\n+  return (\r\n+    <div>\r\n+      <h1>Company Profile</h1>\r\n+      {props.companiesToDisplay.map(company=>{\r\n+        <div>company.slug</div\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default CompanyPage;\r\n"
+                }
+            ],
+            "date": 1708714662653,
+            "name": "Commit-0",
+            "content": "function CompanyPage() {\r\n  return (\r\n    <div>\r\n      <h1>Company Profile</h1>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default CompanyPage;\r\n"
+        }
+    ]
+}

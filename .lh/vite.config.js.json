@@ -1,0 +1,26 @@
+{
+    "sourceFile": "vite.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1708761069292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708761074717,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,12 @@\n import react from \"@vitejs/plugin-react\";\r\n \r\n // https://vitejs.dev/config/\r\n export default defineConfig({\r\n-  \r\n+  server: {\r\n+    open: true,\r\n+    browser: 'chrome'\r\n+  },\r\n   plugins: [react()],\r\n   test: {\r\n     globals: true,\r\n     environment: \"jsdom\",\r\n"
+                },
+                {
+                    "date": 1708761478364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,9 @@\n import react from \"@vitejs/plugin-react\";\r\n \r\n // https://vitejs.dev/config/\r\n export default defineConfig({\r\n-  server: {\r\n-    open: true,\r\n-    browser: 'chrome'\r\n-  },\r\n+ \r\n   plugins: [react()],\r\n   test: {\r\n     globals: true,\r\n     environment: \"jsdom\",\r\n"
+                }
+            ],
+            "date": 1708761069292,
+            "name": "Commit-0",
+            "content": "import { defineConfig } from \"vite\";\r\nimport react from \"@vitejs/plugin-react\";\r\n\r\n// https://vitejs.dev/config/\r\nexport default defineConfig({\r\n  \r\n  plugins: [react()],\r\n  test: {\r\n    globals: true,\r\n    environment: \"jsdom\",\r\n    setupFiles: \"./src/test/setup.ts\",\r\n    css: false,\r\n  },\r\n});\r\n"
+        }
+    ]
+}

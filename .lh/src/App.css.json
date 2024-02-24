@@ -1,0 +1,546 @@
+{
+    "sourceFile": "src/App.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 132,
+            "patches": [
+                {
+                    "date": 1708723490784,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708723498046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,5 +39,7 @@\n \r\n .read-the-docs {\r\n   color: #888;\r\n }\r\n-img\r\n+img{\r\n+  width:50px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708723532322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,6 +40,6 @@\n .read-the-docs {\r\n   color: #888;\r\n }\r\n img{\r\n-  width:50px;\r\n+  width:0px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708723693183,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,46 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+.logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+}\r\n+\r\n+@keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+}\r\n+img{\r\n+  width:70px;\r\n+}\r\n+\r\n"
+                },
+                {
+                    "date": 1708723702649,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,50 +42,7 @@\n }\r\n img{\r\n   width:70px;\r\n }\r\n-\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n+Link{\r\n+  color:black\r\n }\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n-.logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-}\r\n-\r\n-@keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-}\r\n-img{\r\n-  width:0px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708723726622,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n .logo.react:hover {\r\n   filter: drop-shadow(0 0 2em #61dafbaa);\r\n }\r\n \r\n-@keyframes logo-spin {\r\n+/* @keyframes logo-spin {\r\n   from {\r\n     transform: rotate(0deg);\r\n   }\r\n   to {\r\n@@ -38,11 +38,11 @@\n }\r\n \r\n .read-the-docs {\r\n   color: #888;\r\n-}\r\n+} */\r\n img{\r\n   width:70px;\r\n }\r\n Link{\r\n-  color:black\r\n+  color:black;\r\n }\r\n"
+                },
+                {
+                    "date": 1708723743166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,48 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+/* .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} */\r\n+\r\n+/* @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} */\r\n+img{\r\n+  width:70px;\r\n+}\r\n+Link{\r\n+  color:black;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708723759893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,48 @@\n+/* #root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+} */\r\n+/* .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} */\r\n+\r\n+/* @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} */\r\n+img{\r\n+  width:70px;\r\n+}\r\n+Link{\r\n+  color:black;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708723766047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,52 +1,4 @@\n-/* #root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-} */\r\n-/* .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} */\r\n-\r\n-/* @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} */\r\n-img{\r\n-  width:70px;\r\n-}\r\n-Link{\r\n-  color:black;\r\n-}\r\n #root {\r\n   max-width: 1280px;\r\n   margin: 0 auto;\r\n   padding: 2rem;\r\n@@ -93,52 +45,4 @@\n }\r\n Link{\r\n   color:black;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n-.logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-}\r\n-\r\n-/* @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} */\r\n-img{\r\n-  width:70px;\r\n-}\r\n-Link{\r\n-  color:black;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708723777259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n   padding: 1.5em;\r\n   will-change: filter;\r\n   transition: filter 300ms;\r\n }\r\n-/* .logo:hover {\r\n+ .logo:hover {\r\n   filter: drop-shadow(0 0 2em #646cffaa);\r\n }\r\n .logo.react:hover {\r\n   filter: drop-shadow(0 0 2em #61dafbaa);\r\n"
+                },
+                {
+                    "date": 1708723788084,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   filter: drop-shadow(0 0 2em #646cffaa);\r\n }\r\n .logo.react:hover {\r\n   filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} */\r\n+} \r\n \r\n /* @keyframes logo-spin {\r\n   from {\r\n     transform: rotate(0deg);\r\n@@ -38,9 +38,9 @@\n }\r\n \r\n .read-the-docs {\r\n   color: #888;\r\n-} */\r\n+} \r\n img{\r\n   width:70px;\r\n }\r\n Link{\r\n"
+                },
+                {
+                    "date": 1708723812051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n .logo.react:hover {\r\n   filter: drop-shadow(0 0 2em #61dafbaa);\r\n } \r\n \r\n-/* @keyframes logo-spin {\r\n+ @keyframes logo-spin {\r\n   from {\r\n     transform: rotate(0deg);\r\n   }\r\n   to {\r\n@@ -42,7 +42,7 @@\n } \r\n img{\r\n   width:70px;\r\n }\r\n-Link{\r\n+a{\r\n   color:black;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724249615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,4 +45,5 @@\n }\r\n a{\r\n   color:black;\r\n }\r\n+name-link\r\n"
+                },
+                {
+                    "date": 1708724256100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,5 +45,7 @@\n }\r\n a{\r\n   color:black;\r\n }\r\n-name-link\r\n+.name-link{\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724263005,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,51 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+a{\r\n+  \r\n+}\r\n+.name-link{\r\n+\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724269414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,61 +42,7 @@\n } \r\n img{\r\n   width:70px;\r\n }\r\n-a{\r\n-  \r\n-}\r\n .name-link{\r\n-\r\n-}\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-a{\r\n   color:black;\r\n }\r\n-.name-link{\r\n-\r\n-}\r\n"
+                },
+                {
+                    "date": 1708724437810,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,4 +45,5 @@\n }\r\n .name-link{\r\n   color:black;\r\n }\r\n+\r\n"
+                },
+                {
+                    "date": 1708724447909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,5 +45,7 @@\n }\r\n .name-link{\r\n   color:black;\r\n }\r\n-\r\n+hr{\r\n+  border: 1px solid green;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724459304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,6 +46,6 @@\n .name-link{\r\n   color:black;\r\n }\r\n hr{\r\n-  border: 1px solid green;\r\n+  border: 1px solid g;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724478913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,6 +46,6 @@\n .name-link{\r\n   color:black;\r\n }\r\n hr{\r\n-  border: 1px solid g;\r\n+  border: 1px solid ;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724484590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,51 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+}\r\n+hr{\r\n+  border: 1px solid gray;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724493212,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,55 +48,4 @@\n }\r\n hr{\r\n   border: 1px solid gray;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-}\r\n-hr{\r\n-  border: 1px solid ;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708724511611,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,51 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+}\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724549783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,56 +47,6 @@\n   color:black;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n+  width\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-}\r\n-hr{\r\n-  border: 1px solid gray;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708724561173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,6 +47,6 @@\n   color:black;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n-  width\r\n+  width:150px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724577663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,52 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+}\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:250px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724588806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,58 +47,6 @@\n   color:black;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n-  width:250px;\r\n+  width:350px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-}\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:150px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708724627046,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,5 +48,6 @@\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n+  padding\r\n }\r\n"
+                },
+                {
+                    "date": 1708724654846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,6 +48,6 @@\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n-  padding\r\n+  margin:10px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724669134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,6 +48,6 @@\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n-  margin:10px;\r\n+ \r\n }\r\n"
+                },
+                {
+                    "date": 1708724677325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,6 +48,5 @@\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n- \r\n }\r\n"
+                },
+                {
+                    "date": 1708724725018,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n   width:70px;\r\n }\r\n .name-link{\r\n   color:black;\r\n+  \r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708724734915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,53 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  padding:50px;\r\n+}\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724747223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,53 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  \r\n+}\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708724755232,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,114 +46,11 @@\n .name-link{\r\n   color:black;\r\n   \r\n }\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n+Link{\r\n+  padding:10px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  padding:50px;\r\n-}\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  \r\n-}\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708724769598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,11 +46,9 @@\n .name-link{\r\n   color:black;\r\n   \r\n }\r\n-Link{\r\n-  padding:10px;\r\n-}\r\n+\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724800480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n .name-link{\r\n   color:black;\r\n   \r\n }\r\n-\r\n+.companyDetails\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724808382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,11 @@\n .name-link{\r\n   color:black;\r\n   \r\n }\r\n-.companyDetails\r\n+.companyDetails{\r\n+  padding: 10px;\r\n+}\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708724815925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails{\r\n-  padding: 10px;\r\n+  padding: 0px;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708724830830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails{\r\n-  padding: 0px;\r\n+  \r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708724841312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails{\r\n-  \r\n+  padding: 30px;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708724881380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails{\r\n-  padding: 30px;\r\n+  margin: 30px;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708724890702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails{\r\n-  margin: 30px;\r\n+  margin: 20px;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708725573186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,9 @@\n   \r\n }\r\n .companyDetails{\r\n   margin: 20px;\r\n+  display: flex;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708725579047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n }\r\n .companyDetails{\r\n   margin: 20px;\r\n   display: flex;\r\n+  flex-wrap: wrap;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708725649773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n   margin: 20px;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n+.companyDetails > div {\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708725655322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,10 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n+  \r\n+}\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708725663935,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n-  \r\n+  width: 50%;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708725692674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n   flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n   width: 50%;\r\n+  box-sizing: border-box;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708725715108,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n-  width: 50%;\r\n+  width: 0%;\r\n   box-sizing: border-box;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708725741678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n-  width: 0%;\r\n+  width: 100px;\r\n   box-sizing: border-box;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708725753103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,62 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  \r\n+}\r\n+.companyDetails{\r\n+  margin: 20px;\r\n+  display: flex;\r\n+  flex-wrap: wrap;\r\n+}\r\n+.companyDetails > div {\r\n+  \r\n+  box-sizing: border-box;\r\n+}\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708725763208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,62 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  \r\n+}\r\n+.companyDetails{\r\n+  margin: 20px;\r\n+  display: flex;\r\n+  flex-wrap: wrap;\r\n+}\r\n+.companyDetails > div {\r\n+  width: 100px;\r\n+  box-sizing: border-box;\r\n+}\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708725775559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,128 +59,4 @@\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  \r\n-}\r\n-.companyDetails{\r\n-  margin: 20px;\r\n-  display: flex;\r\n-  flex-wrap: wrap;\r\n-}\r\n-.companyDetails > div {\r\n-  \r\n-  box-sizing: border-box;\r\n-}\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  \r\n-}\r\n-.companyDetails{\r\n-  margin: 20px;\r\n-  display: flex;\r\n-  flex-wrap: wrap;\r\n-}\r\n-.companyDetails > div {\r\n-  width: 100px;\r\n-  box-sizing: border-box;\r\n-}\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708725793174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,9 @@\n   margin: 20px;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n-.companyDetails > div {\r\n-  width: 100px;\r\n-  box-sizing: border-box;\r\n-}\r\n+\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708725807424,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,9 +51,12 @@\n   margin: 20px;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n-\r\n+.companyDetails > div {\r\n+  width: 100px;\r\n+  box-sizing: border-box;\r\n+}\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708725844485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,9 @@\n   margin: 20px;\r\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n-.companyDetails > div {\r\n-  width: 100px;\r\n-  box-sizing: border-box;\r\n-}\r\n+\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708725849873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,11 +49,14 @@\n }\r\n .companyDetails{\r\n   margin: 20px;\r\n   display: flex;\r\n-  flex-wrap: wrap;\r\n+  \r\n }\r\n-\r\n+.companyDetails > div {\r\n+  width: 100px;\r\n+  box-sizing: border-box;\r\n+}\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708725855610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n }\r\n .companyDetails{\r\n   margin: 20px;\r\n   display: flex;\r\n-  \r\n+  flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n   width: 100px;\r\n   box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1708725861087,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n-  width: 100px;\r\n+  width: 250%;\r\n   box-sizing: border-box;\r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708725866423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n .companyDetails > div {\r\n-  width: 250%;\r\n-  box-sizing: border-box;\r\n+  width: 50%;\r\n+  \r\n }\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708725883136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,17 +46,9 @@\n .name-link{\r\n   color:black;\r\n   \r\n }\r\n-.companyDetails{\r\n-  margin: 20px;\r\n-  display: flex;\r\n-  flex-wrap: wrap;\r\n-}\r\n-.companyDetails > div {\r\n-  width: 50%;\r\n-  \r\n-}\r\n+\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708725918793,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,55 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  \r\n+}\r\n+.companyDetails {\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708725924824,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,57 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  \r\n+}\r\n+.companyDetails {\r\n+  \r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708725935651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,120 +47,11 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails {\r\n-  \r\n+  width:\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  \r\n-}\r\n-.companyDetails {\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  \r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708725974865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails {\r\n-  width:\r\n+  width:300px;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708725980271,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,9 +47,9 @@\n   color:black;\r\n   \r\n }\r\n .companyDetails {\r\n-  width:300px;\r\n+  width:400px;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708726045192,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,10 @@\n   \r\n }\r\n .companyDetails {\r\n   width:400px;\r\n+  display: flex;\r\n+  flex-wrap: wrap;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708726099561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,8 +52,14 @@\n   display: flex;\r\n   flex-wrap: wrap;\r\n }\r\n \r\n+.companyDetails > div {\r\n+  width: 50%; /* Divise l'espace en deux colonnes */\r\n+  box-sizing: border-box; /* Inclut les bordures et marges dans la largeur de la boîte */\r\n+  padding: 10px; /* Ajoute un peu d'espace à l'intérieur des colonnes */\r\n+}\r\n+\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708726119352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,19 +46,9 @@\n .name-link{\r\n   color:black;\r\n   \r\n }\r\n-.companyDetails {\r\n-  width:400px;\r\n-  display: flex;\r\n-  flex-wrap: wrap;\r\n-}\r\n \r\n-.companyDetails > div {\r\n-  width: 50%; /* Divise l'espace en deux colonnes */\r\n-  box-sizing: border-box; /* Inclut les bordures et marges dans la largeur de la boîte */\r\n-  padding: 10px; /* Ajoute un peu d'espace à l'intérieur des colonnes */\r\n-}\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n"
+                },
+                {
+                    "date": 1708727231469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,10 +46,13 @@\n .name-link{\r\n   color:black;\r\n   \r\n }\r\n+.companyDetails {\r\n+  display: flex;\r\n+  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */\r\n+}\r\n \r\n-\r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708727243981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n   \r\n }\r\n .companyDetails {\r\n   display: flex;\r\n-  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */\r\n+  /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708727266017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,9 +48,9 @@\n   \r\n }\r\n .companyDetails {\r\n   display: flex;\r\n-  /* Permet aux éléments de passer à la ligne lorsque l'espace est insuffisant */\r\n+  flex-wrap: wrap; \r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708727271064,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,8 +49,9 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n+  flex-direction: row;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708727277098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n-  flex-direction: row;\r\n+  flex-direction: col;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708727300485,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,10 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n-  flex-direction: col;\r\n+  flex-direction: column;\r\n+  \r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708727445041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,60 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  \r\n+}\r\n+.companyDetails {\r\n+  display: flex;\r\n+  flex-wrap: wrap; \r\n+  flex-direction: column;\r\n+  justify-content: space-around;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708727463370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,71 +50,11 @@\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n   flex-direction: column;\r\n-  justify-content: space-around;\r\n+  justify-content: fl;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  \r\n-}\r\n-.companyDetails {\r\n-  display: flex;\r\n-  flex-wrap: wrap; \r\n-  flex-direction: column;\r\n-  \r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708727469899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n   flex-direction: column;\r\n-  justify-content: fl;\r\n+  justify-content: space-around;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708727970247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n   flex-direction: column;\r\n-  justify-content: space-around;\r\n+  g\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708727975512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,9 @@\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n   flex-direction: column;\r\n-  g\r\n+  gap:20px;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n"
+                },
+                {
+                    "date": 1708728231835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,60 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  \r\n+}\r\n+.companyDetails {\r\n+  display: flex;\r\n+  flex-wrap: wrap; \r\n+  flex-direction: row;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708728306356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,68 +49,8 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n-  flex-direction: row;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  \r\n-}\r\n-.companyDetails {\r\n-  display: flex;\r\n-  flex-wrap: wrap; \r\n   flex-direction: column;\r\n   gap:20px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708728657674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n-  flex-direction: column;\r\n+  /* flex-direction: column; */\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708728710115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   width:70px;\r\n }\r\n .name-link{\r\n   color:black;\r\n-  \r\n+  flex-grow: 1;\r\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n"
+                },
+                {
+                    "date": 1708728731451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n-  /* flex-direction: column; */\r\n+   flex-direction: column; */\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708728744474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n-   flex-direction: column; */\r\n+   flex-direction: row; \r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708728755623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,60 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  flex-grow: 1;\r\n+}\r\n+.companyDetails {\r\n+  display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: row-reverse; \r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708728762455,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,72 +49,12 @@\n }\r\n .companyDetails {\r\n   display: flex;\r\n   flex-wrap: wrap; \r\n-   flex-direction: row-reverse; \r\n+   flex-direction: column; \r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:350px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  flex-grow: 1;\r\n-}\r\n-.companyDetails {\r\n-  display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: row; \r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708759575918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n .read-the-docs {\r\n   color: #888;\r\n } \r\n img{\r\n-  width:70px;\r\n+  width:0px;\r\n }\r\n .name-link{\r\n   color:black;\r\n   flex-grow: 1;\r\n"
+                },
+                {
+                    "date": 1708759581086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,60 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:0px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  flex-grow: 1;\r\n+}\r\n+.companyDetails {\r\n+  display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column; \r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:350px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708759594926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n .read-the-docs {\r\n   color: #888;\r\n } \r\n img{\r\n-  width:0px;\r\n+  width:70px;\r\n }\r\n .name-link{\r\n   color:black;\r\n   flex-grow: 1;\r\n@@ -55,66 +55,6 @@\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n+  width:330px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:0px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  flex-grow: 1;\r\n-}\r\n-.companyDetails {\r\n-  display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column; \r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:350px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708759602951,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,6 +55,6 @@\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n-  width:330px;\r\n+  width:300px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708759653525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,11 +47,11 @@\n   color:black;\r\n   flex-grow: 1;\r\n }\r\n .companyDetails {\r\n-  display: flex;\r\n+  /* display: flex;\r\n   flex-wrap: wrap; \r\n-   flex-direction: column; \r\n+   flex-direction: column;  */\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708759665812,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,9 +44,9 @@\n   width:70px;\r\n }\r\n .name-link{\r\n   color:black;\r\n-  flex-grow: 1;\r\n+  /* flex-grow: 1; */\r\n }\r\n .companyDetails {\r\n   /* display: flex;\r\n   flex-wrap: wrap; \r\n"
+                },
+                {
+                    "date": 1708759709243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n .companyDetails {\r\n   /* display: flex;\r\n   flex-wrap: wrap; \r\n    flex-direction: column;  */\r\n+   display: flex;\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708759717590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,9 @@\n   /* display: flex;\r\n   flex-wrap: wrap; \r\n    flex-direction: column;  */\r\n    display: flex;\r\n+   flex-direction:\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708759789726,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,14 +46,15 @@\n .name-link{\r\n   color:black;\r\n   /* flex-grow: 1; */\r\n }\r\n+\r\n .companyDetails {\r\n   /* display: flex;\r\n   flex-wrap: wrap; \r\n    flex-direction: column;  */\r\n    display: flex;\r\n-   flex-direction:\r\n+   flex-direction:row;\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708759800537,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n .name-link{\r\n   color:black;\r\n   /* flex-grow: 1; */\r\n }\r\n-\r\n+/**  HomePage **/\r\n .companyDetails {\r\n   /* display: flex;\r\n   flex-wrap: wrap; \r\n    flex-direction: column;  */\r\n"
+                },
+                {
+                    "date": 1708759808787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n .name-link{\r\n   color:black;\r\n   /* flex-grow: 1; */\r\n }\r\n-/**  HomePage **/\r\n+/** HomePage.jsx **/\r\n .companyDetails {\r\n   /* display: flex;\r\n   flex-wrap: wrap; \r\n    flex-direction: column;  */\r\n"
+                },
+                {
+                    "date": 1708760054284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n   /* display: flex;\r\n   flex-wrap: wrap; \r\n    flex-direction: column;  */\r\n    display: flex;\r\n-   flex-direction:row;\r\n+   flex-direction:column;\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n"
+                },
+                {
+                    "date": 1708760083891,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,64 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-direction: column;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708760090366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,75 +53,12 @@\n   flex-wrap: wrap; \r\n    flex-direction: column;  */\r\n    display: flex;\r\n    flex-direction:column;\r\n-   flex-direction: column;\r\n+   flex-wrap: wrap;\r\n   gap:20px;\r\n }\r\n \r\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  /* flex-grow: 1; */\r\n-}\r\n-/** HomePage.jsx **/\r\n-.companyDetails {\r\n-  /* display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column;  */\r\n-   display: flex;\r\n-   flex-direction:column;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:300px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1708765059741,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,66 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-wrap: wrap;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n+\r\n+company-page\r\n"
+                },
+                {
+                    "date": 1708765067152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,69 +62,5 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n \r\n-company-page\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  /* flex-grow: 1; */\r\n-}\r\n-/** HomePage.jsx **/\r\n-.companyDetails {\r\n-  /* display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column;  */\r\n-   display: flex;\r\n-   flex-direction:column;\r\n-   flex-wrap: wrap;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:300px;\r\n-}\r\n+.company-page\r\n"
+                },
+                {
+                    "date": 1708765072667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,5 +62,7 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n \r\n-.company-page\r\n+.company-page{\r\n+  ba\r\n+}\r\n"
+                },
+                {
+                    "date": 1708765081169,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,68 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-wrap: wrap;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n+\r\n+.company-page{\r\n+  background-color: burlywood;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708765204398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,75 +62,7 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n \r\n-.company-page{\r\n+bo{\r\n   background-color: burlywood;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  /* flex-grow: 1; */\r\n-}\r\n-/** HomePage.jsx **/\r\n-.companyDetails {\r\n-  /* display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column;  */\r\n-   display: flex;\r\n-   flex-direction:column;\r\n-   flex-wrap: wrap;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:300px;\r\n-}\r\n-\r\n-.company-page{\r\n-  ba\r\n-}\r\n"
+                },
+                {
+                    "date": 1708768520034,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,7 +62,7 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n \r\n-bo{\r\n+/* body{\r\n   background-color: burlywood;\r\n-}\r\n+} */\r\n"
+                },
+                {
+                    "date": 1708768527525,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,7 +62,4 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n \r\n-/* body{\r\n-  background-color: burlywood;\r\n-} */\r\n"
+                },
+                {
+                    "date": 1708771004312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,5 +61,5 @@\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n-\r\n+.text-company\r\n"
+                },
+                {
+                    "date": 1708771009364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,5 +61,7 @@\n hr{\r\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n-.text-company\r\n+.text-company{\r\n+  width:\r\n+}\r\n"
+                },
+                {
+                    "date": 1708771024628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,6 +62,6 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n .text-company{\r\n-  width:\r\n+  width:150px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708771030268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,6 +62,6 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n .text-company{\r\n-  width:150px;\r\n+  width:250px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708771052532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,6 +62,6 @@\n   border: 1px solid rgb(201, 198, 198);\r\n   width:300px;\r\n }\r\n .text-company{\r\n-  width:250px;\r\n+  width:350px;\r\n }\r\n"
+                },
+                {
+                    "date": 1708771060277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,67 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-wrap: wrap;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n+.text-company{\r\n+  width:400px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1708771212963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,71 +64,5 @@\n }\r\n .text-company{\r\n   width:400px;\r\n }\r\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  /* flex-grow: 1; */\r\n-}\r\n-/** HomePage.jsx **/\r\n-.companyDetails {\r\n-  /* display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column;  */\r\n-   display: flex;\r\n-   flex-direction:column;\r\n-   flex-wrap: wrap;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:300px;\r\n-}\r\n-.text-company{\r\n-  width:350px;\r\n-}\r\n+.logo-around\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771219009,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,5 +64,7 @@\n }\r\n .text-company{\r\n   width:400px;\r\n }\r\n-.logo-around\n\\ No newline at end of file\n+.logo-around{\r\n+  pa\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771224286,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,6 @@\n .text-company{\r\n   width:400px;\r\n }\r\n .logo-around{\r\n-  pa\r\n+  padding: 20px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771232827,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,6 @@\n .text-company{\r\n   width:400px;\r\n }\r\n .logo-around{\r\n-  padding: 20px;\r\n+  \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771258671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,6 +65,6 @@\n .text-company{\r\n   width:400px;\r\n }\r\n .logo-around{\r\n-  \r\n+  margin\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771265198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,70 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-wrap: wrap;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n+.text-company{\r\n+  width:400px;\r\n+}\r\n+.logo-around{\r\n+  margin:25px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771271695,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,75 +66,6 @@\n   width:400px;\r\n }\r\n .logo-around{\r\n   margin:25px;\r\n-}\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  /* flex-grow: 1; */\r\n-}\r\n-/** HomePage.jsx **/\r\n-.companyDetails {\r\n-  /* display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column;  */\r\n-   display: flex;\r\n-   flex-direction:column;\r\n-   flex-wrap: wrap;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:300px;\r\n-}\r\n-.text-company{\r\n-  width:400px;\r\n-}\r\n-.logo-around{\r\n-  margin\r\n+  \r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771278020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,6 +66,6 @@\n   width:400px;\r\n }\r\n .logo-around{\r\n   margin:25px;\r\n-  \r\n+  border:1\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771284789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,71 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-wrap: wrap;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n+.text-company{\r\n+  width:400px;\r\n+}\r\n+.logo-around{\r\n+  margin:25px;\r\n+  border: 1px black;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771292372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,77 +66,6 @@\n   width:400px;\r\n }\r\n .logo-around{\r\n   margin:25px;\r\n-  border: 1px black;\r\n-}\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n-}\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  /* flex-grow: 1; */\r\n-}\r\n-/** HomePage.jsx **/\r\n-.companyDetails {\r\n-  /* display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column;  */\r\n-   display: flex;\r\n-   flex-direction:column;\r\n-   flex-wrap: wrap;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:300px;\r\n-}\r\n-.text-company{\r\n-  width:400px;\r\n-}\r\n-.logo-around{\r\n-  margin:25px;\r\n-  border:1\r\n+  border: 1px ;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771342215,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,6 +66,6 @@\n   width:400px;\r\n }\r\n .logo-around{\r\n   margin:25px;\r\n-  border: 1px ;\r\n+  border: 1px solid blue;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771367369,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,7 +65,7 @@\n .text-company{\r\n   width:400px;\r\n }\r\n .logo-around{\r\n-  margin:25px;\r\n-  border: 1px solid blue;\r\n+  margin:125px;\r\n+  border: 5px solid blue;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771374780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,71 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-wrap: wrap;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n+.text-company{\r\n+  width:400px;\r\n+}\r\n+.logo-around{\r\n+  margin:225px;\r\n+  border: 5px solid blue;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771393464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,76 +67,5 @@\n }\r\n .logo-around{\r\n   margin:225px;\r\n   border: 5px solid blue;\r\n-}\n-#root {\r\n-  max-width: 1280px;\r\n-  margin: 0 auto;\r\n-  padding: 2rem;\r\n-  text-align: center;\r\n }\r\n-\r\n-.logo {\r\n-  height: 6em;\r\n-  padding: 1.5em;\r\n-  will-change: filter;\r\n-  transition: filter 300ms;\r\n-}\r\n- .logo:hover {\r\n-  filter: drop-shadow(0 0 2em #646cffaa);\r\n-}\r\n-.logo.react:hover {\r\n-  filter: drop-shadow(0 0 2em #61dafbaa);\r\n-} \r\n-\r\n- @keyframes logo-spin {\r\n-  from {\r\n-    transform: rotate(0deg);\r\n-  }\r\n-  to {\r\n-    transform: rotate(360deg);\r\n-  }\r\n-}\r\n-\r\n-@media (prefers-reduced-motion: no-preference) {\r\n-  a:nth-of-type(2) .logo {\r\n-    animation: logo-spin infinite 20s linear;\r\n-  }\r\n-}\r\n-\r\n-.card {\r\n-  padding: 2em;\r\n-}\r\n-\r\n-.read-the-docs {\r\n-  color: #888;\r\n-} \r\n-img{\r\n-  width:70px;\r\n-}\r\n-.name-link{\r\n-  color:black;\r\n-  /* flex-grow: 1; */\r\n-}\r\n-/** HomePage.jsx **/\r\n-.companyDetails {\r\n-  /* display: flex;\r\n-  flex-wrap: wrap; \r\n-   flex-direction: column;  */\r\n-   display: flex;\r\n-   flex-direction:column;\r\n-   flex-wrap: wrap;\r\n-  gap:20px;\r\n-}\r\n-\r\n-hr{\r\n-  border: 1px solid rgb(201, 198, 198);\r\n-  width:300px;\r\n-}\r\n-.text-company{\r\n-  width:400px;\r\n-}\r\n-.logo-around{\r\n-  margin:125px;\r\n-  border: 5px solid blue;\r\n-}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771405461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -68,4 +68,5 @@\n .logo-around{\r\n   margin:225px;\r\n   border: 5px solid blue;\r\n }\r\n+.logo-company\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771410979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n   width:400px;\r\n }\r\n .logo-around{\r\n   margin:225px;\r\n-  border: 5px solid blue;\r\n+  \r\n }\r\n .logo-company{\r\n-  \r\n+\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1708771418693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,74 @@\n+#root {\r\n+  max-width: 1280px;\r\n+  margin: 0 auto;\r\n+  padding: 2rem;\r\n+  text-align: center;\r\n+}\r\n+\r\n+.logo {\r\n+  height: 6em;\r\n+  padding: 1.5em;\r\n+  will-change: filter;\r\n+  transition: filter 300ms;\r\n+}\r\n+ .logo:hover {\r\n+  filter: drop-shadow(0 0 2em #646cffaa);\r\n+}\r\n+.logo.react:hover {\r\n+  filter: drop-shadow(0 0 2em #61dafbaa);\r\n+} \r\n+\r\n+ @keyframes logo-spin {\r\n+  from {\r\n+    transform: rotate(0deg);\r\n+  }\r\n+  to {\r\n+    transform: rotate(360deg);\r\n+  }\r\n+}\r\n+\r\n+@media (prefers-reduced-motion: no-preference) {\r\n+  a:nth-of-type(2) .logo {\r\n+    animation: logo-spin infinite 20s linear;\r\n+  }\r\n+}\r\n+\r\n+.card {\r\n+  padding: 2em;\r\n+}\r\n+\r\n+.read-the-docs {\r\n+  color: #888;\r\n+} \r\n+img{\r\n+  width:70px;\r\n+}\r\n+.name-link{\r\n+  color:black;\r\n+  /* flex-grow: 1; */\r\n+}\r\n+/** HomePage.jsx **/\r\n+.companyDetails {\r\n+  /* display: flex;\r\n+  flex-wrap: wrap; \r\n+   flex-direction: column;  */\r\n+   display: flex;\r\n+   flex-direction:column;\r\n+   flex-wrap: wrap;\r\n+  gap:20px;\r\n+}\r\n+\r\n+hr{\r\n+  border: 1px solid rgb(201, 198, 198);\r\n+  width:300px;\r\n+}\r\n+.text-company{\r\n+  width:400px;\r\n+}\r\n+.logo-around{\r\n+  margin:5px;\r\n+  \r\n+}\r\n+.logo-company{\r\n+  border: 5px solid blue;\r\n+}\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1708723490784,
+            "name": "Commit-0",
+            "content": "#root {\r\n  max-width: 1280px;\r\n  margin: 0 auto;\r\n  padding: 2rem;\r\n  text-align: center;\r\n}\r\n\r\n.logo {\r\n  height: 6em;\r\n  padding: 1.5em;\r\n  will-change: filter;\r\n  transition: filter 300ms;\r\n}\r\n.logo:hover {\r\n  filter: drop-shadow(0 0 2em #646cffaa);\r\n}\r\n.logo.react:hover {\r\n  filter: drop-shadow(0 0 2em #61dafbaa);\r\n}\r\n\r\n@keyframes logo-spin {\r\n  from {\r\n    transform: rotate(0deg);\r\n  }\r\n  to {\r\n    transform: rotate(360deg);\r\n  }\r\n}\r\n\r\n@media (prefers-reduced-motion: no-preference) {\r\n  a:nth-of-type(2) .logo {\r\n    animation: logo-spin infinite 20s linear;\r\n  }\r\n}\r\n\r\n.card {\r\n  padding: 2em;\r\n}\r\n\r\n.read-the-docs {\r\n  color: #888;\r\n}\r\nimg\r\n"
+        }
+    ]
+}
