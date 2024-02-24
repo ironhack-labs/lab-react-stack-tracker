@@ -1,0 +1,262 @@
+{
+    "sourceFile": "src/pages/TechnologyPage.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 61,
+            "patches": [
+                {
+                    "date": 1708714685453,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708777361594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-function TechnologyPage() {\r\n+function TechnologyPage(props) {\r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708777420459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n function TechnologyPage(props) {\r\n+  c\r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708777505502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n function TechnologyPage(props) {\r\n-  c\r\n+  console.log(props)\r\n+  const { companySlug } = useParams();\r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708777521688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n function TechnologyPage(props) {\r\n   console.log(props)\r\n-  const { companySlug } = useParams();\r\n+  const { slug } = useParams();\r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708777560343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,12 @@\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n+  const companyDetails = props.companiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = companySlug.trim().toLowerCase();\r\n+    return normalizedSlug == normalizedCompanySlug\r\n+  })\r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708777765246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,15 @@\n+\r\n+\r\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n   const companyDetails = props.companiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = companySlug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n+\r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708780356893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n+import { useParams } from 'react-router-dom';\r\n \r\n-\r\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n-  const companyDetails = props.companiesToDisplay.find(element => {\r\n+  const companyDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = companySlug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n"
+                },
+                {
+                    "date": 1708780449696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n   console.log(props)\r\n   const { slug } = useParams();\r\n   const companyDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = companySlug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708780580716,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,8 @@\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n   const companyDetails = props.technologiesToDisplay.find(element => {\r\n-    const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708780599082,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,10 @@\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n   const companyDetails = props.technologiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708780760640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n+      \r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708780766378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n-      \r\n+      <div></div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708780775211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n-      <div></div>\r\n+      <div>{</div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708780784740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n-      <div>{</div>\r\n+      <div>{companyDetails.}</div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708780798535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n-  const companyDetails = props.technologiesToDisplay.find(element => {\r\n+  const Details = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n"
+                },
+                {
+                    "date": 1708780805682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,18 +2,18 @@\n \r\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n-  const Details = props.technologiesToDisplay.find(element => {\r\n+  const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n-      <div>{companyDetails.}</div>\r\n+      <div>{technoDetails.}</div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708780823222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n-      <div>{technoDetails.}</div>\r\n+      <div>{technoDetails.sleg}</div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782016291,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Technology Details</h1>\r\n-      <div>{technoDetails.sleg}</div>\r\n+      <div>{technoDetails.name}</div>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782059931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n import { useParams } from 'react-router-dom';\r\n \r\n function TechnologyPage(props) {\r\n-  console.log(props)\r\n+  //console.log(props)\r\n   const { slug } = useParams();\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n"
+                },
+                {
+                    "date": 1708782067277,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \r\n function TechnologyPage(props) {\r\n   //console.log(props)\r\n   const { slug } = useParams();\r\n+  console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     return normalizedSlug == normalizedCompanySlug\r\n"
+                },
+                {
+                    "date": 1708782141391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   })\r\n \r\n   return (\r\n     <div>\r\n-      <h1>Technology Details</h1>\r\n+      \r\n       <div>{technoDetails.name}</div>\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708782147651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n   return (\r\n     <div>\r\n       \r\n-      <div>{technoDetails.name}</div>\r\n+      {technoDetails.name}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782394661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n   return (\r\n     <div>\r\n       \r\n-      {technoDetails.name}\r\n+      {technoDetails.id}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782425105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n   return (\r\n     <div>\r\n       \r\n-      {technoDetails.id}\r\n+      {technoDetails}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782431550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n   return (\r\n     <div>\r\n       \r\n-      {technoDetails}\r\n+      {technoDetails.map(te)}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782437780,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n   return (\r\n     <div>\r\n       \r\n-      {technoDetails.map(te)}\r\n+      {technoDetails.map(techno )}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782443156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,11 @@\n \r\n   return (\r\n     <div>\r\n       \r\n-      {technoDetails.map(techno )}\r\n+      {technoDetails.map(techno => {\r\n+        \r\n+      })}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782464761,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   return (\r\n     <div>\r\n       \r\n       {technoDetails.map(techno => {\r\n-        \r\n+        t\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708782471683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n   return (\r\n     <div>\r\n       \r\n       {technoDetails.map(techno => {\r\n-        t\r\n+        techno.na\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708782522227,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,11 +12,11 @@\n \r\n   return (\r\n     <div>\r\n       \r\n-      {technoDetails.map(techno => {\r\n-        techno.na\r\n-      })}\r\n+      {/* {technoDetails.map(techno => {\r\n+        techno.name\r\n+      })} */}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708782527340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n+    \r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782535676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    \r\n+    console.log(normalizedSlug == normalizedCompanySlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782550942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.log(normalizedSlug == normalizedCompanySlug)\r\n+    console.log(normalizedSlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782556102,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.log(normalizedSlug)\r\n+    console.log('',normalizedSlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782569091,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.log('',normalizedSlug)\r\n+    console.tab('normalizedSlug',normalizedSlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782581035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.tab('normalizedSlug',normalizedSlug)\r\n+    console.log('normalizedSlug',normalizedSlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782675044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.log('normalizedSlug',normalizedSlug)\r\n+    console.table('normalizedSlug',normalizedSlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782694600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n   console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.table('normalizedSlug',normalizedSlug)\r\n+    console.table('normalizedSlug:',normalizedSlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782734601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import { useParams } from 'react-router-dom';\r\n+\r\n+function TechnologyPage(props) {\r\n+  //console.log(props)\r\n+  const { slug } = useParams();\r\n+  console.log(slug)\r\n+  const technoDetails = props.technologiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n+    console.table('normalizedSlug: ',normalizedSlug)\r\n+    console.table('normalizedSlug: ',normalizedSlug)\r\n+    return normalizedSlug == normalizedCompanySlug\r\n+  })\r\n+\r\n+  return (\r\n+    <div>\r\n+      \r\n+      {/* {technoDetails.map(techno => {\r\n+        techno.name\r\n+      })} */}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708782739651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,28 +22,4 @@\n   );\r\n }\r\n \r\n export default TechnologyPage;\r\n-import { useParams } from 'react-router-dom';\r\n-\r\n-function TechnologyPage(props) {\r\n-  //console.log(props)\r\n-  const { slug } = useParams();\r\n-  console.log(slug)\r\n-  const technoDetails = props.technologiesToDisplay.find(element => {\r\n-    const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.table('normalizedSlug:',normalizedSlug)\r\n-    return normalizedSlug == normalizedCompanySlug\r\n-  })\r\n-\r\n-  return (\r\n-    <div>\r\n-      \r\n-      {/* {technoDetails.map(techno => {\r\n-        techno.name\r\n-      })} */}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708782752413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     console.table('normalizedSlug: ',normalizedSlug)\r\n     console.table('normalizedSlug: ',normalizedSlug)\r\n+    \r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708782760130,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import { useParams } from 'react-router-dom';\r\n+\r\n+function TechnologyPage(props) {\r\n+  //console.log(props)\r\n+  const { slug } = useParams();\r\n+  console.log(slug)\r\n+  const technoDetails = props.technologiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n+    console.table('normalizedSlug: ',normalizedSlug)\r\n+    console.table('normalizedSlug: ',normalizedSlug)\r\n+    console.log()\r\n+    return normalizedSlug == normalizedCompanySlug\r\n+  })\r\n+\r\n+  return (\r\n+    <div>\r\n+      \r\n+      {/* {technoDetails.map(techno => {\r\n+        techno.name\r\n+      })} */}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708782765435,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     console.table('normalizedSlug: ',normalizedSlug)\r\n     console.table('normalizedSlug: ',normalizedSlug)\r\n-    console.log()\r\n+    console.log(normalizedSlug == normalizedCompanySlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n@@ -23,30 +23,4 @@\n   );\r\n }\r\n \r\n export default TechnologyPage;\r\n-import { useParams } from 'react-router-dom';\r\n-\r\n-function TechnologyPage(props) {\r\n-  //console.log(props)\r\n-  const { slug } = useParams();\r\n-  console.log(slug)\r\n-  const technoDetails = props.technologiesToDisplay.find(element => {\r\n-    const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.table('normalizedSlug: ',normalizedSlug)\r\n-    console.table('normalizedSlug: ',normalizedSlug)\r\n-    \r\n-    return normalizedSlug == normalizedCompanySlug\r\n-  })\r\n-\r\n-  return (\r\n-    <div>\r\n-      \r\n-      {/* {technoDetails.map(techno => {\r\n-        techno.name\r\n-      })} */}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708782793222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     console.table('normalizedSlug: ',normalizedSlug)\r\n-    console.table('normalizedSlug: ',normalizedSlug)\r\n+    console.table('normalizedCompanySlug: ',normalizedSlug)\r\n     console.log(normalizedSlug == normalizedCompanySlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n"
+                },
+                {
+                    "date": 1708783397655,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import { useParams } from 'react-router-dom';\r\n+\r\n+function TechnologyPage(props) {\r\n+  //console.log(props)\r\n+  const { slug } = useParams();\r\n+ //console.log(slug)\r\n+  const technoDetails = props.technologiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n+    console.table('normalizedSlug: ',normalizedSlug)\r\n+    console.table('normalizedCompanySlug: ',normalizedCompanySlug)\r\n+    console.log(normalizedSlug == normalizedCompanySlug)\r\n+    return normalizedSlug == normalizedCompanySlug\r\n+  })\r\n+\r\n+  return (\r\n+    <div>\r\n+      \r\n+      {/* {technoDetails.map(techno => {\r\n+        techno.name\r\n+      })} */}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708783407280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,16 +1,16 @@\n import { useParams } from 'react-router-dom';\r\n \r\n function TechnologyPage(props) {\r\n-  //console.log(props)\r\n+  console.log(props)\r\n   const { slug } = useParams();\r\n  //console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.table('normalizedSlug: ',normalizedSlug)\r\n-    console.table('normalizedCompanySlug: ',normalizedCompanySlug)\r\n-    console.log(normalizedSlug == normalizedCompanySlug)\r\n+    // console.table('normalizedSlug: ',normalizedSlug)\r\n+    // console.table('normalizedCompanySlug: ',normalizedCompanySlug)\r\n+    // console.log(normalizedSlug == normalizedCompanySlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n@@ -23,30 +23,4 @@\n   );\r\n }\r\n \r\n export default TechnologyPage;\r\n-import { useParams } from 'react-router-dom';\r\n-\r\n-function TechnologyPage(props) {\r\n-  //console.log(props)\r\n-  const { slug } = useParams();\r\n-  console.log(slug)\r\n-  const technoDetails = props.technologiesToDisplay.find(element => {\r\n-    const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    console.table('normalizedSlug: ',normalizedSlug)\r\n-    console.table('normalizedCompanySlug: ',normalizedSlug)\r\n-    console.log(normalizedSlug == normalizedCompanySlug)\r\n-    return normalizedSlug == normalizedCompanySlug\r\n-  })\r\n-\r\n-  return (\r\n-    <div>\r\n-      \r\n-      {/* {technoDetails.map(techno => {\r\n-        techno.name\r\n-      })} */}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708783866540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n   })\r\n \r\n   return (\r\n     <div>\r\n-      \r\n+      <h1>Techno page</h1>\r\n       {/* {technoDetails.map(techno => {\r\n         techno.name\r\n       })} */}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708783885251,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n function TechnologyPage(props) {\r\n   console.log(props)\r\n   const { slug } = useParams();\r\n- //console.log(slug)\r\n+ console.log(slug)\r\n   const technoDetails = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n     // console.table('normalizedSlug: ',normalizedSlug)\r\n"
+                },
+                {
+                    "date": 1708784159196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import { useParams } from 'react-router-dom';\r\n+\r\n+function TechnologyPage(props) {\r\n+  console.log(props)\r\n+  const { slug } = useParams();\r\n+ console.log(slug)\r\n+  const technology = props.technologiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n+    // console.table('normalizedSlug: ',normalizedSlug)\r\n+    // console.table('normalizedCompanySlug: ',normalizedCompanySlug)\r\n+    // console.log(normalizedSlug == normalizedCompanySlug)\r\n+    return normalizedSlug == normalizedCompanySlug\r\n+  })\r\n+\r\n+  return (\r\n+    <div>\r\n+      <h1>Techno page</h1>\r\n+      {/* {technoDetails.map(techno => {\r\n+        techno.name\r\n+      })} */}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708784172671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,38 +15,10 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Techno page</h1>\r\n-      {/* {technoDetails.map(techno => {\r\n-        techno.name\r\n-      })} */}\r\n+      \r\n     </div>\r\n   );\r\n }\r\n \r\n export default TechnologyPage;\r\n-import { useParams } from 'react-router-dom';\r\n-\r\n-function TechnologyPage(props) {\r\n-  console.log(props)\r\n-  const { slug } = useParams();\r\n- console.log(slug)\r\n-  const technoDetails = props.technologiesToDisplay.find(element => {\r\n-    const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    // console.table('normalizedSlug: ',normalizedSlug)\r\n-    // console.table('normalizedCompanySlug: ',normalizedCompanySlug)\r\n-    // console.log(normalizedSlug == normalizedCompanySlug)\r\n-    return normalizedSlug == normalizedCompanySlug\r\n-  })\r\n-\r\n-  return (\r\n-    <div>\r\n-      <h1>Techno page</h1>\r\n-      {/* {technoDetails.map(techno => {\r\n-        techno.name\r\n-      })} */}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708784179163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Techno page</h1>\r\n-      \r\n+      {technology &&}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708784197008,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,11 @@\n \r\n   return (\r\n     <div>\r\n       <h1>Techno page</h1>\r\n-      {technology &&}\r\n+      {technology && (\r\n+        <div><\r\n+      )}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708784205689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,11 @@\n   return (\r\n     <div>\r\n       <h1>Techno page</h1>\r\n       {technology && (\r\n-        <div><\r\n+        <div>\r\n+          \r\n+        </div>\r\n       )}\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708784213305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     <div>\r\n       <h1>Techno page</h1>\r\n       {technology && (\r\n         <div>\r\n-          \r\n+          <h3>{</h3>\r\n         </div>\r\n       )}\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708784219237,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     <div>\r\n       <h1>Techno page</h1>\r\n       {technology && (\r\n         <div>\r\n-          <h3>{</h3>\r\n+          <h3>{technology.name}</h3>\r\n         </div>\r\n       )}\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708784853117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,11 +6,8 @@\n  console.log(slug)\r\n   const technology = props.technologiesToDisplay.find(element => {\r\n     const normalizedSlug = element.slug.trim().toLowerCase();\r\n     const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    // console.table('normalizedSlug: ',normalizedSlug)\r\n-    // console.table('normalizedCompanySlug: ',normalizedCompanySlug)\r\n-    // console.log(normalizedSlug == normalizedCompanySlug)\r\n     return normalizedSlug == normalizedCompanySlug\r\n   })\r\n \r\n   return (\r\n"
+                },
+                {
+                    "date": 1708784932878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n   return (\r\n     <div>\r\n       <h1>Techno page</h1>\r\n       {technology && (\r\n+        \r\n         <div>\r\n           <h3>{technology.name}</h3>\r\n         </div>\r\n       )}\r\n"
+                },
+                {
+                    "date": 1708784938984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,15 @@\n   return (\r\n     <div>\r\n       <h1>Techno page</h1>\r\n       {technology && (\r\n-        \r\n+        <\r\n+        <div className='logo-company'>\r\n+        <div className='logo-around'>\r\n+          <img src={companyDetails.logo} />\r\n+        </div>\r\n+\r\n+      </div>\r\n         <div>\r\n           <h3>{technology.name}</h3>\r\n         </div>\r\n       )}\r\n"
+                },
+                {
+                    "date": 1708784947548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import { useParams } from 'react-router-dom';\r\n+\r\n+function TechnologyPage(props) {\r\n+  console.log(props)\r\n+  const { slug } = useParams();\r\n+ console.log(slug)\r\n+  const technology = props.technologiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n+    return normalizedSlug == normalizedCompanySlug\r\n+  })\r\n+\r\n+  return (\r\n+    <div>\r\n+      <h1>Techno page</h1>\r\n+      {technology && (\r\n+        <>\r\n+        <div className='logo-company'>\r\n+        <div className='logo-around'>\r\n+          <img src={companyDetails.logo} />\r\n+        </div>\r\n+\r\n+      </div>\r\n+        <div>\r\n+          <h3>{technology.name}</h3>\r\n+        </div>\r\n+        </>\r\n+      )}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708784984306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import { useParams } from 'react-router-dom';\r\n+\r\n+function TechnologyPage(props) {\r\n+  console.log(props)\r\n+  const { slug } = useParams();\r\n+ console.log(slug)\r\n+  const technology = props.technologiesToDisplay.find(element => {\r\n+    const normalizedSlug = element.slug.trim().toLowerCase();\r\n+    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n+    return normalizedSlug == normalizedCompanySlug\r\n+  })\r\n+\r\n+  return (\r\n+    <div>\r\n+      <h1>Techno page</h1>\r\n+      {technology && (\r\n+        <>\r\n+        <div className='logo-company'>\r\n+        <div className='logo-around'>\r\n+          <img src={technology.logo} />\r\n+        </div>\r\n+\r\n+      </div>\r\n+        <div>\r\n+          <h3>{technology.name}</h3>\r\n+        </div>\r\n+        </>\r\n+      )}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default TechnologyPage;\r\n"
+                },
+                {
+                    "date": 1708785017631,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       {technology && (\r\n         <>\r\n         <div className='logo-company'>\r\n         <div className='logo-around'>\r\n-          <img src={technology.logo} />\r\n+          <img src={technology.image} />\r\n         </div>\r\n \r\n       </div>\r\n         <div>\r\n@@ -30,69 +30,4 @@\n   );\r\n }\r\n \r\n export default TechnologyPage;\r\n-import { useParams } from 'react-router-dom';\r\n-\r\n-function TechnologyPage(props) {\r\n-  console.log(props)\r\n-  const { slug } = useParams();\r\n- console.log(slug)\r\n-  const technology = props.technologiesToDisplay.find(element => {\r\n-    const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    return normalizedSlug == normalizedCompanySlug\r\n-  })\r\n-\r\n-  return (\r\n-    <div>\r\n-      <h1>Techno page</h1>\r\n-      {technology && (\r\n-        <>\r\n-        <div className='logo-company'>\r\n-        <div className='logo-around'>\r\n-          <img src={companyDetails.logo} />\r\n-        </div>\r\n-\r\n-      </div>\r\n-        <div>\r\n-          <h3>{technology.name}</h3>\r\n-        </div>\r\n-        </>\r\n-      )}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default TechnologyPage;\r\n-import { useParams } from 'react-router-dom';\r\n-\r\n-function TechnologyPage(props) {\r\n-  console.log(props)\r\n-  const { slug } = useParams();\r\n- console.log(slug)\r\n-  const technology = props.technologiesToDisplay.find(element => {\r\n-    const normalizedSlug = element.slug.trim().toLowerCase();\r\n-    const normalizedCompanySlug = slug.trim().toLowerCase();\r\n-    return normalizedSlug == normalizedCompanySlug\r\n-  })\r\n-\r\n-  return (\r\n-    <div>\r\n-      <h1>Techno page</h1>\r\n-      {technology && (\r\n-        <\r\n-        <div className='logo-company'>\r\n-        <div className='logo-around'>\r\n-          <img src={companyDetails.logo} />\r\n-        </div>\r\n-\r\n-      </div>\r\n-        <div>\r\n-          <h3>{technology.name}</h3>\r\n-        </div>\r\n-      )}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default TechnologyPage;\r\n"
+                }
+            ],
+            "date": 1708714685453,
+            "name": "Commit-0",
+            "content": "function TechnologyPage() {\r\n  return (\r\n    <div>\r\n      <h1>Technology Details</h1>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default TechnologyPage;\r\n"
+        }
+    ]
+}

@@ -1,0 +1,486 @@
+{
+    "sourceFile": "src/pages/HomePage.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 117,
+            "patches": [
+                {
+                    "date": 1708714639743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708716612678,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n function HomePage() {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      \r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708716619665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,11 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n function HomePage() {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      \r\n+      <Link\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708716742574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n function HomePage() {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      <Link\r\n+      <Link  />\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708716752990,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n function HomePage() {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      <Link  />\r\n+      <Link to=\"\">\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708717316211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n function HomePage() {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      <Link to=\"\">\r\n+      <<Link to=\"\"></Link>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708717322312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n import { Link } from \"react-router-dom\";\r\n+import CompanyPage from \"./CompanyPage\";\r\n \r\n function HomePage() {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      <<Link to=\"\"></Link>\r\n+      <CompanyPage<Link to=\"\"></Link>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708717330222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n function HomePage() {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      <CompanyPage<Link to=\"\"></Link>\r\n+      <CompanyPage></CompanyPage>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708718078747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import { Link } from \"react-router-dom\";\r\n import CompanyPage from \"./CompanyPage\";\r\n \r\n-function HomePage() {\r\n+function HomePage(pro) {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      <CompanyPage></CompanyPage>\r\n+      <CompanyPage><Link to=\"\"></Link></CompanyPage>\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719181322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n import { Link } from \"react-router-dom\";\r\n import CompanyPage from \"./CompanyPage\";\r\n \r\n-function HomePage(pro) {\r\n+function HomePage(props) {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      <CompanyPage><Link to=\"\"></Link></CompanyPage>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719200614,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719206433,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,14 @@\n+import { Link } from \"react-router-dom\";\r\n+import CompanyPage from \"./CompanyPage\";\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708719226056,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,24 +5,10 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.}\r\n+      {props.companiesToDisplay}\r\n     </div>\r\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-import CompanyPage from \"./CompanyPage\";\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708719235355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay}\r\n+      {props.companiesToDisplay.}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719244890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.}\r\n+      {props.companiesToDisplay.map()}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719254249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map()}\r\n+      {props.companiesToDisplay.map(company)}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719267691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(company)}\r\n+      {props.companiesToDisplay.map(companyDetails =)}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719278223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,11 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =)}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        retur\r\n+      })}\r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708719290449,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,11 @@\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n-        retur\r\n+        return(\r\n+          <\r\n+        )\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n"
+                },
+                {
+                    "date": 1708719295490,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n-          <\r\n+          <div></\r\n         )\r\n       })}\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708719304850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,11 @@\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n-          <div></\r\n+          <div>\r\n+            \r\n+          </div>\r\n         )\r\n       })}\r\n     </div>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708719323497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n-          <div>\r\n-            \r\n+          <div key>\r\n+\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708719350003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n-          <div key>\r\n+          <div key={}>\r\n \r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708719403975,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,10 @@\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n-          <div key={}>\r\n-\r\n+          <div key={companyDetails.id}>\r\n+            \r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708719414048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+import { Link } from \"react-router-dom\";\r\n+import CompanyPage from \"./CompanyPage\";\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            {companyDetails.id}\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708719424533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,33 +8,13 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            {companyDetails.id}\r\n+            Id{companyDetails.id}\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-import CompanyPage from \"./CompanyPage\";\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            \r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708719436881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            Id{companyDetails.id}\r\n+            Id: {companyDetails}\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708719454774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            Id: {companyDetails}\r\n+            Id: {companyDetails.id}\r\n+            Id: {companyDetails.id}\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708719462145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n             Id: {companyDetails.id}\r\n-            Id: {companyDetails.id}\r\n+            Slug: {companyDetails.id}\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708719480235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            Id: {companyDetails.id}\r\n-            Slug: {companyDetails.id}\r\n+            Id: {companyDetails.id} - \r\n+            Slug: {companyDetails.slug}\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708720916666,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            Id: {companyDetails.id} - \r\n+            <Link to=\"\"></Link>Id: {companyDetails.id} - \r\n             Slug: {companyDetails.slug}\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708720924140,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+import CompanyPage from \"./CompanyPage\";\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to=\"\">Id: {companyDetails.id}</Link> \r\n+            Slug: {companyDetails.slug}\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708720934473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+import CompanyPage from \"./CompanyPage\";\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to=\"\">Id: {companyDetails.id}</Link> \r\n+            <Link to=\"\"></Link>Slug: {companyDetails.slug}\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708721015461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,56 +8,14 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to=\"\">Id: {companyDetails.id}</Link> \r\n-            <Link to=\"\"></Link>Slug: {companyDetails.slug}\r\n+            <Link to=\"\">Id: {technologiesToDisplay.id}</Link> \r\n+            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-import CompanyPage from \"./CompanyPage\";\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to=\"\">Id: {companyDetails.id}</Link> \r\n-            Slug: {companyDetails.slug}\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-import CompanyPage from \"./CompanyPage\";\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to=\"\"></Link>Id: {companyDetails.id} - \r\n-            Slug: {companyDetails.slug}\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708721059794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to=\"\">Id: {technologiesToDisplay.id}</Link> \r\n+            <Link to=\"\">Id: {technologiesToDisplay.name}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708721065590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to=\"\">Id: {technologiesToDisplay.name}</Link> \r\n+            <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708721073874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n-            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n+            <Link to=\"\">Slug: {technologiesToDisplay.name}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721080290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+import CompanyPage from \"./CompanyPage\";\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n+            <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708721113367,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n+      {props.technologiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n             <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n@@ -18,25 +18,4 @@\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-import CompanyPage from \"./CompanyPage\";\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n-            <Link to=\"\">Slug: {technologiesToDisplay.name}</Link>\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708721125987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.technologiesToDisplay.map(companyDetails =>{\r\n+      {props.technologiesToDisplay.map(Details =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n             <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n"
+                },
+                {
+                    "date": 1708721135523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,11 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.technologiesToDisplay.map(Details =>{\r\n+      {props.technologiesToDisplay.map(technoDetails =>{\r\n         return(\r\n-          <div key={companyDetails.id}>\r\n+          <div key={technoDetails.id}>\r\n             <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n             <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n           </div>\r\n         )\r\n"
+                },
+                {
+                    "date": 1708721181799,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.technologiesToDisplay.map(technoDetails =>{\r\n         return(\r\n           <div key={technoDetails.id}>\r\n-            <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n+            <Link to=\"\">Name {technoDetails.name}</Link> \r\n             <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708721192030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.technologiesToDisplay.map(technoDetails =>{\r\n         return(\r\n           <div key={technoDetails.id}>\r\n-            <Link to=\"\">Name {technoDetails.name}</Link> \r\n-            <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n+            <Link to=\"\">Name {technoDetails.name} </Link> \r\n+            <Link to=\"\">Logo: {technoDetails.logo}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721197967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.technologiesToDisplay.map(technoDetails =>{\r\n         return(\r\n           <div key={technoDetails.id}>\r\n-            <Link to=\"\">Name {technoDetails.name} </Link> \r\n+            <Link to=\"\">Name {technoDetails.name} ; </Link> \r\n             <Link to=\"\">Logo: {technoDetails.logo}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708721308901,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       {props.technologiesToDisplay.map(technoDetails =>{\r\n         return(\r\n           <div key={technoDetails.id}>\r\n             <Link to=\"\">Name {technoDetails.name} ; </Link> \r\n-            <Link to=\"\">Logo: {technoDetails.logo}</Link>\r\n+            <Link to={technoDetails.logo}>Logo: {technoDetails.logo}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721363913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         return(\r\n           <div key={technoDetails.id}>\r\n             <Link to=\"\">Name {technoDetails.name} ; </Link> \r\n             <Link to={technoDetails.logo}>Logo: {technoDetails.logo}</Link>\r\n+            <Link to={`/movies/${movieDetails.id}`}>More Details</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721393390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={technoDetails.id}>\r\n             <Link to=\"\">Name {technoDetails.name} ; </Link> \r\n             <Link to={technoDetails.logo}>Logo: {technoDetails.logo}</Link>\r\n-            <Link to={`/movies/${movieDetails.id}`}>More Details</Link>\r\n+            <Link to={`/companies/${movieDetails.id}`}>More Details</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721420906,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={technoDetails.id}>\r\n             <Link to=\"\">Name {technoDetails.name} ; </Link> \r\n             <Link to={technoDetails.logo}>Logo: {technoDetails.logo}</Link>\r\n-            <Link to={`/companies/${movieDetails.id}`}>More Details</Link>\r\n+            <Link to={`/companies/${technoDetails.id}`}>More Details</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721867850,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={technoDetails.id}>\r\n             <Link to=\"\">Name {technoDetails.name} ; </Link> \r\n             <Link to={technoDetails.logo}>Logo: {technoDetails.logo}</Link>\r\n-            <Link to={`/companies/${technoDetails.id}`}>More Details</Link>\r\n+            \r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721877656,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,14 +5,13 @@\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.technologiesToDisplay.map(technoDetails =>{\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n-          <div key={technoDetails.id}>\r\n-            <Link to=\"\">Name {technoDetails.name} ; </Link> \r\n-            <Link to={technoDetails.logo}>Logo: {technoDetails.logo}</Link>\r\n-            \r\n+          <div key={companyDetails.id}>\r\n+            <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n+            <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721888826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to=\"\">Name {technologiesToDisplay.name}</Link> \r\n-            <Link to=\"\">Logo: {technologiesToDisplay.logo}</Link>\r\n+            <Link to=\"\">Id: {technologiesToDisplay.name}</Link> \r\n+            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708721894415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to=\"\">Id: {technologiesToDisplay.name}</Link> \r\n-            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n+            <Link to=\"\">Id: {companyDetails.id}</Link> \r\n+            <Link to=\"\"></Link>Slug: {companyDetails.slug}\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708722005620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { Link } from \"react-router-dom\";\r\n-import CompanyPage from \"./CompanyPage\";\r\n \r\n+\r\n function HomePage(props) {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n@@ -9,9 +9,9 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to=\"\">Id: {companyDetails.id}</Link> \r\n-            <Link to=\"\"></Link>Slug: {companyDetails.slug}\r\n+            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708722332587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to=\"\">Id: {companyDetails.id}</Link> \r\n+            <Link to=>Id: {companyDetails.id}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722343066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to={``}>Id: {companyDetails.id}</Link> \r\n+            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722364755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={``}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`company`}>Id: {companyDetails.id}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n@@ -18,25 +18,4 @@\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to=>Id: {companyDetails.id}</Link> \r\n-            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722377937,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={`company`}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`/company`}>Id: {companyDetails.id}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722387787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={`/company`}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`/company/`}>Id: {companyDetails.id}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722392928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={`/company/`}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`/company/$`}>Id: {companyDetails.id}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722436647,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={`/company/$`}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`/company/${}`}>Id: {companyDetails.id}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722442732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={`/company/${}`}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> \r\n             <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722597629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> \r\n-            <Link to=\"\">Slug: {companyDetails.slug}</Link>\r\n+            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708722606017,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`/company/${companyDetails.slug}`}>Id: {companyDetails.id}</Link>\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722617347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,34 +9,13 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> \r\n-            <Link to={`/company/${companyDetails.slug}`}>Id: {companyDetails.id}</Link>\r\n+            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> \r\n-            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link>\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722625954,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> \r\n+            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br></br>\r\n             <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link>\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722639540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n+            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722647393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,33 +10,13 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n             <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n+            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br></br>\r\n-            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link>\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722658885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n+            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}>Slug: {companyDetails.slug}</Link><br />\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722670829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,22 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n+            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722745141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,57 +10,13 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n             <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n-            <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.web}`}>Name: {companyDetails.name}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n-            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n-            <Link to={`/company/${companyDetails.name}`}>Slug: {companyDetails.slug}</Link><br />\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n-            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n-            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708722752838,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n             <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n             <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n-            <Link to={`/company/${companyDetails.web}`}>Name: {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708722777658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,9 @@\n           <div key={companyDetails.id}>\r\n             <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n             <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n             <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n+            <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708722782948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n           <div key={companyDetails.id}>\r\n             <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n             <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n             <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n-            <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n+            <Link to={`/company/${companyDetails.description}`}>Name: {companyDetails.website}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708722842125,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,12 +8,12 @@\n       {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n-            <Link to={`/company/${companyDetails.id}`}>Id: {companyDetails.id}</Link> <br />\r\n+        \r\n             <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n             <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n-            <Link to={`/company/${companyDetails.description}`}>Name: {companyDetails.website}</Link><br />\r\n+            <Link to={`/company/${companyDetails.description}`}>Name: {companyDetails.description}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708722861164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n-            <Link to={`/company/${companyDetails.slug}`}>Slug: {companyDetails.slug}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}>Slug: {companyDetails.slug}</Link><br />\r\n             <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n             <Link to={`/company/${companyDetails.description}`}>Name: {companyDetails.description}</Link><br />\r\n           </div>\r\n         )\r\n"
+                },
+                {
+                    "date": 1708722875427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n-            <Link to={`/company/${companyDetails.name}`}>Slug: {companyDetails.slug}</Link><br />\r\n-            <Link to={`/company/${companyDetails.website}`}>Name: {companyDetails.website}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}>Slug: {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.lo}`}>Name: {companyDetails.website}</Link><br />\r\n             <Link to={`/company/${companyDetails.description}`}>Name: {companyDetails.description}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708722887637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Slug: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.lo}`}>Name: {companyDetails.website}</Link><br />\r\n-            <Link to={`/company/${companyDetails.description}`}>Name: {companyDetails.description}</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}>Name: {companyDetails.logo}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723178544,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n-            <Link to={`/company/${companyDetails.name}`}>Slug: {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}>Name {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}>Name: {companyDetails.logo}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708723184873,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,10 @@\n       {props.companiesToDisplay.map(companyDetails =>{\r\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n-            <Link to={`/company/${companyDetails.name}`}>Name {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}>Name: {companyDetails.logo}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><Name:> {companyDetails.logo}</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723192410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><Name:> {companyDetails.logo}</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><a> {companyDetails.logo}</</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723199864,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><a> {companyDetails.logo}</</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><a > {companyDetails.logo}</a>s</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723205304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><a > {companyDetails.logo}</a>s</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><a href=\"\"> {companyDetails.logo}</a>s</Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723220020,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><a href=\"\"> {companyDetails.logo}</a>s</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><a href=\"\"> {companyDetails.logo}</a></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723235434,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><a href=\"\"> {companyDetails.logo}</a></Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><a href={companyDetails.logo}> {companyDetails.logo}</a></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723261253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><a href={companyDetails.logo}> {companyDetails.logo}</a></Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img href={companyDetails.logo}> {companyDetails.logo}</a></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723279319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img href={companyDetails.logo}> {companyDetails.logo}</a></Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo}> </a></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723291826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo}> </a></Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo}> </img></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723346879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo}> </img></Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo}>gfgf </img></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723367257,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n         return(\r\n           <div key={companyDetails.id}>\r\n         \r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo}>gfgf </img></Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} ></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708723417995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {props.companiesToDisplay.map(companyDetails =>{\r\n+        return(\r\n+          <div key={companyDetails.id}>\r\n+        \r\n+            <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708723428797,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,12 +4,12 @@\n function HomePage(props) {\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n+      {props.companiesToDisplay.map(companyDetails => {\r\n+        return (\r\n           <div key={companyDetails.id}>\r\n-        \r\n+\r\n             <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n@@ -18,26 +18,4 @@\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {/* <CompanyPage><Link to=\"\"></Link></CompanyPage> */}\r\n-      {props.companiesToDisplay.map(companyDetails =>{\r\n-        return(\r\n-          <div key={companyDetails.id}>\r\n-        \r\n-            <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} ></Link><br />\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708723653143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}`}>Name: {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708723947254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}`}> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}` }> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708723987000,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}` }> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}` style={{ color: 'red' }} }> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708724018214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}` style={{ color: 'red' }} }> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`  }> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708724025826,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,21 @@\n+import { Link } from \"react-router-dom\";\r\n+\r\n+\r\n+function HomePage(props) {\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {props.companiesToDisplay.map(companyDetails => {\r\n+        return (\r\n+          <div key={companyDetails.id}>\r\n+\r\n+            <Link to={`/company/${companyDetails.name}`} style={{ color: 'red' }}> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708724058295,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}`} style={{ color: 'red' }}> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`} style={{ color: 'black' }}> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n@@ -18,25 +18,4 @@\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {props.companiesToDisplay.map(companyDetails => {\r\n-        return (\r\n-          <div key={companyDetails.id}>\r\n-\r\n-            <Link to={`/company/${companyDetails.name}`  }> {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708724225499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}`} style={{ color: 'black' }}> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`} className={{ color: 'black' }}> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708724230999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}`} className={{ color: 'black' }}> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`} className=> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708724237161,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id}>\r\n \r\n-            <Link to={`/company/${companyDetails.name}`} className=> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708724343356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n           <div key={companyDetails.id}>\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n+            \r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708724349061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n           <div key={companyDetails.id}>\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n-            \r\n+            <hr>\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708724784995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,13 +6,13 @@\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n-          <div key={companyDetails.id}>\r\n+          <div key={companyDetails.id} >\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n-            <hr>\r\n+            <hr />\r\n           </div>\r\n         )\r\n       })}\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708724793725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n-          <div key={companyDetails.id} >\r\n+          <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n             <hr />\r\n"
+                },
+                {
+                    "date": 1708729775386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         return (\r\n           <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n+            <img src={companyDetails.logo} /></Link><br />\r\n             <hr />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708729783340,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         return (\r\n           <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n-            <img src={companyDetails.logo} /></Link><br />\r\n+            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n             <hr />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708729792732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n         return (\r\n           <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n-            <Link to={`/company/${companyDetails.logo}`}><img src={companyDetails.logo} /></Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link><br />\r\n             <hr />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708760000116,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n-            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n             <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link><br />\r\n             <hr />\r\n           </div>\r\n         )\r\n"
+                },
+                {
+                    "date": 1708760028547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n-            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n+            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n             <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link><br />\r\n             <hr />\r\n           </div>\r\n         )\r\n"
+                },
+                {
+                    "date": 1708760035066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n-            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n             <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link><br />\r\n             <hr />\r\n           </div>\r\n         )\r\n"
+                },
+                {
+                    "date": 1708761917524,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,19 @@\n import { Link } from \"react-router-dom\";\r\n \r\n \r\n function HomePage(props) {\r\n+\r\n+  \r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {props.companiesToDisplay.map(companyDetails => {\r\n         return (\r\n           <div key={companyDetails.id} className=\"companyDetails\">\r\n \r\n             <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n-            <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link><br />\r\n+            <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link>\r\n             <hr />\r\n           </div>\r\n         )\r\n       })}\r\n"
+                },
+                {
+                    "date": 1708761930820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n \r\n function HomePage(props) {\r\n \r\n-  \r\n+  const {:companySlug} = useParams();\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {props.companiesToDisplay.map(companyDetails => {\r\n"
+                },
+                {
+                    "date": 1708761941396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n \r\n \r\n function HomePage(props) {\r\n \r\n-  const {:companySlug} = useParams();\r\n+  const {companySlug} = useParams();\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {props.companiesToDisplay.map(companyDetails => {\r\n"
+                },
+                {
+                    "date": 1708762029636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import { Link } from \"react-router-dom\";\r\n+import { Routes, Route, useParams } from 'react-router-dom';\r\n+\r\n+function HomePage(props) {\r\n+\r\n+  const {companySlug} = useParams();\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {props.companiesToDisplay.map(companyDetails => {\r\n+        return (\r\n+          <div key={companyDetails.id} className=\"companyDetails\">\r\n+\r\n+            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n+            <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link>\r\n+            <hr />\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708762038027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import { Link } from \"react-router-dom\";\r\n-import { Routes, Route, useParams } from 'react-router-dom';\r\n+import { useParams } from 'react-router-dom';\r\n \r\n function HomePage(props) {\r\n \r\n   const {companySlug} = useParams();\r\n@@ -21,28 +21,4 @@\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-\r\n-\r\n-function HomePage(props) {\r\n-\r\n-  const {companySlug} = useParams();\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {props.companiesToDisplay.map(companyDetails => {\r\n-        return (\r\n-          <div key={companyDetails.id} className=\"companyDetails\">\r\n-\r\n-            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n-            <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link>\r\n-            <hr />\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708766217553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,24 @@\n+import { Link } from \"react-router-dom\";\r\n+import { useParams } from 'react-router-dom';\r\n+\r\n+function HomePage(props) {\r\n+\r\n+  //const {companySlug} = useParams();\r\n+  return (\r\n+    <div>\r\n+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n+      {props.companiesToDisplay.map(companyDetails => {\r\n+        return (\r\n+          <div key={companyDetails.id} className=\"companyDetails\">\r\n+\r\n+            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n+            <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link>\r\n+            <hr />\r\n+          </div>\r\n+        )\r\n+      })}\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708772677992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,5 @@\n import { Link } from \"react-router-dom\";\r\n-import { useParams } from 'react-router-dom';\r\n \r\n function HomePage(props) {\r\n \r\n   //const {companySlug} = useParams();\r\n@@ -21,28 +20,4 @@\n   );\r\n }\r\n \r\n export default HomePage;\r\n-import { Link } from \"react-router-dom\";\r\n-import { useParams } from 'react-router-dom';\r\n-\r\n-function HomePage(props) {\r\n-\r\n-  const {companySlug} = useParams();\r\n-  return (\r\n-    <div>\r\n-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n-      {props.companiesToDisplay.map(companyDetails => {\r\n-        return (\r\n-          <div key={companyDetails.id} className=\"companyDetails\">\r\n-\r\n-            <Link to={`/company/${companyDetails.name}`} className=\"name-link\"> {companyDetails.name}</Link>\r\n-            <Link to={`/company/${companyDetails.name}`}><img src={companyDetails.logo} /></Link>\r\n-            <hr />\r\n-          </div>\r\n-        )\r\n-      })}\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default HomePage;\r\n"
+                },
+                {
+                    "date": 1708772684887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,8 @@\n import { Link } from \"react-router-dom\";\r\n \r\n function HomePage(props) {\r\n \r\n-  //const {companySlug} = useParams();\r\n   return (\r\n     <div>\r\n       <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n       {props.companiesToDisplay.map(companyDetails => {\r\n"
+                }
+            ],
+            "date": 1708714639743,
+            "name": "Commit-0",
+            "content": "function HomePage() {\r\n  return (\r\n    <div>\r\n      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default HomePage;\r\n"
+        }
+    ]
+}

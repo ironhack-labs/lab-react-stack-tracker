@@ -1,0 +1,242 @@
+{
+    "sourceFile": "src/App.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 56,
+            "patches": [
+                {
+                    "date": 1708713982239,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708713988211,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import \"./App.css\";\r\n-import \r\n+import ''\r\n \r\n function App() {\r\n   return (\r\n     <div className=\"App\">\r\n"
+                },
+                {
+                    "date": 1708713993912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import \"./App.css\";\r\n-import ''\r\n+import './companies.json'\r\n \r\n function App() {\r\n   return (\r\n     <div className=\"App\">\r\n"
+                },
+                {
+                    "date": 1708713999837,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import \"./App.css\";\r\n import './companies.json'\r\n+import \r\n \r\n function App() {\r\n   return (\r\n     <div className=\"App\">\r\n"
+                },
+                {
+                    "date": 1708714004909,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import \"./App.css\";\r\n import './companies.json'\r\n-import \r\n+import './technologies.json'\r\n \r\n function App() {\r\n   return (\r\n     <div className=\"App\">\r\n"
+                },
+                {
+                    "date": 1708714297688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n import \"./App.css\";\r\n-import './companies.json'\r\n+import companies from './companies.json'\r\n import './technologies.json'\r\n \r\n function App() {\r\n   return (\r\n"
+                },
+                {
+                    "date": 1708714304067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import \"./App.css\";\r\n import companies from './companies.json'\r\n-import './technologies.json'\r\n+import technologies from './technologies.json'\r\n \r\n function App() {\r\n   return (\r\n     <div className=\"App\">\r\n"
+                },
+                {
+                    "date": 1708714354454,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,11 @@\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n+\r\n+\r\n+  \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708714359658,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,10 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n+  const \r\n \r\n-  \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708714367668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const \r\n+  const [companies]\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714373945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companies]\r\n+  const [companies, set]\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714379734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companies, set]\r\n+  const [companies, setCompanies]\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714385312,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companies, setCompanies]\r\n+  const [companies, setCompanies] = useS\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714394984,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,12 @@\n+import { useState } from \"react\";\r\n import \"./App.css\";\r\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companies, setCompanies] = useS\r\n+  const [companies, setCompanies] = useState()\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714406822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companies, setCompanies] = useState()\r\n+  const [companies, setCompanies] = useState(companies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714434489,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companies, setCompanies] = useState(companies)\r\n+  const [companiesT, setCompanies] = useState(companies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714454831,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companiesT, setCompanies] = useState(companies)\r\n+  const [companiesToDisplay, setCompaniesTo] = useState(companies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714482308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n import technologies from './technologies.json'\r\n \r\n function App() {\r\n \r\n-  const [companiesToDisplay, setCompaniesTo] = useState(companies)\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714489450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n function App() {\r\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setCompaniesToDisplay] = useState(technologies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714497458,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n function App() {\r\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setCompaniesToDisplay] = useState(technologies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714861028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,19 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  \r\n+\r\n+  return (\r\n+    <div className=\"App\">\r\n+      <h1>LAB | React Stack Tracker</h1>\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708714866699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n function App() {\r\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  \r\n+  console.log(companies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n@@ -16,22 +16,4 @@\n   );\r\n }\r\n \r\n export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-\r\n-  return (\r\n-    <div className=\"App\">\r\n-      <h1>LAB | React Stack Tracker</h1>\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n"
+                },
+                {
+                    "date": 1708714872526,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n   console.log(companies)\r\n+  console.log(techn)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714926015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n function App() {\r\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log(companies)\r\n-  console.log(techn)\r\n+  console.log(''companies)\r\n+  console.log(technologies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708714932079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,20 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ',companies)\r\n+  console.log(technologies)\r\n+\r\n+  return (\r\n+    <div className=\"App\">\r\n+      <h1>LAB | React Stack Tracker</h1>\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708714937414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n   console.log('companies: ',companies)\r\n-  console.log(technologies)\r\n+  console.log('',technologies)\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n@@ -17,24 +17,4 @@\n   );\r\n }\r\n \r\n export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log(''companies)\r\n-  console.log(technologies)\r\n-\r\n-  return (\r\n-    <div className=\"App\">\r\n-      <h1>LAB | React Stack Tracker</h1>\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n"
+                },
+                {
+                    "date": 1708715143557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,10 +7,12 @@\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n   console.log('companies: ',companies)\r\n-  console.log('',technologies)\r\n+  console.log('technologies: ',technologies)\r\n \r\n+  import { BrowserRouter as Router } from \"react-router-dom\";\r\n+\r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1708715150273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,17 +1,18 @@\n import { useState } from \"react\";\r\n import \"./App.css\";\r\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n+import { BrowserRouter as Router } from \"react-router-dom\";\r\n \r\n function App() {\r\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n   console.log('companies: ',companies)\r\n   console.log('technologies: ',technologies)\r\n \r\n-  import { BrowserRouter as Router } from \"react-router-dom\";\r\n+ \r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708715165867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,15 @@\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n   console.log('companies: ',companies)\r\n   console.log('technologies: ',technologies)\r\n \r\n- \r\n+  ReactDOM.createRoot(document.getElementById(\"root\")).render(\r\n+    <React.StrictMode>\r\n+      <Router>\r\n+        <App />\r\n+      </Router>\r\n+    </React.StrictMode>\r\n+  );\r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708715216391,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n import { useState } from \"react\";\r\n import \"./App.css\";\r\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n-import { BrowserRouter as Router } from \"react-router-dom\";\r\n \r\n+\r\n function App() {\r\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n"
+                },
+                {
+                    "date": 1708715236048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,15 +10,9 @@\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n   console.log('companies: ',companies)\r\n   console.log('technologies: ',technologies)\r\n \r\n-  ReactDOM.createRoot(document.getElementById(\"root\")).render(\r\n-    <React.StrictMode>\r\n-      <Router>\r\n-        <App />\r\n-      </Router>\r\n-    </React.StrictMode>\r\n-  );\r\n+  \r\n \r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n"
+                },
+                {
+                    "date": 1708715339241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,13 +10,15 @@\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n   console.log('companies: ',companies)\r\n   console.log('technologies: ',technologies)\r\n \r\n-  \r\n-\r\n   return (\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n+\r\n+\r\n+\r\n+      \r\n     </div>\r\n   );\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1708715355967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ',companies)\r\n+  console.log('technologies: ',technologies)\r\n+\r\n+  return (\r\n+    <div className=\"App\">\r\n+      <h1>LAB | React Stack Tracker</h1>\r\n+\r\n+\r\n+    </div>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708715361543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,23 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ',companies)\r\n+  console.log('technologies: ',technologies)\r\n+\r\n+  return (\r\n+    <div className=\"App\">\r\n+      <h1>LAB | React Stack Tracker</h1>\r\n+\r\n+    </div>\r\n+    \r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708715368244,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,61 +11,19 @@\n   console.log('companies: ',companies)\r\n   console.log('technologies: ',technologies)\r\n \r\n   return (\r\n+    <></>\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n \r\n     </div>\r\n-    \r\n+    <Routes>\r\n+    <Route path=\"/\" element={<MovieList moviesToDisplay={moviesToDisplay} callbackToDelete={deleteMovie} />} />\r\n+    <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n+    <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n+    <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n+  </Routes>\r\n   );\r\n }\r\n \r\n export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log('companies: ',companies)\r\n-  console.log('technologies: ',technologies)\r\n-\r\n-  return (\r\n-    <div className=\"App\">\r\n-      <h1>LAB | React Stack Tracker</h1>\r\n-\r\n-\r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log('companies: ',companies)\r\n-  console.log('technologies: ',technologies)\r\n-\r\n-  return (\r\n-    <div className=\"App\">\r\n-      <h1>LAB | React Stack Tracker</h1>\r\n-\r\n-\r\n-\r\n-      \r\n-    </div>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n"
+                },
+                {
+                    "date": 1708715375016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n   console.log('companies: ',companies)\r\n   console.log('technologies: ',technologies)\r\n \r\n   return (\r\n-    <></>\r\n+    <>\r\n     <div className=\"App\">\r\n       <h1>LAB | React Stack Tracker</h1>\r\n \r\n     </div>\r\n@@ -22,8 +22,9 @@\n     <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n     <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n     <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n   </Routes>\r\n+  \r\n   );\r\n }\r\n \r\n export default App;\r\n"
+                },
+                {
+                    "date": 1708715380166,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,24 +7,24 @@\n function App() {\r\n \r\n   const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n   const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log('companies: ',companies)\r\n-  console.log('technologies: ',technologies)\r\n+  console.log('companies: ', companies)\r\n+  console.log('technologies: ', technologies)\r\n \r\n   return (\r\n     <>\r\n-    <div className=\"App\">\r\n-      <h1>LAB | React Stack Tracker</h1>\r\n+      <div className=\"App\">\r\n+        <h1>LAB | React Stack Tracker</h1>\r\n \r\n-    </div>\r\n-    <Routes>\r\n-    <Route path=\"/\" element={<MovieList moviesToDisplay={moviesToDisplay} callbackToDelete={deleteMovie} />} />\r\n-    <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n-    <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n-    <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n-  </Routes>\r\n-  \r\n+      </div>\r\n+      <Routes>\r\n+        <Route path=\"/\" element={<MovieList moviesToDisplay={moviesToDisplay} callbackToDelete={deleteMovie} />} />\r\n+        <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n+        <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n+        <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n+      </Routes>\r\n+    </>\r\n   );\r\n }\r\n \r\n export default App;\r\n"
+                },
+                {
+                    "date": 1708715631124,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n import { useState } from \"react\";\r\n import \"./App.css\";\r\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n+import { Route, Routes } from \"react-router-dom\";\r\n \r\n \r\n function App() {\r\n \r\n"
+                },
+                {
+                    "date": 1708715695985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+import { Route, Routes } from \"react-router-dom\";\r\n+\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ', companies)\r\n+  console.log('technologies: ', technologies)\r\n+\r\n+  return (\r\n+    <>\r\n+      <div className=\"App\">\r\n+        <h1>LAB | React Stack Tracker</h1>\r\n+\r\n+      </div>\r\n+      <Routes>\r\n+        <Route path=\"/\" element={<MovieList moviesToDisplay={moviesToDisplay} />} />\r\n+        <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n+        <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n+        <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n+      </Routes>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708715705383,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,9 +18,9 @@\n         <h1>LAB | React Stack Tracker</h1>\r\n \r\n       </div>\r\n       <Routes>\r\n-        <Route path=\"/\" element={<MovieList moviesToDisplay={moviesToDisplay} />} />\r\n+        <Route path=\"/\" element={<MovieList />} />\r\n         <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n         <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n         <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n       </Routes>\r\n@@ -28,35 +28,4 @@\n   );\r\n }\r\n \r\n export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-import { Route, Routes } from \"react-router-dom\";\r\n-\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log('companies: ', companies)\r\n-  console.log('technologies: ', technologies)\r\n-\r\n-  return (\r\n-    <>\r\n-      <div className=\"App\">\r\n-        <h1>LAB | React Stack Tracker</h1>\r\n-\r\n-      </div>\r\n-      <Routes>\r\n-        <Route path=\"/\" element={<MovieList moviesToDisplay={moviesToDisplay} callbackToDelete={deleteMovie} />} />\r\n-        <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n-        <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n-        <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n-      </Routes>\r\n-    </>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n"
+                },
+                {
+                    "date": 1708715711690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n import \"./App.css\";\r\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n import { Route, Routes } from \"react-router-dom\";\r\n+import HomePage from \"./pages/HomePage\";\r\n \r\n \r\n function App() {\r\n \r\n@@ -18,9 +19,9 @@\n         <h1>LAB | React Stack Tracker</h1>\r\n \r\n       </div>\r\n       <Routes>\r\n-        <Route path=\"/\" element={<MovieList />} />\r\n+        <Route path=\"/\" element={<HomePage />} />\r\n         <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n         <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n         <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n       </Routes>\r\n"
+                },
+                {
+                    "date": 1708715726762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+import { Route, Routes } from \"react-router-dom\";\r\n+import HomePage from \"./pages/HomePage\";\r\n+\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ', companies)\r\n+  console.log('technologies: ', technologies)\r\n+\r\n+  return (\r\n+    <>\r\n+      <div className=\"App\">\r\n+        <h1>LAB | React Stack Tracker</h1>\r\n+\r\n+      </div>\r\n+      <Routes>\r\n+        <Route path=\"/\" element={<HomePage />} />\r\n+        <Route path=\"/company/:companySlug\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n+        <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n+        <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n+      </Routes>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708715740853,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,45 +20,13 @@\n \r\n       </div>\r\n       <Routes>\r\n         <Route path=\"/\" element={<HomePage />} />\r\n-        <Route path=\"/company/:companySlug\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n+        <Route path=\"/company/:companySlug\" element={<CompanyPage  />} />\r\n         <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n         <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n       </Routes>\r\n     </>\r\n   );\r\n }\r\n \r\n export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-import { Route, Routes } from \"react-router-dom\";\r\n-import HomePage from \"./pages/HomePage\";\r\n-\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log('companies: ', companies)\r\n-  console.log('technologies: ', technologies)\r\n-\r\n-  return (\r\n-    <>\r\n-      <div className=\"App\">\r\n-        <h1>LAB | React Stack Tracker</h1>\r\n-\r\n-      </div>\r\n-      <Routes>\r\n-        <Route path=\"/\" element={<HomePage />} />\r\n-        <Route path=\"/movies/:movieId\" element={<MovieDetails moviesToDisplay={moviesToDisplay} />} />\r\n-        <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n-        <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n-      </Routes>\r\n-    </>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n"
+                },
+                {
+                    "date": 1708715746223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,9 @@\n \r\n       </div>\r\n       <Routes>\r\n         <Route path=\"/\" element={<HomePage />} />\r\n-        <Route path=\"/company/:companySlug\" element={<CompanyPage  />} />\r\n+        <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n         <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n         <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n       </Routes>\r\n     </>\r\n"
+                },
+                {
+                    "date": 1708715760605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       </div>\r\n       <Routes>\r\n         <Route path=\"/\" element={<HomePage />} />\r\n         <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n-        <Route path=\"/about\" element={<p>This is the About page</p>} />\r\n+        <Route path=\"/tech/:slug\" element={<p>This is the About page</p>} />\r\n         <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n       </Routes>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708715777074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       </div>\r\n       <Routes>\r\n         <Route path=\"/\" element={<HomePage />} />\r\n         <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n-        <Route path=\"/tech/:slug\" element={<p>This is the About page</p>} />\r\n+        <Route path=\"/tech/:slug\" element={} />\r\n         <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n       </Routes>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708715783593,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n       </div>\r\n       <Routes>\r\n         <Route path=\"/\" element={<HomePage />} />\r\n         <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n-        <Route path=\"/tech/:slug\" element={} />\r\n+        <Route path=\"/tech/:slug\" element={<TechnologyPage />} />\r\n         <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n       </Routes>\r\n     </>\r\n   );\r\n"
+                },
+                {
+                    "date": 1708715794207,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+import { Route, Routes } from \"react-router-dom\";\r\n+import HomePage from \"./pages/HomePage\";\r\n+\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ', companies)\r\n+  console.log('technologies: ', technologies)\r\n+\r\n+  return (\r\n+    <>\r\n+      <div className=\"App\">\r\n+        <h1>LAB | React Stack Tracker</h1>\r\n+\r\n+      </div>\r\n+      <Routes>\r\n+        <Route path=\"/\" element={<HomePage />} />\r\n+        <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n+        <Route path=\"/tech/:slug\" element={<TechnologyPage />} />\r\n+      </Routes>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708715838136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,32 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+import { Route, Routes } from \"react-router-dom\";\r\n+import HomePage from \"./pages/HomePage\";\r\n+imprt \r\n+\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ', companies)\r\n+  console.log('technologies: ', technologies)\r\n+\r\n+  return (\r\n+    <>\r\n+      <div className=\"App\">\r\n+        <h1>LAB | React Stack Tracker</h1>\r\n+\r\n+      </div>\r\n+      <Routes>\r\n+        <Route path=\"/\" element={<HomePage />} />\r\n+        <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n+        <Route path=\"/tech/:slug\" element={<TechnologyPage />} />\r\n+      </Routes>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                },
+                {
+                    "date": 1708715845887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n import { Route, Routes } from \"react-router-dom\";\r\n import HomePage from \"./pages/HomePage\";\r\n-imprt \r\n+import CompanyPage fr\r\n \r\n \r\n function App() {\r\n \r\n@@ -29,67 +29,4 @@\n   );\r\n }\r\n \r\n export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-import { Route, Routes } from \"react-router-dom\";\r\n-import HomePage from \"./pages/HomePage\";\r\n-\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log('companies: ', companies)\r\n-  console.log('technologies: ', technologies)\r\n-\r\n-  return (\r\n-    <>\r\n-      <div className=\"App\">\r\n-        <h1>LAB | React Stack Tracker</h1>\r\n-\r\n-      </div>\r\n-      <Routes>\r\n-        <Route path=\"/\" element={<HomePage />} />\r\n-        <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n-        <Route path=\"/tech/:slug\" element={<TechnologyPage />} />\r\n-      </Routes>\r\n-    </>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n-import { useState } from \"react\";\r\n-import \"./App.css\";\r\n-import companies from './companies.json'\r\n-import technologies from './technologies.json'\r\n-import { Route, Routes } from \"react-router-dom\";\r\n-import HomePage from \"./pages/HomePage\";\r\n-\r\n-\r\n-function App() {\r\n-\r\n-  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n-  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n-  console.log('companies: ', companies)\r\n-  console.log('technologies: ', technologies)\r\n-\r\n-  return (\r\n-    <>\r\n-      <div className=\"App\">\r\n-        <h1>LAB | React Stack Tracker</h1>\r\n-\r\n-      </div>\r\n-      <Routes>\r\n-        <Route path=\"/\" element={<HomePage />} />\r\n-        <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n-        <Route path=\"/tech/:slug\" element={<TechnologyPage />} />\r\n-        <Route path=\"*\" element={<p>404, this page doesnt exist...</p>} />\r\n-      </Routes>\r\n-    </>\r\n-  );\r\n-}\r\n-\r\n-export default App;\r\n"
+                },
+                {
+                    "date": 1708715866502,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n import { Route, Routes } from \"react-router-dom\";\r\n import HomePage from \"./pages/HomePage\";\r\n-import CompanyPage fr\r\n+import CompanyPage from \"./\"\r\n \r\n \r\n function App() {\r\n \r\n"
+                },
+                {
+                    "date": 1708715871688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import companies from './companies.json'\r\n import technologies from './technologies.json'\r\n import { Route, Routes } from \"react-router-dom\";\r\n import HomePage from \"./pages/HomePage\";\r\n-import CompanyPage from \"./\"\r\n+import CompanyPage from \"./pages/CompanyPage\"\r\n \r\n \r\n function App() {\r\n \r\n"
+                },
+                {
+                    "date": 1708715888645,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import technologies from './technologies.json'\r\n import { Route, Routes } from \"react-router-dom\";\r\n import HomePage from \"./pages/HomePage\";\r\n import CompanyPage from \"./pages/CompanyPage\"\r\n+import TechnologyPage \r\n \r\n \r\n function App() {\r\n \r\n"
+                },
+                {
+                    "date": 1708715894463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import technologies from './technologies.json'\r\n import { Route, Routes } from \"react-router-dom\";\r\n import HomePage from \"./pages/HomePage\";\r\n import CompanyPage from \"./pages/CompanyPage\"\r\n-import TechnologyPage \r\n+import TechnologyPage from \"./\"\r\n \r\n \r\n function App() {\r\n \r\n"
+                },
+                {
+                    "date": 1708716106660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import technologies from './technologies.json'\r\n import { Route, Routes } from \"react-router-dom\";\r\n import HomePage from \"./pages/HomePage\";\r\n import CompanyPage from \"./pages/CompanyPage\"\r\n-import TechnologyPage from \"./\"\r\n+import TechnologyPage from \"./pages/TechnologyPage\"\r\n \r\n \r\n function App() {\r\n \r\n@@ -17,9 +17,9 @@\n \r\n   return (\r\n     <>\r\n       <div className=\"App\">\r\n-        <h1>LAB | React Stack Tracker</h1>\r\n+        {/* <h1>LAB | React Stack Tracker</h1> */}\r\n \r\n       </div>\r\n       <Routes>\r\n         <Route path=\"/\" element={<HomePage />} />\r\n"
+                },
+                {
+                    "date": 1708718909574,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         {/* <h1>LAB | React Stack Tracker</h1> */}\r\n \r\n       </div>\r\n       <Routes>\r\n-        <Route path=\"/\" element={<HomePage  />} />\r\n+        <Route path=\"/\" element={<HomePage companiesToDisplay />} />\r\n         <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n         <Route path=\"/tech/:slug\" element={<TechnologyPage />} />\r\n       </Routes>\r\n     </>\r\n"
+                },
+                {
+                    "date": 1708718958601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,33 @@\n+import { useState } from \"react\";\r\n+import \"./App.css\";\r\n+import companies from './companies.json'\r\n+import technologies from './technologies.json'\r\n+import { Route, Routes } from \"react-router-dom\";\r\n+import HomePage from \"./pages/HomePage\";\r\n+import CompanyPage from \"./pages/CompanyPage\"\r\n+import TechnologyPage from \"./pages/TechnologyPage\"\r\n+\r\n+\r\n+function App() {\r\n+\r\n+  const [companiesToDisplay, setCompaniesToDisplay] = useState(companies)\r\n+  const [technologiesToDisplay, setTechnologiesToDisplay] = useState(technologies)\r\n+  console.log('companies: ', companies)\r\n+  console.log('technologies: ', technologies)\r\n+\r\n+  return (\r\n+    <>\r\n+      <div className=\"App\">\r\n+        {/* <h1>LAB | React Stack Tracker</h1> */}\r\n+\r\n+      </div>\r\n+      <Routes>\r\n+        <Route path=\"/\" element={<HomePage companiesToDisplay={} />} />\r\n+        <Route path=\"/company/:companySlug\" element={<CompanyPage />} />\r\n+        <Route path=\"/tech/:slug\" element={<TechnologyPage />} />\r\n+      </Routes>\r\n+    </>\r\n+  );\r\n+}\r\n+\r\n+export default App;\r\n"
+                }
+            ],
+            "date": 1708713982239,
+            "name": "Commit-0",
+            "content": "import \"./App.css\";\r\nimport \r\n\r\nfunction App() {\r\n  return (\r\n    <div className=\"App\">\r\n      <h1>LAB | React Stack Tracker</h1>\r\n    </div>\r\n  );\r\n}\r\n\r\nexport default App;\r\n"
+        }
+    ]
+}

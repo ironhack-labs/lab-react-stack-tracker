@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/main.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1708715222268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1708715249194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,13 @@\n import React from 'react'\r\n import ReactDOM from 'react-dom/client'\r\n import App from './App.jsx'\r\n import './index.css'\r\n+import { BrowserRouter as Router } from \"react-router-dom\";\r\n \r\n-\r\n-ReactDOM.createRoot(document.getElementById('root')).render(\r\n+ReactDOM.createRoot(document.getElementById(\"root\")).render(\r\n   <React.StrictMode>\r\n-    <App />\r\n-  </React.StrictMode>,\r\n-)\r\n+    <Router>\r\n+      <App />\r\n+    </Router>\r\n+  </React.StrictMode>\r\n+);\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1708715222268,
+            "name": "Commit-0",
+            "content": "import React from 'react'\r\nimport ReactDOM from 'react-dom/client'\r\nimport App from './App.jsx'\r\nimport './index.css'\r\n\r\n\r\nReactDOM.createRoot(document.getElementById('root')).render(\r\n  <React.StrictMode>\r\n    <App />\r\n  </React.StrictMode>,\r\n)\r\n"
+        }
+    ]
+}
