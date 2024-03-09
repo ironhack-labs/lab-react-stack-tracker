@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+.company-img{
+  width: 30px;
+  height: 30px;
+}
+
 .App {
   text-align: center;
 }
