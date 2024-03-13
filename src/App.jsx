@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 import "./App.css";
 import companiesJSON from './companies.json'
 import technologiesJSON from './technologies.json'
@@ -18,8 +19,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage companies={companies} />} />
-        <Route path="/company/:company.slug" element={<CompanyPage />} />
-        <Route path="/tech/:slug" element={<TechnologyPage />} />
+<Route path="/company/:companySlug" element={<CompanyPage companies={companies} />} />        <Route path="/tech/:slug" element={<TechnologyPage />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
