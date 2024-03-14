@@ -1,7 +1,9 @@
-import { NavLink } from "react-router-dom";
+//import { NavLink } from "react-router-dom";
 function Navbar() {
   return <nav style={{ backgroundColor: 'violet' }}>
-    <ul>
+    {
+      <h1 style={{ padding: "20px" }}>Stack Tracker</h1>
+      /* <ul>
 
       <NavLink to="/" className={({ isActive }) => isActive ? "selected" : ""}>
         Home
@@ -21,7 +23,8 @@ function Navbar() {
         technologies
       </NavLink>
 
-    </ul>  </nav>;
+    </ul>  */
+    } </nav>;
 }
 
 export default Navbar;

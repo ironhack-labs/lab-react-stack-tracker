@@ -30,3 +30,43 @@ box-shadow: -5px 1px 36px 0px rgba(128, 124, 124, 0.75);
   height: 200px;
   width: 200px;
 }
+.company-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 10%;
+}
+.company-info {
+  width: 50%;
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.tech-stack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+   
+}
+.techStack-img {
+  height: 40px;
+    width: 50px;
+}
+.techStack-img-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  text-align: center; 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: -5px 1px 36px 0px rgba(128, 124, 124, 0.75);
+  -webkit-box-shadow: -5px 1px 36px 0px rgba(128, 124, 124, 0.75);
+  -moz-box-shadow: -5px 1px 36px 0px rgba(128, 124, 124, 0.75);
+}
