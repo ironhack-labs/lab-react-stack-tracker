@@ -1,8 +1,17 @@
-function HomePage() {
+import { Link } from "react-router-dom";
+
+function HomePage({ companies }) {
   return (
-    <div>
-      <h1>HomePage</h1>
-    </div>
+    <ul>
+      {companies.map((company) => (
+        <li key={company.id}>
+          <Link to={`/company/${company.slug}`}>
+            <img src={company.logo} alt={company.companyName} />
+            {company.companyName}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 
