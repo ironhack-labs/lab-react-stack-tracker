@@ -1,0 +1,20 @@
+.technology-page {
+  margin: 0 auto; /* Center the content horizontally */
+  max-width: 800px; /* Set a maximum width for responsiveness */
+  padding: 2rem; /* Add some padding for spacing */
+}
+
+.technology-page h1 {
+  font-size: 2rem; /* Set the font size */
+  margin-bottom: 1rem; /* Add some space below the heading */
+}
+
+.technology-page img {
+  max-width: 100%; /* Make the image responsive */
+  margin-bottom: 1rem; /* Add some space below the image */
+}
+
+.technology-page p {
+  line-height: 1.5; /* Set line spacing for readability */
+  margin-bottom: 1rem; /* Add some space below the paragraph */
+}

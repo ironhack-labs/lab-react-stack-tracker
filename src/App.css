@@ -40,3 +40,15 @@
 .read-the-docs {
   color: #888;
 }
+
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.company {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
