@@ -1,17 +1,21 @@
 import { Link } from "react-router-dom";
+import React from "react";
 
-function HomePage({ companies }) {
+function HomePage(props) {
   return (
-    <ul>
-      {companies.map((company) => (
-        <li key={company.id}>
-          <Link to={`/company/${company.slug}`}>
-            <img src={company.logo} alt={company.companyName} />
-            {company.companyName}
-          </Link>
-        </li>
-      ))}
-    </ul>
+    <div>
+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>
+      <ul>
+        {props.companies.map((company) => (
+          <li key={company.slug}>
+            <Link to={`/company/${company.slug}`}>
+              <img src={company.logo} style={{ width: "50px" }} />
+              {company.name}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
