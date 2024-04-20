@@ -15,7 +15,7 @@ export default function TechnologyPage({ technologies }) {
 	return (
 		<>
 			<div className="techpage">
-				<Hero title={name} size="s" />
+				<Hero title={name} size="s" h3="Technology Details" />
 
 				<Container>
 					<Row className="mb-5">

@@ -14,7 +14,7 @@ export default function CompanyPage({ companies, technologies }) {
 
 	return (
 		<div className="companypage">
-			<Hero title={name} size="s" />
+			<Hero title={name} size="s" h3="Company Profile" />
 
 			<Container>
 				<Row>
