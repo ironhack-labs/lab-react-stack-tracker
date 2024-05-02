@@ -1,7 +1,8 @@
 function TechnologyPage() {
   return (
-    <div>
-      <h1>TechnologyPage</h1>
+    <div className="technologies">
+      <h1>Technology Details</h1>
+      <p>Too bad it's a bonus, huh?</p>
     </div>
   );
 }

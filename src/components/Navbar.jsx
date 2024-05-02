@@ -1,5 +1,9 @@
+import './Navbar.css'
+
 function Navbar() {
-  return <nav>Navbar</nav>;
+  return <header className="navbar">
+    StackTracker
+  </header>;
 }
 
 export default Navbar;
