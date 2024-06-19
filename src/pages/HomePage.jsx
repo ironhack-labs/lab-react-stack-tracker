@@ -1,7 +1,16 @@
-function HomePage() {
+import "../App.css";
+import CompanyCard from "../components/CompanyCard";
+
+function HomePage(props) {
   return (
-    <div>
-      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>
+    <div className="companyList">
+      {
+        props.companies.map(company => {
+          return(
+            <CompanyCard key={company.id} company={company} />
+          )
+        })
+      }
     </div>
   );
 }
