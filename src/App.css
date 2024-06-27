@@ -52,6 +52,7 @@ h3 {
 .nav-bar {
   background-color: rgb(64, 64, 199);
   color: white;
+  font-weight: bold;
   padding: 1rem;
   margin-bottom: 2rem;
 }

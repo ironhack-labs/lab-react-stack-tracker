@@ -6,8 +6,10 @@ function TechnologyPage({ techs }) {
 
   const [searchParams, setSearchParams] = useSearchParams();
 
+  // get search param to navigate back
   const companySlug = searchParams.get("companySlug");
 
+  // get param to find current tech
   const currentTech = techs.find((tech) => tech.slug === slug);
 
   return (

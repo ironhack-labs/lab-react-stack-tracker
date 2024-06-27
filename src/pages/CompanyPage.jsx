@@ -4,6 +4,7 @@ function CompanyPage({ companies }) {
 
   const { companySlug } = useParams();
 
+  // use param to find current company
   const currentCompany = companies.find((company) => company.slug === companySlug)
 
   return (
@@ -21,6 +22,7 @@ function CompanyPage({ companies }) {
             <p>{currentCompany.website}</p>
           </div>
         </section>
+        
         <section>
           <ul className="tech-ul">
             {currentCompany.techStack.map(tech => (
