@@ -1,8 +1,12 @@
-import { useParams, useSearchParams } from "react-router-dom";
+import { useParams, useSearchParams, Link } from "react-router-dom";
 
 function TechnologyPage({ techs }) {
 
   const { slug } = useParams();
+
+  const [searchParams, setSearchParams] = useSearchParams();
+
+  const companySlug = searchParams.get("companySlug");
 
   const currentTech = techs.find((tech) => tech.slug === slug);
 
@@ -20,7 +24,9 @@ function TechnologyPage({ techs }) {
         </div>
       </section>
       <div className="tech-button-div">
-        <button className="tech-button">Return</button>
+        <Link to={`/company/${companySlug}`}>
+          <button className="tech-button">Return</button>
+        </Link>
       </div>
     </div>
   );

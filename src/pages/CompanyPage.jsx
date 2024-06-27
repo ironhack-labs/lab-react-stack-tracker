@@ -25,7 +25,7 @@ function CompanyPage({ companies }) {
           <ul className="tech-ul">
             {currentCompany.techStack.map(tech => (
               <li className="tech-li" key={tech.slug}>
-                <Link to={`/tech/${tech.slug}`}>
+                <Link to={`/tech/${tech.slug}/?companySlug=${currentCompany.slug}`}>
                   <div className="tech-img-div">
                     <img src={tech.image}/>
                   </div>
