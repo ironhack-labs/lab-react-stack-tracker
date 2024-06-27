@@ -27,8 +27,21 @@ body {
   font-family: sans-serif;
 }
 
+h1, h2, h3 {
+  color: rgb(66, 65, 65);
+}
+
 h1 {
   text-align: center;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin-bottom: 0.5rem;
 }
 
 .nav-bar {
@@ -38,27 +51,119 @@ h1 {
   margin-bottom: 2rem;
 }
 
-.company-ul {
+ul {
   list-style: none;
   padding: 0;
+}
+
+.company-ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin: 0 1rem;
+  grid-row-gap: 2rem;
+  grid-column-gap: 8rem;
+  margin: 0 8rem;
 }
 
 .company-li {
-  border: 2px solid black;
+  /*border: 2px solid rgb(66, 65, 65);*/
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
 }
 
+a {
+  text-decoration: none;
+  color: rgb(66, 65, 65);
+}
+
 .company-li h3 {
   text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .company-li img {
   max-width: 100px;
+}
+
+.company-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5rem;
+  gap: 5rem;
+  margin-bottom: 2rem;
+}
+
+.company-card .logo-div {
+  width: 20%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.company-card img {
+  max-width: 100px;
+}
+
+.company-card .company-info {
+  text-align: center;
+  width: 40%
+}
+
+.company-page .company-info p:last-child {
+  margin-top: 0.5rem;
+  text-decoration: underline;
+}
+
+.tech-ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  overflow-x: scroll;
+  align-items: center;
+  padding: 2rem;
+}
+
+.tech-img-div {
+  width: 8rem;
+  aspect-ratio: 1 / 1;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-img-div img {
+  width: 70%;
+  max-height: 100%;
+}
+
+.tech-li p {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(66, 65, 65);
+}
+
+.tech-button-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.tech-button {
+  background-color: rgb(64, 64, 199);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
 }
