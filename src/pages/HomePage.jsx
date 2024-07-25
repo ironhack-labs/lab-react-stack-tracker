@@ -1,7 +1,25 @@
-function HomePage() {
+function HomePage({ companies }) {
+
+  console.log(companies)
+
   return (
     <div>
-      <h1>HomePage</h1>
+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>
+      <hr />
+      <div className="allCompanies">
+        {companies.map(elm => {
+          const { name, logo, id } = elm
+          return (
+
+            <article className="company" key={id}>
+              {name}
+
+              <img className='logo' src={logo} />
+
+            </article>
+          )
+        })}
+      </div>
     </div>
   );
 }
