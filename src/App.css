@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  
 }
 
 .logo {
@@ -39,4 +39,164 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.header{
+  background-color: rgb(100,108,255);
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: -130px;
+  margin-right: -130px;
+    
+}
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+ 
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/*logo page css*/
+
+.companies-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.company-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 100px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+
+.company-item img {
+  max-width: 150%;
+  max-height: 150px;
+  margin:auto;
+  align-items: center;
+}
+
+.company-item:hover {
+  transform: scale(1.05);
+}
+.company-name{
+  color: black;
+  padding-bottom: 40px;
+}
+/*Company Page*/
+
+.company-details {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.company-logo-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px; 
+  width: 200px;  
+}
+
+.company-logo {
+  max-width: 150px;
+  max-height: 150px;
+  padding-left: 10px;
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding-left: 350px;
+}
+/* For technologies in company page*/
+.technologies-container {
+  display: flex;
+  overflow-x: auto; 
+  gap: 20px;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.technology-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  width: 100px; 
+}
+
+.technology-item img {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 10px; 
+  border: 1px solid #ccc; 
+  padding: 15px;
+}
+/*technology page*/
+.tech-details {
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.tech-logo-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px; 
+  width: 200px;  
+}
+
+.tech-logo {
+  max-width: 150px;
+  max-height: 150px;
+  padding-left: 10px;
+}
+
+.tech-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  padding-left: 350px;
 }
