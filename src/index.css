@@ -60,14 +60,28 @@ nav{
 }
 
 
-footer{
+.swiper-wrapper{
   display: flex;
+  margin: 50px 0;
 }
-footer div{
-  margin: 0 15px;
-  padding: 0 50px;
-  box-shadow: #b0b3b5 1px 1px 8px;
+
+.techDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  box-shadow: #838586 1px 1px 8px;
+}
+.techDiv a{
+  color: black;
+  text-decoration: none;
 }
 .techPictures{
   width:100px;
+}
+
+.techPageDiv{
+  display: flex;
+  margin: 5% 0;
+  justify-content: center;
 }

@@ -1,15 +1,23 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+
 
 function CompanyPage(props) {
 
-  let companyId = useParams().companySlug.slice(1)
+  let companyId = useParams().companySlug
   console.log(companyId)
 
-  let company = props.companies.filter((oneCompanie)=>{
-    return oneCompanie.id==companyId
+  let company = props.companies.filter((oneCompanie) => {
+    return oneCompanie.id == companyId
   })
   console.log(company)
+
   return (
     <div className="companyProfile">
       <h1>Company Profile</h1>
@@ -21,15 +29,32 @@ function CompanyPage(props) {
           <p className="description">{company[0].description}</p>
         </div>
       </div>
+
       <footer>
-        {props.tech.map((oneTech)=>{
-          return(
-            <div>
-              <h2>{oneTech.name}</h2>
-              <img className="techPictures" src={oneTech.image} alt="" />
-            </div>
-          )
-        })}
+        
+    
+          <Swiper
+                modules={[Navigation, Pagination]}
+                  spaceBetween={10}
+                  slidesPerView={5}
+                  navigation
+                  pagination={{clickable:true}}
+                  onSlideChange={() => console.log('slide change')}
+                  onSwiper={(swiper) => console.log(swiper)}>
+
+            {props.tech.map((oneTech) => {
+              return (
+                
+                  <SwiperSlide key={oneTech.id}>
+                    <div className="techDiv swiper-wrapper">
+                      <Link to={`/tech/${oneTech.name}`} ><h2>{oneTech.name}</h2></Link>
+                      <img className="techPictures" src={oneTech.image} alt="" />
+                    </div>
+                  </SwiperSlide>
+      
+              )
+            })}
+            </Swiper>
       </footer>
     </div>
   );

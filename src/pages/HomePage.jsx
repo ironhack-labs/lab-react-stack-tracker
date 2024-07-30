@@ -3,9 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import {v4 as uuidv4} from 'uuid'
 
-function HomePage(props) {
 
-  
+function HomePage(props) {
   
   return (
     <div className="homePage" style={{maxWidth:"2000px"}}>
@@ -15,7 +14,7 @@ function HomePage(props) {
       {props.companies.map((oneCompanie)=>{
         return (
           <div  className="companyDiv" key={uuidv4()}>
-            <Link to={`/company/"${oneCompanie.id}`} ><h1>{oneCompanie.name}</h1></Link>
+            <Link to={`/company/${oneCompanie.id}`} ><h1>{oneCompanie.name}</h1></Link>
             <img style={{width:"120px"}} src={oneCompanie.logo} alt="" />
           </div>
         )
