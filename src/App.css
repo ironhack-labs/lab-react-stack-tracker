@@ -1,7 +1,8 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
+  margin-top: 0;
+  padding-top: 0;
+
   text-align: center;
 }
 
@@ -40,3 +41,91 @@
 .read-the-docs {
   color: #888;
 }
+
+.title{
+  font-family: 'Montserrat';
+  font-size: 2rem;
+  width: 70%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.navbar{
+  display: flex;
+  
+  text-align: left;
+  color: white;
+  background-color: cornflowerblue;
+  font-size: 1.5rem;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-bottom: 60px;
+
+  transition: color 0.3s ease; 
+}
+
+.navbar:hover{
+  color: rgb(255, 208, 0);
+}
+
+#root{
+  margin: auto;
+}
+
+.companies-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  justify-content: center;
+  padding: 10px;
+}
+
+.company{
+  background-color: whitesmoke;
+  border-radius: 10px;
+  min-width: 22%;
+/*   min-height: 22vh; */
+  margin: 5px 5px 5px 5px;
+  
+  padding: 20px 10px;
+}
+
+
+.company-container{
+  margin: auto;
+  margin-top: 150px;
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+  
+  .about{
+    width: 35%;
+  }
+
+  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    width: 200px;
+    height: 200px;
+
+    box-shadow: 6px 6px 6px rgb(225, 240, 253);
+  }
+  #company-title{
+    margin-top: 0;
+  }
+
+  .company-techs{
+    display: flex;
+    overflow-x: scroll;
+    gap: 5%;
+    margin: 5%;
+    padding-bottom: 20px;
+  }
