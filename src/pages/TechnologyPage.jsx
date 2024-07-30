@@ -1,8 +1,8 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 
-function TechnologyPage({technologies}) {
+function TechnologyPage({technologies, actualCompany}) {
 
   const {techSlug} = useParams();
 
@@ -16,6 +16,7 @@ function TechnologyPage({technologies}) {
       <h2>{foundTech.name}</h2>
       <img src={foundTech.image} alt="" style={{width:'300px'}}/>
       <p style={{width:'300px', textAlign:'center', margin:'auto'}}>{foundTech.description} </p>
+      <button><Link to={`/company/${actualCompany}`}>Back</Link></button>
     </div>
   );
 }

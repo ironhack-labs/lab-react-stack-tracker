@@ -2,9 +2,10 @@ import { Link, useParams } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 
-function CompanyPage({companies}) {
+function CompanyPage({companies, setActualCompany}) {
 
   const {companySlug} = useParams()
+  setActualCompany(companySlug)
   
   const foundCompany = companies.find((company)=>{
     return company.slug === companySlug;
