@@ -30,8 +30,9 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 32px;
   line-height: 1.1;
+  margin: 48px 0px;
 }
 
 .navbar{
@@ -47,4 +48,46 @@ nav {
   color: white;
   font-weight: 700;
   font-size: 20px;
+}
+
+.companyCard img{
+  width: 80px;
+}
+
+.companyCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px; 
+  height: 300px;
+  border: 1px solid green;
+  box-sizing: border-box; 
+}
+
+.companyList{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  max-width: 640px; 
+  margin: 0 auto; 
+}
+
+h4{
+  margin-top: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  text-align: center; 
+}
+
+h2 {
+  width: 100%; 
+  text-align: center; 
 }
