@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 function CompanyPage({ companiesArr }) {
   const { companySlug } = useParams();
@@ -27,8 +27,12 @@ function CompanyPage({ companiesArr }) {
       <section className="techStackContainer">
         {companyToDisplay.techStack.map((tech, index) => (
           <div className="techCard" key={index}>
+            <Link to={`/tech/${tech.slug}`}>
             <img src={tech.image} alt={tech.name} />
-            <p>{tech.name}</p>
+            <p>
+              {tech.name}
+            </p>
+            </Link>
           </div>
         ))}
       </section>
