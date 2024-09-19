@@ -21,8 +21,8 @@ a:hover {
 }
 
 body {
-  min-width: 100vw; /* Evita que la página sea más pequeña que la ventana */
-  overflow-x: hidden; /* Asegura que no haya scroll horizontal en la página completa */
+  min-width: 100vw; 
+  overflow-x: hidden; 
 }
 
 h1 {
@@ -60,7 +60,7 @@ nav {
 }
 
 .techCard img{
-  width: 48px; /* Tamaño fijo para las imágenes */
+  width: 48px; 
   height: auto;
 }
 
@@ -139,12 +139,12 @@ h2 {
   display: flex;
   gap: 32px;
   margin: 96px 32px;
-  overflow-x: auto; /* Scroll horizontal */
-  overflow-y: hidden; /* Oculta el scroll vertical */
+  overflow-x: auto; 
+  overflow-y: hidden; 
   padding-bottom: 10px; 
-  max-width: 100%; /* Asegura que no exceda el ancho de la página */
-  justify-content: flex-start; /* Alinea las tarjetas al principio del contenedor */
-  scroll-behavior: smooth; /* Scroll suave al desplazarse */
+  max-width: 100%; 
+  justify-content: flex-start;
+  scroll-behavior: smooth; 
 }
 
 header {
@@ -155,3 +155,9 @@ header {
   align-items: center;
   gap: 96px;
   margin-bottom: 32px; 
+}
+
+button {
+  height: 32px;
+  padding: 8px 16px;
+}

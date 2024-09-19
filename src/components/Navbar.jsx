@@ -1,9 +1,14 @@
+import { Link } from 'react-router-dom';
+
 function Navbar() {
   return (
-  <div className="navbar">
-    <nav>StackTracker</nav>
-  </div>
-  )
+    <div className="navbar">
+      <Link to={`/`}>
+        <nav>StackTracker</nav>
+      </Link>
+    </div>
+  );
 }
 
 export default Navbar;
+

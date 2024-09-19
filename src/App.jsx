@@ -24,8 +24,7 @@ function App() {
       <Routes>
         <Route path={"/"} element={<HomePage companiesArr={companiesArr}/>}></Route>
         <Route path={"/company/:companySlug"} element={<CompanyPage companiesArr={companiesArr}/>}></Route>
-        <Route path="/tech/:slug" element={<TechnologyPage technologiesArr={technologiesArr} />} />
-
+        <Route path="/company/:companySlug/tech/:slug" element={<TechnologyPage technologiesArr={technologiesArr} />} />
         <Route path={"*"} element={<NotFound />}></Route>
       </Routes>
     </div>

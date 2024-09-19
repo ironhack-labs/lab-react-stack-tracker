@@ -27,7 +27,7 @@ function CompanyPage({ companiesArr }) {
       <section className="techStackContainer">
         {companyToDisplay.techStack.map((tech, index) => (
           <div className="techCard" key={index}>
-            <Link to={`/tech/${tech.slug}`}>
+             <Link to={`/company/${companySlug}/tech/${tech.slug}`}>
             <img src={tech.image} alt={tech.name} />
             <p>
               {tech.name}
