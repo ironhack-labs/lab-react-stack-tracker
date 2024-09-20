@@ -8,6 +8,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  margin:0;
 }
 
 a {
@@ -61,4 +62,25 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+nav {
+  background-color: #646CFF;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: white;
+  padding: 15px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.techs-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.techs-container img {
+ width: 100px
 }
