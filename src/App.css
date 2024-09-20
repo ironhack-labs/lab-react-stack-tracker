@@ -41,20 +41,12 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
 #pages {
-  height: 100vh;
+  /* height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2rem; */
 }
 
 #company-page {
@@ -118,6 +110,7 @@
 
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   gap: 100px;
 
   overflow-y: hidden;
@@ -125,7 +118,7 @@
 }
 
 .tech-stack::-webkit-scrollbar {
-  width: 1px;
+  width: 5px;
 }
 
 .tech-stack::-webkit-scrollbar-track {

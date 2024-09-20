@@ -13,7 +13,7 @@ function CompanyPage({data}) {
       <div className="company-card">
         <img src={currentItem.logo} alt="company logo" />
         <div className="company-info">
-          <a href={currentItem.website}><h2>{currentItem.name}</h2></a>
+          <a href={`https://${currentItem.website}`}><h2>{currentItem.name}</h2></a>
           <h4>About</h4>
           <p>{currentItem.description}</p>
         </div>
