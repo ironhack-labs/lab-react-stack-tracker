@@ -66,6 +66,13 @@ ul img {
   margin-top: 1rem;
 }
 
+.tech-container {
+  padding: 50px;
+}
+.tech-container img {
+  width: 50px;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
