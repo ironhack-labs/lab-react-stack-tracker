@@ -17,7 +17,11 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-nav {
+.App {
+  height: 100vh;
+}
+
+.App nav {
   background-color: #b8dbff;
   color: rgb(80, 80, 80);
   padding: 1rem;
@@ -69,7 +73,7 @@ ul img {
 .tech-container {
   padding: 50px;
 }
-.tech-container img {
+.tech-container img, .tech-stack-container img {
   width: 50px;
 }
 

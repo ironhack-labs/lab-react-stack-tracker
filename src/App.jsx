@@ -10,8 +10,8 @@ import TechnologyPage from "./pages/TechnologyPage";
 
 function App() {
 
-  const [companies, setCompanies] = useState(companiesData)
-  const [technologies, setTechnologies] = useState(technologiesData)
+  const [ companies ] = useState(companiesData)
+  const [ technologies ] = useState(technologiesData)
 
   return (
     <div className="App">
@@ -35,7 +35,7 @@ function App() {
 
         <Route path={"/"} element={ <HomePage companiesData={companies} /> }/>
         <Route path={"/company/:companySlug"} element={ <CompanyPage companies={companies}/> }/>
-        <Route path={"/technology/:techSlug"} element={ <TechnologyPage tenchologies={technologies}/> }/> 
+        <Route path={"/technology/:techSlug"} element={ <TechnologyPage technologies={technologies}/> }/> 
 
       </Routes>
 

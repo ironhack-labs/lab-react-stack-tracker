@@ -24,8 +24,12 @@ function CompanyPage({ companies }) {
       <ul>
         {companyToDisplay.techStack.map((tech) => (
           <li key={tech.slug}>
-            <img src={tech.image} />
-            {tech.name}
+            {/* adding ?company=${companySlug} so the company slug is passed as a query param 
+                when visiting the tech page and we can use back-btn to come back to the company page */}
+            <Link to={`/technology/${tech.slug}?company=${companySlug}`}>
+              <img src={tech.image} />
+              {tech.name}            
+            </Link>
           </li>
         ))}
       </ul>
