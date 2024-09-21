@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -16,6 +15,66 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.App {
+  height: 100vh;
+}
+
+.App nav {
+  background-color: #b8dbff;
+  color: rgb(80, 80, 80);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0;
+  padding: 1rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+ul, li {
+  list-style: none;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 2rem; 
+  padding: 2rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 1rem;
+  background: #e7e7e7;
+  border: 1px solid #ffee52;
+  box-shadow: 0 2px 5px rgba(219, 219, 219, 0.1);
+  border-radius: 10px;
+  padding: 2rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+
+ul img {
+  margin-top: 1rem;
+}
+
+.tech-container {
+  padding: 50px;
+}
+.tech-container img, .tech-stack-container img {
+  width: 50px;
 }
 
 @keyframes logo-spin {
