@@ -4,6 +4,7 @@ function TechnologyPage (props) {
   const techInfo = props.technologies.find(tech => {
     return tech.slug === slug
   })
+  console.log(techInfo)
   return (
     <div>
       <h1>Technology Details</h1>
@@ -15,7 +16,7 @@ function TechnologyPage (props) {
           <p>{techInfo.description}</p>
         </div>
       </div>
-      <Link to='/'>Back</Link>
+      <button onClick={() => window.history.back()}>Back</button>
     </div>
   )
 }
