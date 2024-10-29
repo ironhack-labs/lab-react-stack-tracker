@@ -52,6 +52,7 @@ button:focus-visible {
 .home{
   display: flex;
   flex-wrap: wrap;
+  
 }
 li{
   list-style: none;
@@ -63,17 +64,19 @@ img{
 }
 .company{
   display: flex;
-  
+  flex-direction: column;
+  justify-content: center;
 }
 p{
   width: 20em;
 }
-.company img{margin: 10em;
-}
-.logo{
-  width: 5em;
-}
+
 .tech{
-  width: 20vw;
-  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.tech div{
+  width:10em;
+}
+

@@ -16,14 +16,16 @@ function CompanyPage(props) {
         <p>{company.description}</p>
       </div>
       <div>
-        {props.techs.map((tech) => {
-          return (
-            <div className="tech">
-              <img src={tech.image} className="logo" />
-              <span>{tech.name}</span>
-            </div>
-          );
-        })}
+        <span className="tech">
+          {company.techStack.map((tech) => {
+            return (
+              <div>
+                <img src={tech.image} />
+                <p>{tech.name}</p>
+              </div>
+            );
+          })}
+        </span>
       </div>
     </div>
   );
