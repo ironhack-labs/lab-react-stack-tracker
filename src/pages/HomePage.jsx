@@ -1,7 +1,17 @@
-function HomePage() {
+import { Link } from "react-router-dom";
+function HomePage(props) {
   return (
-    <div>
-      <h1>HomePage</h1>
+    <div className="home">
+      {props.companies.map((company) => {
+        return (
+          <Link key={company.id} to={`company/${company.slug}`}>
+            <li>{company.name}</li>
+            <li>
+              <img src={company.logo} />
+            </li>
+          </Link>
+        );
+      })}
     </div>
   );
 }
