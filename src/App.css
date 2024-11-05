@@ -1,7 +1,6 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
   text-align: center;
 }
 
@@ -39,4 +38,126 @@
 
 .read-the-docs {
   color: #888;
+}
+
+nav{
+  background-color: #646cffaa;
+  color: white;
+  text-align: left;
+  padding: 20px;
+}
+
+.App{
+  width: 100vw;
+}
+
+.App-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1{
+    margin: 5px 0;
+  }
+}
+
+.companies{
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.company{
+  width: 500px;
+  height: 500px;
+  padding: 100px;
+
+  cursor: pointer;
+
+  h3{
+    font-size: 2em;
+    margin-bottom: 100px;
+  }
+}
+
+.small-company{
+  width: 350px;
+  height: 350px;
+}
+
+.main-title{
+  width: 350px;
+  height: 350px;
+  margin: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow:  0 3px 10px  rgb(0 0 0 / 0.2);
+}
+
+.technology{
+  width: 350px;
+  height: 350px;
+}
+
+.img-tile{
+  width: 50%;
+}
+
+.company-area, .tech-area{
+  display: flex;
+  justify-content: center;
+}
+
+.company-img, .technology-img{
+  width: 50%;
+}
+
+.company-details, .technology-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+
+  width: 400px;
+  margin-left: 100px;
+}
+
+.company-tech{
+  display: flex;
+  overflow-x: scroll;
+  margin: 0 20px;
+}
+
+.tech-tile-area{
+  display: flex;
+  flex-direction: column;
+}
+
+.tech-tile{
+  width: 150px;
+  height: 150px;
+  margin: 25px;
+  cursor: pointer;
+
+  box-shadow:  0 3px 10px  rgb(0 0 0 / 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-icon{
+  width: 50%;
+}
+
+#back-button{
+  background-color: #c2bebe;
+
+  border: 0.5px solid black;
 }
