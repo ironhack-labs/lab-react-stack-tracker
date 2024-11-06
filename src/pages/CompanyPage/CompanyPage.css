@@ -1,0 +1,62 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.logo {
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.144);
+}
+
+.information {
+    width: 70%;
+}
+
+h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.technologies-grid {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.technology {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+    height: 70px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 5%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.144);
+    text-align: center;
+}
+
+.technology img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 8px;
+}
