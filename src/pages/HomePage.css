@@ -1,0 +1,39 @@
+.HomePage{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+gap: 24px;
+padding: 40px;
+align-items: center;
+justify-content: center;
+}
+
+.companyCard{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px;
+    width: 40%;
+    height: 200px;
+    min-height: fit-content;
+
+    border: 1px solid #666;
+
+    text-decoration: none;
+    color: #666;
+}
+
+.companyCard div{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+}
+
+img.logo{
+    width: 100px;
+}
