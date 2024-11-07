@@ -1,9 +1,15 @@
 import "./App.css";
+import Navbar from "./components/Navbar";
+import AppRoutes from "./routes/AppRoutes";
+
 
 function App() {
   return (
     <div className="App">
-      <h1>LAB | React Stack Tracker</h1>
+      <Navbar />
+
+      <AppRoutes />
+
     </div>
   );
 }
