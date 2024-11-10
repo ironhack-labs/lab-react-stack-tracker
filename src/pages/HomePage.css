@@ -1,0 +1,30 @@
+.container {
+  text-align: center;
+
+
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  img {
+    width: 40px;
+  }
+}
+
+.list-item {
+  list-style: none;
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: rgb(171, 44, 125);
+}
