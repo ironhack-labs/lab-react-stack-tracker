@@ -1,0 +1,9 @@
+.navbar {
+  background-color: #646cff;
+  height: 5rem;
+  padding: 2rem;
+}
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+}

@@ -11,14 +11,14 @@ function HomePage({companies}) {
       <ul className="list-container">
         {companies.map((company) => (
           <li key={company.id} className="list-item">
-            <Link className="link"  to={`/company/${company.slug}`}>
               <div>
                 <img
                   src={company.logo}
                   alt={`${company.name} logo`}
                 />
-                <h3>{company.name}</h3>
               </div>
+            <Link className="link"  to={`/company/${company.slug}`}>
+                <h3>{company.name}</h3>
             </Link>
           </li>
         ))}
