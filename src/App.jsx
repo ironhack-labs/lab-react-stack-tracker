@@ -17,9 +17,22 @@ function App() {
       <Navbar />
       <div>
         <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/tech/:slug" element={<TechnologyPage />} />
-          <Route path="/company/:companySlug" element={<CompanyPage />} />
+          <Route
+            path="/"
+            element={
+              <HomePage companies={companies} technologies={technologies} />
+            }
+          />
+          <Route
+            path="/tech/:slug"
+            element={<TechnologyPage technologies={technologies} />}
+          />
+          <Route
+            path="/company/:companySlug"
+            element={
+              <CompanyPage companies={companies} technologies={technologies} />
+            }
+          />
         </Routes>
       </div>
     </div>
