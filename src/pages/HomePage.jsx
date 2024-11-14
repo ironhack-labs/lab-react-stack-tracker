@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const HomePage = ({ companies, technologies }) => {
   if (!Array.isArray(companies)) {
@@ -9,15 +10,14 @@ const HomePage = ({ companies, technologies }) => {
     <>
       <h3>StackTracker: Discover Tech Stacks Used by Top Companies</h3>
       <div>
-        <article>
+        <article className='company-list'>
           {companies.map((company) => (
-            <div key={company.slug}>
-              <h3>{company.name}</h3>
-              <p>{company.description}</p>
-              <p>
-                <a href={`/company/${company.slug}`}>View {company.name}</a>
-              </p>
+            <Link className='company-card' to={`/company/${company.slug}`} key={company.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+            <div>
+              <h2>{company.name}</h2>
+              <img src={company.logo} alt={company.name} />
             </div>
+          </Link>
           ))}
         </article>
       </div>
@@ -26,3 +26,4 @@ const HomePage = ({ companies, technologies }) => {
 };
 
 export default HomePage;
+
