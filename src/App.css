@@ -40,3 +40,89 @@
 .read-the-docs {
   color: #888;
 }
+
+nav {
+  background-color: aqua;
+  text-align: start;
+  padding: 1em;
+  margin: 0;
+  border: 0;
+  color: white;
+  font-weight: bold;
+}
+
+.company-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.company-profile > div:first-child {
+  display: flex;
+  justify-content: space around;
+  align-items: center;
+  flex-direction: column;
+  margin: 2em;
+  padding: 1em;
+  gap: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+.company-profile img {
+  height: 200px;
+  width: auto;
+  padding: 3em;
+}
+
+.company-profile-techstack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+  
+}
+.company-profile-techstack :link {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: 1em;
+  color: black;
+}
+
+.company-profile-techstack img {
+  height: 50px;
+  min-width: 120px;
+  max-width: 150px;
+  object-fit: contain;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.company-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+.company-card img {
+  height: 100px;
+  min-width: 120px;
+  max-width: 150px;
+  object-fit: contain;
+}
+
