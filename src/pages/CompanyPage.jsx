@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 function CompanyPage({companies}) {
   const {companySlug} = useParams();
@@ -14,6 +14,12 @@ function CompanyPage({companies}) {
       {companyToShow.website}
       {companyToShow.description}
       {companyToShow.logo}
+      {companyToShow.techStack.map((tech) => (
+        <Link key={companyToShow.id} to={`/tech/${tech.slug}`}>
+          {tech.name}
+          {tech.image}
+        </Link>
+      ))}
     </div>
   );
 }
