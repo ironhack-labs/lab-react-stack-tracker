@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
+
 import { useState } from "react";
-import "./App.css";
 import companiesData from "./companies.json";
 import technologiesData from "./technologies.json";
 import Navbar from "./components/Navbar";
@@ -15,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar  />
       <Routes>
         <Route path="/" element={<HomePage companies={companies}/>} />
         <Route path="/company/:companySlug" element={<CompanyPage companies={companies}/>} />

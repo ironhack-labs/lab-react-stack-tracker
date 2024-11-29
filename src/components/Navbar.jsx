@@ -1,7 +1,9 @@
 function Navbar() {
   return (
-    <nav>
-      StackTracker
+    <nav className="navbar bg-primary">
+      <div className="container-fluid">
+        <span className="ps-2 text-light fs-1">StackTracker</span>
+      </div>
     </nav>
   );
 }
