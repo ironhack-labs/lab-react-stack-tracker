@@ -37,7 +37,7 @@ function CompanyPage(props) {
       <div className="tech-stack-list">
         {foundCompany.techStack.map((eachTech) => {
           return(
-          <Link to={`/tech/${eachTech.slug}`} key={eachTech.name}>
+          <Link to={`/tech/${eachTech.slug}?company=${foundCompany.slug}`} key={eachTech.name}>
             <div className="each-tech-stack">
               <img src={eachTech.image}/>
             </div>

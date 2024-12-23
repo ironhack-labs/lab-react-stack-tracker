@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams, useSearchParams } from "react-router-dom";
 
 function TechnologyPage(props) {
   // console.log(props);
@@ -18,6 +18,11 @@ function TechnologyPage(props) {
 
   // console.log(foundTech);
 
+  const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
+
+  const companySlug = searchParams.get("company");
+
   return (
     <div className="company-page">
       <h1>Technology Details</h1>
@@ -31,6 +36,9 @@ function TechnologyPage(props) {
           <p>{foundTech.description}</p>
         </div>
       </div>
+      <button onClick={() => navigate(`/company/${companySlug}`)}>
+        BACK
+      </button>
     </div>
   );
 }
