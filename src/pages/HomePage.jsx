@@ -11,10 +11,10 @@ function HomePage(props) {
       <div className="companies-container">
         {companies.map((eachCompany) => {
           return (
-            <Link to={`/company/${eachCompany.id}`} key={eachCompany.id}>
+            <Link to={`/company/${eachCompany.slug}`} key={eachCompany.id}>
               <div className="each-company">
                 <p>{eachCompany.name}</p>
-                <img src={eachCompany.logo} />
+                <img src={eachCompany.logo}/>
               </div>
             </Link>
           );
