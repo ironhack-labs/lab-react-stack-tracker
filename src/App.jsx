@@ -2,6 +2,10 @@ import { useState } from "react";
 import "./App.css";
 import CompaniesData from "./companies.json"
 import TechnologiesData from "./technologies.json"
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import CompanyPage from "./pages/CompanyPage";
+import TechnologyPage from "./pages/TechnologyPage";
 
 
 function App() {
@@ -13,7 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>LAB | React Stack Tracker</h1>
+      <Navbar />
+      <HomePage />
+      <CompanyPage />
+      <TechnologyPage />
     </div>
   );
 }
