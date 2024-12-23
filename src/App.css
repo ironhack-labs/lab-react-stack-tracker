@@ -1,31 +1,9 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
@@ -33,10 +11,161 @@
   }
 }
 
-.card {
-  padding: 2em;
+
+
+/* *** Nav Section *** */
+nav {
+  margin: 10px;
+  height: 75px;
+  padding: 0px 20px;
+
+  background-color: #2563EB;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
 }
 
-.read-the-docs {
-  color: #888;
+nav p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  color: #E2E8F0;
+
+}
+
+/* *** Home Page Section *** */
+.page-container h1 {
+  font-size: 25px;
+}
+
+.companies-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.each-company {
+  margin: 25px;
+  padding: 10px;
+  
+  width: 350px;
+  height: 275px;
+  
+  box-shadow: 0px 5px 3px #dfdfdf;
+
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.each-company img {
+  width: 100px;
+  margin-bottom: 55px;
+}
+
+/* *** Company Page Section *** */
+.company-page {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.company-page h1 {
+  font-size: 27px;
+}
+
+.image-container img {
+  width: 125px;
+}
+
+.image-container {
+  margin: 25px;
+  padding: 10px;
+  
+  width: 250px;
+  height: 250px;
+  
+  box-shadow: 0px 5px 3px #dfdfdf;
+
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.company-info-container {
+  margin-bottom: 45px;
+  width: 75vw;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.info-section {
+  width: 50%;
+  height: 275px;
+}
+
+.info-section h2 {
+  font-size: 35px;
+}
+
+.info-section p {
+  text-align: center;
+}
+
+/* *** Tech Stack List Section *** */
+.each-tech-stack img {
+  width: 70px;
+}
+
+.tech-stack-list {
+  width: 95vw;
+  padding: 10px;
+
+  overflow: hidden;
+
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  white-space: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.each-tech-stack {
+  margin: 25px;
+  padding: 10px;
+  
+  width: 150px;
+  height: 150px;
+  
+  box-shadow: 0px 5px 3px #dfdfdf;
+
+  font-weight: bold;
+  font-size: 20px;
+  color: #000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
