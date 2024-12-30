@@ -1,10 +1,9 @@
-import companiesData from "../companies.json";
 import CompanyDetails from "../components/CompanyDetails";
 import { useParams } from "react-router-dom";
 
-function CompanyPage() {
+function CompanyPage({ companies }) {
   const { companySlug } = useParams();
-  const foundCompany = companiesData.find((oneCompany) => oneCompany.slug === companySlug);
+  const foundCompany = companies.find((oneCompany) => oneCompany.slug === companySlug);
   return (
     <div className="company-details-container">
       <h2>Company Profile</h2>
