@@ -14,8 +14,8 @@ function CompanyDetails({ company }) {
       <div className="company-stack-container">
         {company.techStack.map((stack) => (
           <div key={stack.slug} className="company-stack">
-            <Link to={`/tech/${stack.slug}`}>
-              <img className="logo" src={stack.image} alt="Stack image" />
+            <Link to={`/tech?company=${company.slug}&tech=${stack.slug}`}>
+              <img className="logo logo-small" src={stack.image} alt="Stack image" />
               <p>{stack.name}</p>
             </Link>
           </div>

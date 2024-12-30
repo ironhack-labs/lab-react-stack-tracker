@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/company/:companySlug" element={<CompanyPage />} />
-        <Route path="/tech/:techSlug" element={<TechnologyPage />} />
+        <Route path="/company" element={<CompanyPage />} />
+        <Route path="/tech" element={<TechnologyPage />} />
       </Routes>
     </div>
   );
