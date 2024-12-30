@@ -1,12 +1,11 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
 .logo {
   height: 6em;
+  width: 6em;
+  object-fit: contain;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
@@ -16,6 +15,11 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.logo-small {
+  height: 3rem;
+  width: 3rem;
+  object-fit: contain;
 }
 
 @keyframes logo-spin {
@@ -40,3 +44,40 @@
 .read-the-docs {
   color: #888;
 }
+
+nav {
+  height: 4rem;
+  background-color: #646cffaa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 2rem;
+}
+
+#homePage {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.company-card {
+  /* margin: 2rem;
+  border: 2px rgba(187, 187, 187, 0.356) solid;
+  border-radius: 5rem; */
+}
+
+.company-stack-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.company-stack-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: column;
+}
+

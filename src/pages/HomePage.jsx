@@ -1,8 +1,16 @@
+import CompanyCard from "../components/CompanyCard";
+import companiesData from "../companies.json";
+
 function HomePage() {
   return (
-    <div>
-      <h1>HomePage</h1>
-    </div>
+    <>
+      <h1>StackTracker: Discover Tech Stacks Used by Top Companies</h1>
+      <div id="homePage">
+        {companiesData.map((element) => (
+          <CompanyCard key={element.id} company={element} />
+        ))}
+      </div>
+    </>
   );
 }
 
