@@ -5,11 +5,11 @@ function CompanyPage({ companies }) {
   const { companySlug } = useParams();
   const foundCompany = companies.find((oneCompany) => oneCompany.slug === companySlug);
   return (
-    <div className="company-details-container">
+    <li className="company-details-container">
       <h2>Company Profile</h2>
       {!foundCompany && <h3>Error 404: the page not found!</h3>}
       {foundCompany && <CompanyDetails company={foundCompany} />}
-    </div>
+    </li>
   );
 }
 
