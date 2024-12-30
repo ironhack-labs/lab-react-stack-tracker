@@ -1,5 +1,11 @@
+import { NavLink } from "react-router";
+
 function Navbar() {
-  return <nav>Navbar</nav>;
+  return (
+    <nav>
+      <NavLink to="/">StackTracker</NavLink>
+    </nav>
+  );
 }
 
 export default Navbar;
