@@ -1,7 +1,7 @@
-/* eslint-disable react/prop-types */
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 function CompanyCard({ company }) {
+
   return (
     <div className="company-card">
       <Link to={`/company/${company.slug}`}>
