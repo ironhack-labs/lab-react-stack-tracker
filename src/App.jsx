@@ -21,7 +21,7 @@ const [technologies, setTechnologies] = useState(technologiesData)
       <Navbar/>
       <Routes>
       <Route path="/" element={<HomePage companies={companies} />}/>
-      <Route path="/company/:companySlug" element={<CompanyPage companies={companies} />} />
+      <Route path="/company/:companySlug" element={<CompanyPage companies={companies} technologies={technologies} />} />
       <Route path="/tech/:slug" element={<TechnologyPage companies={companies}/>}/>
 
         

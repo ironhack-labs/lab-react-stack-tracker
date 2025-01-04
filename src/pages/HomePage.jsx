@@ -5,7 +5,7 @@ function HomePage({companies}) {
   
   return (
     <div className="homepage-container">
-      <h3>StackTracker: Descubra las pilas tecnológicas utilizadas por las principales empresas</h3>
+      <h3>StackTracker: Discover Tech Stacks Used by Top Companies</h3>
       <div className="companies-list">
       {companies.map((eachCompany) => {
         return(
