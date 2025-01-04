@@ -50,6 +50,47 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.companies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; 
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.company-card {
+  text-decoration: none; 
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 150px;
+  text-align: center;
+  transition: transform 0.2s; /*cuantos tiempo va a tardar */
+}
+
+.company-card:hover {
+  transform: translateY(-5px); /*cuantos pixeles va a subir */
+}
+
+.company-card img {
+  width: 100%; 
+  height: auto; 
+  align-items: center;
+  justify-content: center;
+}
+
+.company-card h3 {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+
+
+
+
+
 
 .navbar {
   position: absolute;
@@ -64,6 +105,11 @@ button:focus-visible {
   text-align: left;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
+
+
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
