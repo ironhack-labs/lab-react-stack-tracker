@@ -1,7 +1,22 @@
-function HomePage() {
+import { Link } from "react-router-dom";
+
+function HomePage({companies}) {
+  console.log(companies)
+  
   return (
-    <div>
-      <h1>HomePage</h1>
+    <div className="homepage-container">
+      <h3>StackTracker: Discover Tech Stacks Used by Top Companies</h3>
+      <div className="companies-list">
+      {companies.map((eachCompany) => {
+        return(
+        <Link to={`/company/${eachCompany.slug}`} key={eachCompany.id} className="company-card">
+        <div>
+        <h3>{eachCompany.name}</h3>
+        <img src={eachCompany.logo} alt={eachCompany.slug} />
+        </div>
+        </Link>)
+      })}
+      </div>
     </div>
   );
 }
