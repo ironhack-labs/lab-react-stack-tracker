@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+.company-grid,
+.tech-containers {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  justify-content: center;
+}
+
+.companyNameAndLogo img {
+  height: 300px;
+  width: 300px;
+  object-fit: contain;
+}
+
+.technology img,
+.company img,
+.company-grid img {
+  width: 100px;
+  height: 100px;
+}
