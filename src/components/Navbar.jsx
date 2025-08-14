@@ -1,5 +1,10 @@
+import { Link } from "react-router";
+
 function Navbar() {
-  return <nav>Navbar</nav>;
+  return (
+    <Link to={"/"}><nav>StackTracker</nav></Link>
+    
+  );
 }
 
 export default Navbar;
