@@ -1,7 +1,16 @@
-function CompanyPage() {
+function CompanyPage({companies}) {
+  
+  const companyPageStyle = {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+    marginTop: "40px"  
+  }
+
   return (
-    <div>
-      <h1>CompanyPage</h1>
+    <div style={companyPageStyle}> 
+      <h1>Company Profile</h1>
     </div>
   );
 }

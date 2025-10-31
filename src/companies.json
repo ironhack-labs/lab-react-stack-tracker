@@ -4,7 +4,7 @@
     "slug": "airbnb",
     "name": "Airbnb",
     "website": "www.example.com",
-    "description": "An online platform for listing, discovering, and booking unique accommodations around the world. It allows users to rent out their homes or spare rooms to travelers.An online platform for listing, discovering, and booking unique accommodations around the world.",
+    "description": "An online platform for listing, discovering, and booking unique accommodations around the world. It allows users to rent out their homes or spare rooms to travelers. An online platform for listing, discovering, and booking unique accommodations around the world.",
     "logo": "https://education-team-2020.s3.eu-west-1.amazonaws.com/web-dev/m3/lab-react-stack-tracker/logos/airbnb-logo.png",
     "techStack": [
       {
