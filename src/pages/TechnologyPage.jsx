@@ -1,7 +1,16 @@
 function TechnologyPage() {
+
+  const technologyPageStyle = {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
+    marginTop: "40px"
+  }
+
   return (
-    <div>
-      <h1>TechnologyPage</h1>
+    <div style={technologyPageStyle}>
+      <h1>Technology Details</h1>
     </div>
   );
 }
